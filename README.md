@@ -15,7 +15,7 @@
 >
 > * [Aline Trofino](https://github.com/Acrispereira)
 > * [Bruno Araújo](https://github.com/dimorais1)
-> * [Débora Faria](https://github.com/deborafaria01)
+> * [Debora Faria](https://github.com/deborafaria01)
 > * [Hariel Thums](https://github.com/HarielThums)
 > * [Henrique Alexandre](https://github.com/henriquesalex)
 > * [Mariana Assis](https://github.com/mariana299)
