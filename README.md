@@ -13,11 +13,11 @@
 >
 ## Equipe:
 >
-> * [Aline Trofino](https://github.com/Acrispereira)
-> * [Bruno Araújo](https://github.com/dimorais1)
-> * [Debora Faria](https://github.com/deborafaria01)
-> * [Jean Gomes](https://github.com/jeangomes3)
-> * [Hariel Thums](https://github.com/HarielThums)
-> * [Henrique Alexandre](https://github.com/henriquesalex)
-> * [Mariana Assis](https://github.com/mariana299)
-> * [Vinícius Oliveira](https://github.com/vinicius-hso)
+> * [Aline Trofino](https://github.com/Acrispereira) - [LinkedIn](https://www.linkedin.com/in/alinetrofino/)
+> * [Bruno Araújo](https://github.com/dimorais1) - [LinkedIn]()
+> * [Debora Faria](https://github.com/deborafaria01) - [LinkedIn](https://www.linkedin.com/in/debora-faria2109/)
+> * [Jean Gomes](https://github.com/jeangomes3) - [LinkedIn](https://www.linkedin.com/in/jean-santos-562b74200/?trk=public-profile-join-page)
+> * [Hariel Thums](https://github.com/HarielThums) - [LinkedIn](https://www.linkedin.com/in/hariel-thums/)
+> * [Henrique Alexandre](https://github.com/henriquesalex) - [LinkedIn](https://www.linkedin.com/in/henrique-souza-alexandre-30373016b/)
+> * [Mariana Assis](https://github.com/mariana299) - [LinkedIn](https://www.linkedin.com/in/mariana-assis-23514061/)
+> * [Vinícius Oliveira](https://github.com/vinicius-hso) - [LinkedIn](https://www.linkedin.com/in/viniciushso/)
