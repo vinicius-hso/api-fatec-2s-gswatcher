@@ -2,7 +2,7 @@
 
 ## Project setup
 
-## Getting Started
+## Iniciando projeto
 - Instalar [Nodejs](https://nodejs.org/en/)
 - Abrir terminal
 - Abrir pasta do projeto
