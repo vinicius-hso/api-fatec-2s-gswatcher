@@ -9,6 +9,8 @@ npm install
 ```
 npm run serve
 ```
+Utilizar apenas ambiente de desenvolvimento para subir o projeto (developmentm), pois não foram feitas configurações para produção até então.
+```
 
 ### Compiles and minifies for production
 ```
