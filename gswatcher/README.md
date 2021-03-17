@@ -1,24 +1,10 @@
 # gswatcher
 
 ## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Iniciando projeto
+- Instalar [Nodejs](https://nodejs.org/en/)
+- Abrir terminal
+- Abrir pasta do projeto
+- Rodar `npm install`
+- Rodar `npm run serve` para iniciar o ambiente de desenvolvimento local
