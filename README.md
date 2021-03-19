@@ -1,4 +1,4 @@
-# Aprendizado por Projeto Integrador
+# 🎓 Aprendizado por Projeto Integrador
 > * FATEC São José dos Campos - Prof. Jessen Vidal
 > 
 > * 2º Período - Turma "B"
@@ -9,7 +9,7 @@
 > Nesse cenário volátil, a empresa GSW que atua a mais de 29 anos na área de desenvolvimento de softwares sente a necessidade de acompanhar seus projetos mais de perto, sabendo o que está sendo produzido, o que está em atraso, o que foi concluído, quantas pessoas estão envolvidas, quantas horas de trabalho foram dedicadas a determinada atividade etc. Isso é possível através de seus sistemas de gerenciamento de projetos, porém esses sistemas variam de acordo com cada equipe, gerando fontes de dados sem padronização e dificultando a visualização panorâmica de seus projetos.
 
 ## 🎯 DESAFIO
-> Desenvolver uma solução que unifique e trate os dados gerados pelos atuais sistemas de gerenciamento de projetos da GSW (Trello e Jira) e apresente as informações da base de dados em um dashboard para o acompanhamento do desenvolvimento dos projetos.
+> Desenvolver uma solução que unifique e trate os dados gerados pelos atuais sistemas de gerenciamento de projetos da [GSW](https://www.gsw.com.br/) (Trello e Jira) e apresente as informações da base de dados em um __Dashboard__ para o acompanhamento do desenvolvimento dos projetos.
 
 ## 💡 SOLUÇÃO
 
