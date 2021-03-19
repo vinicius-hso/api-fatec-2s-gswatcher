@@ -12,6 +12,7 @@
 > Desenvolver uma solução que unifique e trate os dados gerados pelos atuais sistemas de gerenciamento de projetos da [GSW](https://www.gsw.com.br/) (Trello e Jira) e apresente as informações da base de dados em um __Dashboard__ para o acompanhamento do desenvolvimento dos projetos.
 
 ## 💡 SOLUÇÃO
+> A __Cluster 8__ traz uma solução que irá aproximar Diretores e projetos, proporcionando uma visão mais detalhada e atualizada do que está realmente acontecendo, fornecendo insights baseados em dados reais sobre seus projetos e facilitando a tomada de decisões. Através de uma __Aplicação Web__ oferecemos a visualização de informações em forma de gráficos a respeito de seus projetos. 
 
 ## 🔎📊 GSWATCHER
 
