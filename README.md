@@ -1,4 +1,6 @@
-# 🔎📊 GSWATCHER
+# Aprendizado por Proejto Integrador - FATEC SJC - Prof. Jessen Vidal
+
+## 🔎📊 GSWATCHER
 
 ## Tema do Semestre (2º período)
 >
