@@ -1,7 +1,7 @@
 # Aprendizado por Projeto Integrador
 > FATEC SJC - Prof. Jessen Vidal
-> 2º Período
-> Turma "B"
+> 
+> 2º Período - Turma "B"
 
 ## 🔎📊 GSWATCHER
 
