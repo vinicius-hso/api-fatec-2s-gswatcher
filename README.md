@@ -21,6 +21,9 @@
 > 
 > > [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dimorais1) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
 >
+> * __Debora Faria__ - *Product Owner* 
+> 
+> > [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dimorais1) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](LinkedIn](https://www.linkedin.com/in/debora-faria2109/)
 >
 
 
