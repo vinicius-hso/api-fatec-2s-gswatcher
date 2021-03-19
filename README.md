@@ -15,7 +15,7 @@
 >
 ## 👨‍💻 👩‍💻 EQUIPE
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/cluster8_logo.png) é formada por:
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/cluster8_logo.png)
 
 * __Aline Trofino__ - *Developer Team* 
 
