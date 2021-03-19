@@ -12,6 +12,8 @@
 >> Desenvolver uma aplicação que reúna informações sobre projetos a partir de diferentes fontes de dados, entre eles __end-points__ fornecidos pela __GSM__, e crie um __Dashboard__ para acompanhamento dos projetos.
 >
 ## Equipe:
+
+> * [![Aline Trofino]([https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Acrispereira)
 >
 > * Aline Trofino [https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white](https://github.com/Acrispereira) - [LinkedIn](https://www.linkedin.com/in/alinetrofino/)
 > * [Bruno Araújo](https://github.com/dimorais1) - [LinkedIn]()
