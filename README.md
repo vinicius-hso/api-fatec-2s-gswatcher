@@ -13,7 +13,9 @@
 > * Problema (Desafio):
 >> Desenvolver uma aplicação que reúna informações sobre projetos a partir de diferentes fontes de dados, entre eles __end-points__ fornecidos pela __GSM__, e crie um __Dashboard__ para acompanhamento dos projetos.
 >
-## 👨‍💻 👩‍💻 EQUIPE ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/cluster8_logo.png)
+## 👨‍💻 👩‍💻 EQUIPE
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/cluster8_logo.png) é formada por:
 
 * __Aline Trofino__ - *Developer Team* 
 
