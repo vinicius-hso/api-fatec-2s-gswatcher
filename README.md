@@ -11,6 +11,8 @@
 ## 🎯 DESAFIO
 > Desenvolver uma solução que unifique e trate os dados gerados pelos atuais sistemas de gerenciamento de projetos da GSW (Trello e Jira) e apresente as informações da base de dados em um dashboard para o acompanhamento do desenvolvimento dos projetos.
 
+## 💡 SOLUÇÃO
+
 ## 🔎📊 GSWATCHER
 
 ## Tema do Semestre (2º período)
