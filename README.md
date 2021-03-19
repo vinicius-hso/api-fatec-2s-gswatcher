@@ -1,7 +1,5 @@
 # 🔎📊 GSWATCHER
 
-## 🔎📊 GSWATCHER
-
 ## Tema do Semestre (2º período)
 >
 > * CRUD Simples:
