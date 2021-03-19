@@ -13,7 +13,7 @@
 >
 ## Equipe:
 >
-> * [Aline Trofino](https://github.com/Acrispereira) - [LinkedIn](https://www.linkedin.com/in/alinetrofino/)
+> * Aline Trofino [https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white](https://github.com/Acrispereira) - [LinkedIn](https://www.linkedin.com/in/alinetrofino/)
 > * [Bruno Araújo](https://github.com/dimorais1) - [LinkedIn]()
 > * [Debora Faria](https://github.com/deborafaria01) - [LinkedIn](https://www.linkedin.com/in/debora-faria2109/)
 > * [Jean Gomes](https://github.com/jeangomes3) - [LinkedIn](https://www.linkedin.com/in/jean-santos-562b74200/?trk=public-profile-join-page)
