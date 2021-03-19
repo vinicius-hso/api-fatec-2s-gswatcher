@@ -14,11 +14,17 @@
 ## 💡 SOLUÇÃO
 > A __Cluster 8__ traz uma solução que irá aproximar Diretores e projetos, proporcionando uma visão mais detalhada e atualizada do que está realmente acontecendo, fornecendo insights baseados em dados reais sobre seus projetos e facilitando a tomada de decisões. Através de uma __Aplicação Web__ oferecemos a visualização de informações em forma de gráficos a respeito de seus projetos. 
 
-## 🔎📊 PROJETO:  GSWATCHER
+## 📝 PROJETO: GSWATCHER 
 
-
+### 📋 Product Backlog 
 >
-### 👨‍💻 👩‍💻 EQUIPE
+>
+>
+### ⏳ Planejamento
+>
+>
+>
+### 👨‍💻 👩‍💻 Equipe
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/cluster8_logo.png)
 
@@ -54,7 +60,7 @@
 
 > [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vinicius-hso) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/viniciushso/)
 
-### 🛠️ FERRAMENTAS/TECNOLOGIAS
+### 🛠️ Ferramentas/Tecnologias
 
 * __Front-End__
 
