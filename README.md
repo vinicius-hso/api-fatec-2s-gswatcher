@@ -3,13 +3,13 @@
 > 
 > * 2º Período - Turma "B"
 
-## MOTIVAÇÃO
+## 💬 MOTIVAÇÃO
 > Em um mundo cada vez mais dinâmico onde a cada instante as coisas mudam de direção e é necessário se adaptar para sobreviver, ter relatórios sobre sua empresa e seus processos de forma fácil e rápida se tornou algo altamente desejado. Essa facilidade em visualizar quase em tempo real o que está acontecendo pode facilitar e muito as tomadas de decisões e consequentemente poupar muito dinheiro e esforço do desperdício.  
 >
 > Nesse cenário volátil, a empresa GSW que atua a mais de 29 anos na área de desenvolvimento de softwares sente a necessidade de acompanhar seus projetos mais de perto, sabendo o que está sendo produzido, o que está em atraso, o que foi concluído, quantas pessoas estão envolvidas, quantas horas de trabalho foram dedicadas a determinada atividade etc. Isso é possível através de seus sistemas de gerenciamento de projetos, porém esses sistemas variam de acordo com cada equipe, gerando fontes de dados sem padronização e dificultando a visualização panorâmica de seus projetos.
 
-## DESAFIO
-> Desenvolver uma solução que unifique e trate os dados gerados pelos atuais sistemas de gerenciamento de projetos da GSW, Trello e Jira e apresente as informações da base de dados em um dashboard.
+## 🎯 DESAFIO
+> Desenvolver uma solução que unifique e trate os dados gerados pelos atuais sistemas de gerenciamento de projetos da GSW (Trello e Jira) e apresente as informações da base de dados em um dashboard para o acompanhamento do desenvolvimento dos projetos.
 
 ## 🔎📊 GSWATCHER
 
