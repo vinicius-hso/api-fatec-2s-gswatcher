@@ -1,4 +1,4 @@
-# Documentação do Projeto 'GSWatcher'
+# 📂 Documentação do Projeto 'GSWatcher'
 
 Nessa pasta estão todos os arquivos gerados pelo processo de documentação do projeto juntamente com seus artefatos.
 
