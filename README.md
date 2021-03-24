@@ -53,14 +53,8 @@
 > | ---------------- | ---------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
 > |__Aline Trofino__ | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/Acrispereira) | [![](https://bit.ly/2P1ZogM)](https://bit.ly/3foIiEX) |
 > |__Bruno Araújo__  | *Developer Team* | [![](https://bit.ly/2OXq16O)](https://github.com/dimorais1)    | [![](https://bit.ly/3rdQWrW)]()                       |
->
-> * __Debora Faria__ - *Product Owner* 
->
-> [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/deborafaria01) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/debora-faria2109/)
->
-> * __Jean Gomes__ - *Developer Team* 
->
-> [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jeangomes3) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jean-santos-562b74200/?trk=public-profile-join-page)
+> |__Debora Faria__  | *Product Owner*  | [![](https://bit.ly/3vPNXtc)](https://github.com/deborafaria01)| [![](https://bit.ly/3cguzOq)](https://bit.ly/2QwcT8R) |
+> |__Jean Gomes__ -  | *Developer Team* | [![](https://bit.ly/3lRMj5J)](https://github.com/jeangomes3)   | [![](https://bit.ly/3f8uUod)](https://bit.ly/39eZZ5T) |
 >
 > * __Hariel Thums__ - *Developer Team* 
 >
