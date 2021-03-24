@@ -1,5 +1,8 @@
-const app = require('./config/server')
-const port = 3000
+const app = require('./config/server'), port = 3000
+
+
+// const dados = require('./dados')
+// console.log(dados)
 
 
 app.listen(port, () => {
