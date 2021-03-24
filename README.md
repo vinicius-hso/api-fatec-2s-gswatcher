@@ -55,14 +55,8 @@
 > |__Bruno Araújo__  | *Developer Team* | [![](https://bit.ly/2OXq16O)](https://github.com/dimorais1)    | [![](https://bit.ly/3rdQWrW)]()                       |
 > |__Debora Faria__  | *Product Owner*  | [![](https://bit.ly/3vPNXtc)](https://github.com/deborafaria01)| [![](https://bit.ly/3cguzOq)](https://bit.ly/2QwcT8R) |
 > |__Jean Gomes__ -  | *Developer Team* | [![](https://bit.ly/3lRMj5J)](https://github.com/jeangomes3)   | [![](https://bit.ly/3f8uUod)](https://bit.ly/39eZZ5T) |
->
-> * __Hariel Thums__ - *Developer Team* 
->
-> [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HarielThums) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hariel-thums/)
->
-> * __Henrique Alexandre__ - *Developer Team* 
-> 
-> [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/henriquesalex) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/henrique-souza-alexandre-30373016b/)
+> |__Hariel Thums__  | *Developer Team* | [![](https://bit.ly/3rhcKmn)](https://github.com/HarielThums)  | [![](https://bit.ly/31db2In)](https://bit.ly/3f9bjUH) |
+> |__Henrique Alexandre__| *Developer Team* | [![](https://bit.ly/3snKRdK)](https://bit.ly/3skFVGG)      | [![](https://bit.ly/3vTluTo)](https://bit.ly/397ULc3) |
 >
 > * __Mariana Assis__ - *Developer Team* 
 > 
