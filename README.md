@@ -28,7 +28,9 @@ Acesse os documentos clicando nos links abaixo:
 * 5. [__Diagrama de casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2305_diagrama_casos_de_uso.png)
 * 6. [__Documento de Casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2306_documento_casos_de_uso.pdf)
 
-### 📋 Sprints Backlog 
+### 📋 Sprints Backlog
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/sprints_backlog.png)
 
 ### ⏳ Planejamento
 * [x] __Kick-off__ - 28/02/2021 a 06/03/2021
