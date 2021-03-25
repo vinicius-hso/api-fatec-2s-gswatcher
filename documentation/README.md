@@ -8,4 +8,4 @@ Acesse os documentos clicando nos links abaixo:
 * [__Ata da Reunião__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2302_gsw_kickoff_Ata%20de%20Reunia%CC%83o.pdf) *Kick-off*
 * [__Product Backlog__]()
 * [__Documento de Casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2304_documento_casos_de_uso.pdf)
-* [__Diagrama de casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2304_documento_casos_de_uso.pdf)
+* [__Diagrama de casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2305_diagrama_casos_de_uso.png)
