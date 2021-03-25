@@ -15,7 +15,14 @@ Desenvolver uma solução que unifique e trate os dados gerados pelos atuais sis
 A __Cluster 8__ traz uma solução que irá aproximar Diretores e projetos, proporcionando uma visão mais detalhada e atualizada do que está realmente acontecendo, fornecendo insights baseados em dados reais sobre seus projetos e facilitando a tomada de decisões. Através de uma __Aplicação Web__ oferecemos a visualização de informações em forma de gráficos a respeito de seus projetos. 
 
 ## 📝 PROJETO: GSWATCHER 
-__GSWatcher__ é a proposta de solução oferecida pela equipe __Cluster 8__ em forma de aplicação web para o problema apresentado pela empresa __GSW__
+__GSWatcher__ é a proposta de solução oferecida pela equipe __Cluster 8__ em forma de aplicação web para o problema apresentado pela empresa __GSW__. A aplicação finalizada deve:
+
+* Realizar o *upload* de arquivos *.json* e a inserção desses dados no banco de dados.
+* Gerar visualizações em forma de *gráficos* sobre:
+> * Projetos;
+> * Desenvolvedores;
+> * Tasks;
+> * Horas;
 
 ### 📂 Documentação do Projeto
 
