@@ -52,11 +52,16 @@ Acesse os documentos clicando nos links abaixo:
 
 * __Sprint 1__:
 > 🗂️ Artefatos
+> 
 > 📅 Planejamento das Sprints
+> 
 > 📱 Wireframe Mobile
+> 
 > 🖥️ Wireframe Desktop
+> 
 > 🎲 Modelagem do Banco de Dados
-> 🛹 Minimum Viable Product (Mínimo Produto Viável)
+> 
+> 🚲 Minimum Viable Product (Mínimo Produto Viável)
 
 ### 🛠️ Ferramentas/Tecnologias
 
