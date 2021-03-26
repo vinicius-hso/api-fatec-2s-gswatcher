@@ -48,6 +48,15 @@ Acesse os documentos clicando nos links abaixo:
 * [ ] __Apresentação Final__ - 07/06/2021 a 11/06/2021
 * [ ] __Feira de Soluções__ - 14/06/2021 a 18/06/2021
 
+### 📦 Entregas
+
+* __Sprint 1__:
+> 🗂️ Artefatos
+> 📅 Planejamento das Sprints
+> 📱 Wireframe Mobile
+> 🖥️ Wireframe Desktop
+> 🎲 Modelagem do Banco de Dados
+> 🛹 Minimum Viable Product (Mínimo Produto Viável)
 
 ### 🛠️ Ferramentas/Tecnologias
 
