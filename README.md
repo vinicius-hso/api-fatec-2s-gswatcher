@@ -24,6 +24,8 @@ __GSWatcher__ é a proposta de solução oferecida pela equipe __Cluster 8__ em 
 > * Tasks;
 > * Horas;
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### 📂 Documentação do Projeto
 
 Acesse os documentos clicando nos links abaixo:
@@ -35,9 +37,13 @@ Acesse os documentos clicando nos links abaixo:
 * [__Diagrama de casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2305_diagrama_casos_de_uso.png)
 * [__Documento de Casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2306_documento_casos_de_uso.pdf)
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### 📋 Sprints Backlog
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/sprints_backlog.png)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### ⏳ Planejamento
 * [x] __Kick-off__ - 28/02/2021 a 06/03/2021
@@ -47,6 +53,8 @@ Acesse os documentos clicando nos links abaixo:
 * [ ] __Sprint 4__ - 17/05/2021 a 05/06/2021
 * [ ] __Apresentação Final__ - 07/06/2021 a 11/06/2021
 * [ ] __Feira de Soluções__ - 14/06/2021 a 18/06/2021
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 📦 Entregas
 
@@ -63,6 +71,8 @@ Acesse os documentos clicando nos links abaixo:
 > 
 > 🚲 Minimum Viable Product (Mínimo Produto Viável)
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### 🛠️ Ferramentas/Tecnologias
 
 * __Front-End__
@@ -76,6 +86,8 @@ Acesse os documentos clicando nos links abaixo:
 * __Data-Base__
 
 ![[]](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 👨‍💻 👩‍💻 Equipe
 
