@@ -8,7 +8,7 @@ function projetosFinalizados(input) {
     let inputstats = input
     const finalizado = dados => dados.finished == inputstats || dados.isFinished == inputstats // buscando por card já finalizados
 
-    return console.log(dados.filter(finalizado))
+    return dados.filter(finalizado)
 }
 
 
@@ -18,7 +18,7 @@ function buscandoProjeto(input) {
     let inputprojeto = input
     const projeto = projeto => projeto.project ==  inputprojeto 
 
-    return console.log(dados.filter(projeto))
+    return dados.filter(projeto)
 }
 
 
@@ -39,7 +39,7 @@ function cardID(input) {
     let inputcard = input
     const numerodocard = n => n.id == inputcard || n._id == inputcard
 
-    return console.log(dados.filter(numerodocard))
+    return dados.filter(numerodocard)
 }
 
 
