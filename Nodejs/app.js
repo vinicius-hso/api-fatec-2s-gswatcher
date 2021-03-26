@@ -1,12 +1,10 @@
 const app = require('./config/server'), port = 3000
-
-
 const dados = require('./dados')
+
 // console.log(dados)
 
 
-app.get('/', (req, res) => res.send(programador('Antônio', 'Nogueira')))
-
+app.get('/', (req, res) => res.send(dados.programador('Antônio', 'Nogueira')))
 
 
 

@@ -28,7 +28,7 @@ function programador(nome, sobrenome) {
     let inputnome = nome[0].toLocaleUpperCase() + nome.slice(1) + sobrenome[0].toLocaleUpperCase() + sobrenome.slice(1) // definindo letras maiusculas, para evitar erro de busca.
     const buscandoprogramador = nome => nome.user.first_name + nome.user.last_name == inputnome
     
-    return console.log(dados.filter(buscandoprogramador))
+    return dados.filter(buscandoprogramador)
 }
 
 
