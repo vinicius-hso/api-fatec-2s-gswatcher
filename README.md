@@ -26,19 +26,6 @@ __GSWatcher__ é a proposta de solução oferecida pela equipe __Cluster 8__ em 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### 📂 Documentação do Projeto
-
-Acesse os documentos clicando nos links abaixo:
-
-* [__Planejamento da Entrevista__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2301_gsw_kickoff_Planejamento%20da%20Entrevista.pdf) *Kick-off*
-* [__Ata da Reunião__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2302_gsw_kickoff_Ata%20de%20Reunia%CC%83o.pdf) *Kick-off*
-* [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2303_product_backlog.pdf)
-* [__Documento de Visão__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2304_documento_de_visao.pdf)
-* [__Diagrama de casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2305_diagrama_casos_de_uso.png)
-* [__Documento de Casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2306_documento_casos_de_uso.pdf)
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 ### ⏳ Planejamento
 * [x] __Kick-off__ - 28/02/2021 a 06/03/2021
 * [ ] __Sprint 1__ - 08/03/2021 a 28/03/2021
@@ -48,32 +35,39 @@ Acesse os documentos clicando nos links abaixo:
 * [ ] __Apresentação Final__ - 07/06/2021 a 11/06/2021
 * [ ] __Feira de Soluções__ - 14/06/2021 a 18/06/2021
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-### 📋 Sprints Backlog
-
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/sprints_backlog.png)
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-### 🃏 Sprints Cards
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 📦 Entregas
 
-* __Sprint 1__:
-> 🗂️ Artefatos
-> 
-> 📅 Planejamento das Sprints
-> 
-> 📱 Wireframe Mobile
-> 
-> 🖥️ Wireframe Desktop
-> 
-> 🎲 Modelagem do Banco de Dados
-> 
-> 🚲 Minimum Viable Product (Mínimo Produto Viável)
+#### Sprint 1:
+ 
+##### 📂 Artefatos: Documentação do Projeto
+
+Acesse os documentos clicando nos links abaixo:
+
+* [__Planejamento da Entrevista__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2301_gsw_kickoff_Planejamento%20da%20Entrevista.pdf) *Kick-off*
+* [__Ata da Reunião__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2302_gsw_kickoff_Ata%20de%20Reunia%CC%83o.pdf) *Kick-off*
+* [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2303_product_backlog.pdf)
+* [__Documento de Visão__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2304_documento_de_visao.pdf)
+* [__Diagrama de casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2305_diagrama_casos_de_uso.png)
+* [__Documento de Casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2306_documento_casos_de_uso.pdf)
+ 
+##### 📅 Planejamento das Sprints:
+
+📋 Sprints Backlog
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/sprints_backlog.png)
+
+🃏 Sprints Cards
+
+##### 📱 Wireframe Mobile
+ 
+##### 🖥️ Wireframe Desktop
+
+##### 🎲 Modelagem do Banco de Dados
+ 
+##### 🚲 Minimum Viable Product (Mínimo Produto Viável)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
