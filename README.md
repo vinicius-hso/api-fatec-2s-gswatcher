@@ -65,6 +65,9 @@ Acesse os documentos clicando nos links abaixo:
  
 ##### 🖥️ Wireframe Desktop
 
+> * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Wireframe/Desktop)
+> * [Protótipo interativo no Figma](https://www.figma.com/proto/PfWwvxaXMKOjZhFJ6jK0qD/GSWatcher-Desktop?node-id=1%3A10&scaling=scale-down-width&page-id=0%3A1)
+
 ##### 🎲 Modelagem do Banco de Dados
  
 ##### 🚲 Minimum Viable Product (Mínimo Produto Viável)
