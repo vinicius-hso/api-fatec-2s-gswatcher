@@ -62,7 +62,10 @@ Acesse os documentos clicando nos links abaixo:
 🃏 Sprints Cards
 
 ##### 📱 Wireframe Mobile
- 
+
+> * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Wireframe/Mobile)
+> * [Protótipo interativo no Figma](https://www.figma.com/proto/HlvBPe52pr9g2V8ZiUIkPn/Wireframe-Mobile?node-id=15%3A77&scaling=scale-down&page-id=0%3A1)
+
 ##### 🖥️ Wireframe Desktop
 
 > * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Wireframe/Desktop)
