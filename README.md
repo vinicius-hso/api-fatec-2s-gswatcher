@@ -76,6 +76,9 @@ Acesse os documentos clicando nos links abaixo:
 > * [Protótipo interativo no Figma](https://www.figma.com/proto/PfWwvxaXMKOjZhFJ6jK0qD/GSWatcher-Desktop?node-id=1%3A10&scaling=scale-down-width&page-id=0%3A1)
 
 ##### 🎲 Modelagem do Banco de Dados
+
+> * [Dicionário de Dados](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/dicionario_de_dados_gswatcher.pdf)
+> * [Modelo Lógico Relacional]()
  
 ##### 🚲 Minimum Viable Product (Mínimo Produto Viável)
 
