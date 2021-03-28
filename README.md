@@ -63,34 +63,46 @@ Acesse os documentos clicando nos links abaixo:
 
 * 📋 Sprints Backlog
 
+*A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2303_product_backlog.pdf) foram distribuídos de acordo com as Sprints do projeto*
+
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/sprint_backlog.jpg)
 
 * 🃏 Sprints Cards
+
+*A imagem abaixo mostra os itens definidos a serem produzidos a cada Sprint e seu respectivo grau de complexidade*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/sprint_cards.jpg)
 
 * 📉 Burndown Chart
 
+*O gráfico abaixo mostra o desempelho da equipe na realização das tarefas referentes a Sprint*
+
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/burndown_sprint1.png)
 
 ##### 3 - 📱 Wireframe Mobile
+
+Acesse os links para visualizar:
 
 > * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Wireframe/Mobile)
 > * [Protótipo interativo no Figma](https://www.figma.com/proto/HlvBPe52pr9g2V8ZiUIkPn/Wireframe-Mobile?node-id=1%3A2&scaling=scale-down&page-id=0%3A1)
 
 ##### 4 - 🖥️ Wireframe Desktop
 
+Acesse os links para visualizar:
+
 > * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Wireframe/Desktop)
 > * [Protótipo interativo no Figma](https://www.figma.com/proto/PfWwvxaXMKOjZhFJ6jK0qD/GSWatcher-Desktop?node-id=1%3A10&scaling=scale-down-width&page-id=0%3A1)
 
 ##### 6 - 🎲 Modelagem do Banco de Dados
+
+Acesse os links para visualizar:
 
 > * [Dicionário de Dados](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/dicionario_de_dados_gswatcher.pdf)
 > * [Modelo Lógico Relacional](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/modelo_logico_relacional_gswatcher.jpeg)
  
 ##### 7 - 🚲 Mínimo Produto Viável (MVP)
 
-* Página de Visualização: Projetos em cards e Gráfico Geral dos Projetos
+*O Gif abaixo mostra a página de visualização dos projetos em cards e um gráfico geral dos projetos*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Entregas/Minimum%20Viable%20Product/gswatcher.gif)
 
