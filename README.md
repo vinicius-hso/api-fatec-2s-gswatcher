@@ -115,7 +115,7 @@ Acesse os documentos clicando nos links abaixo:
 
 * __Wireframe__
 
-![]()
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/figma_logo.png)
 
 * __Project Management__
 
