@@ -102,7 +102,7 @@ Acesse os links para visualizar:
  
 ##### 7 - 🚲 Mínimo Produto Viável (MVP)
 
-*O Gif abaixo mostra a página de visualização dos projetos em cards e um gráfico geral dos projetos*
+*O Gif abaixo mostra a página de visualização dos projetos em cards e um gráfico geral dos projetos:*
 
 * Acesse o [código]()
 
