@@ -41,8 +41,10 @@ __GSWatcher__ é a proposta de solução oferecida pela equipe __Cluster 8__ em 
 ### 📦 Entregas
 
 #### Sprint 1:
+
+Abaixo encontram-se todos os itens produzidos durante a __SPRINT 1__ conforme establecido previamente por meio do planejamento das entregas: 
  
-##### 📂 Artefatos: Documentação do Projeto
+##### 1 - 📂 Artefatos: Documentação do Projeto
 
 Acesse os documentos clicando nos links abaixo:
 
@@ -57,30 +59,30 @@ Acesse os documentos clicando nos links abaixo:
 * [__Plano de Gerenciamento do Cronograma__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2309_Termo_Plano_de_Gerenc_Cronograma_GSW.pdf)
 * [__Plano de Gerenciamento dos Custos__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2310_Plano_de_Gerenciamento_dos_Custos_GSW.pdf)
 
-##### 📅 Planejamento das Sprints:
+##### 2 - 📅 Planejamento das Sprints:
 
-📋 Sprints Backlog
+* 📋 Sprints Backlog
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/sprints_backlog.png)
 
-🃏 Sprints Cards
+* 🃏 Sprints Cards
 
-##### 📱 Wireframe Mobile
+##### 3 - 📱 Wireframe Mobile
 
 > * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Wireframe/Mobile)
 > * [Protótipo interativo no Figma](https://www.figma.com/proto/HlvBPe52pr9g2V8ZiUIkPn/Wireframe-Mobile?node-id=1%3A2&scaling=scale-down&page-id=0%3A1)
 
-##### 🖥️ Wireframe Desktop
+##### 4 - 🖥️ Wireframe Desktop
 
 > * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Wireframe/Desktop)
 > * [Protótipo interativo no Figma](https://www.figma.com/proto/PfWwvxaXMKOjZhFJ6jK0qD/GSWatcher-Desktop?node-id=1%3A10&scaling=scale-down-width&page-id=0%3A1)
 
-##### 🎲 Modelagem do Banco de Dados
+##### 6 - 🎲 Modelagem do Banco de Dados
 
 > * [Dicionário de Dados](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/dicionario_de_dados_gswatcher.pdf)
-> * [Modelo Lógico Relacional]()
+> * [Modelo Lógico Relacional](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/modelo_logico_relacional_gswatcher.jpeg)
  
-##### 🚲 Minimum Viable Product (Mínimo Produto Viável)
+##### 7 - 🚲 Minimum Viable Product (Mínimo Produto Viável)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
