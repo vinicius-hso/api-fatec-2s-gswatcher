@@ -42,7 +42,7 @@ __GSWatcher__ é a proposta de solução oferecida pela equipe __Cluster 8__ em 
 
 #### Sprint 1:
 
-Abaixo encontram-se todos os itens produzidos durante a __SPRINT 1__ conforme establecido previamente por meio do planejamento das entregas: 
+Abaixo encontram-se todos os itens produzidos durante a __SPRINT 1__ conforme estabelecido previamente por meio do planejamento das entregas: 
  
 ##### 1 - 📂 Artefatos: Documentação do Projeto
 
