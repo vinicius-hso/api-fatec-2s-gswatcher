@@ -108,7 +108,7 @@ Acesse os documentos clicando nos links abaixo:
 
 ### 👨‍💻 👩‍💻 Equipe
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/cluster8_logo.png)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/cluster8_logo.png =100x50)
 
 | Aluno            | Função           | GitHub                                                         | LinkedIn                                              |
 | ---------------- | ---------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
