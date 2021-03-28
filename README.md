@@ -63,19 +63,19 @@ Acesse os documentos clicando nos links abaixo:
 
 * 📋 Sprints Backlog
 
-*A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2303_product_backlog.pdf) foram distribuídos de acordo com as Sprints do projeto*
+*A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2303_product_backlog.pdf) foram distribuídos de acordo com as Sprints do projeto:*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/sprint_backlog.jpg)
 
 * 🃏 Sprints Cards
 
-*A imagem abaixo mostra os itens definidos a serem produzidos a cada Sprint e seu respectivo grau de complexidade*
+*A imagem abaixo mostra os itens definidos a serem produzidos a cada Sprint e seu respectivo grau de complexidade:*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/sprint_cards.jpg)
 
 * 📉 Burndown Chart
 
-*O gráfico abaixo mostra o desempelho da equipe na realização das tarefas referentes a Sprint*
+*O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/burndown_sprint1.png)
 
@@ -131,6 +131,8 @@ Acesse os links para visualizar:
 * __Project Management__
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/jira_software.png)
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/ms_project.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
