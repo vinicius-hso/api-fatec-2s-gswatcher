@@ -67,10 +67,14 @@ Acesse os documentos clicando nos links abaixo:
 
 * 🃏 Sprints Cards
 
-![]()
-![]()
-![]()
-![]()
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/card_sprint1.jpg)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/card_sprint2.jpg)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/card_sprint3.jpg)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/card_sprint4.jpg)
+
+* 📉 Burndown Chart
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/burndown_sprint1.png)
 
 ##### 3 - 📱 Wireframe Mobile
 
@@ -87,9 +91,11 @@ Acesse os documentos clicando nos links abaixo:
 > * [Dicionário de Dados](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/dicionario_de_dados_gswatcher.pdf)
 > * [Modelo Lógico Relacional](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/modelo_logico_relacional_gswatcher.jpeg)
  
-##### 7 - 🚲 Minimum Viable Product (Mínimo Produto Viável)
+##### 7 - 🚲 Mínimo Produto Viável (MVP)
 
-> * [Vídeo Demonstrativo](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Entregas/Minimum%20Viable%20Product/gswatcher.gif)
+* Página de Visualização: Projetos em cards e Gráfico Geral dos Projetos
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Entregas/Minimum%20Viable%20Product/gswatcher.gif)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
