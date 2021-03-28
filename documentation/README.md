@@ -16,4 +16,4 @@ Acesse os documentos clicando nos links abaixo:
 * [__Plano de Gerenciamento de Custos__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2310_Plano_de_Gerenciamento_dos_Custos_GSW.pdf)
 
 
-Observação: Para poder vizualizar os anexos dos arquivos em pdf é necessário realizar o download do pdf e abrir o arquivo pdf com o app adobe. 
+Observação: Para poder visualizar os anexos dos arquivos em pdf é necessário realizar o download do pdf e abrir o arquivo pdf com o app adobe. 
