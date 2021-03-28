@@ -71,7 +71,7 @@ Acesse os documentos clicando nos links abaixo:
 
 *A imagem abaixo mostra os itens definidos a serem produzidos a cada Sprint e seu respectivo grau de complexidade:*
 
-![]()
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/sprint_cards.jpg)
 
 * 📉 Burndown Chart
 
