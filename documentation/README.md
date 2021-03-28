@@ -10,5 +10,10 @@ Acesse os documentos clicando nos links abaixo:
 * [__Documento de Visão__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2304_documento_de_visao.pdf)
 * [__Diagrama de casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2305_diagrama_casos_de_uso.png)
 * [__Documento de Casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2306_documento_casos_de_uso.pdf)
+* [__Declaração do Escopo do Projeto__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2307_Termo_de_Abertura_Projeto_GSW.pdf)
 * [__Termo Declaração de Escopo__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2308_Termo_Declaracao_Escopo_GSW.pdf)
 * [__Plano de Gerenciamento do Cronograma__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2309_Termo_Plano_de_Gerenc_Cronograma_GSW.pdf)
+* [__Plano de Gerenciamento de Custos__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2310_Plano_de_Gerenciamento_dos_Custos_GSW.pdf)
+
+
+Observação: Para poder vizualizar os anexos dos arquivos em pdf é necessário realizar o download do pdf e abrir o arquivo pdf com o app adobe. 
