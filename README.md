@@ -84,6 +84,8 @@ Acesse os documentos clicando nos links abaixo:
  
 ##### 7 - 🚲 Minimum Viable Product (Mínimo Produto Viável)
 
+> * [Vídeo Demonstrativo](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Entregas/Minimum%20Viable%20Product/gswatcher.gif)
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 🛠️ Ferramentas/Tecnologias
