@@ -67,6 +67,11 @@ Acesse os documentos clicando nos links abaixo:
 
 * 🃏 Sprints Cards
 
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/card_sprint1.jpg)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/card_sprint2.jpg)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/card_sprint3.jpg)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/card_sprint4.jpg)
+
 ##### 3 - 📱 Wireframe Mobile
 
 > * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Wireframe/Mobile)
