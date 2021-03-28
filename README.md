@@ -115,6 +115,12 @@ Acesse os documentos clicando nos links abaixo:
 
 * __Wireframe__
 
+![]()
+
+* __Project Management__
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/jira_software.png)
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 👨‍💻 👩‍💻 Equipe
