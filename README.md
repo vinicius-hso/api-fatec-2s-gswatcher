@@ -63,7 +63,7 @@ Acesse os documentos clicando nos links abaixo:
 
 * 📋 Sprints Backlog
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/sprints_backlog.png)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/sprint_backlog.jpg)
 
 * 🃏 Sprints Cards
 
@@ -102,11 +102,13 @@ Acesse os documentos clicando nos links abaixo:
 
 ![[]](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
+* __Wireframe__
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 👨‍💻 👩‍💻 Equipe
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/cluster8_logo.png)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/cluster8_logo.png)
 
 | Aluno            | Função           | GitHub                                                         | LinkedIn                                              |
 | ---------------- | ---------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
