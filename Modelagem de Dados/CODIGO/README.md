@@ -1,22 +1,30 @@
-A nossa solução unifica e trata os dados utilizando o node.js, e importa esses dados no SGDB Postegresql para que posteriomente possamos integrar esse banco ao nosso dashboard.
+# 📄 Instruções para rodar o código
 
+## 🖥️ Preparando a máquina
 
-PREPARANDO A MÁQUINA:
-Para conseguir rodar a solução é necessário possuir o NODE.JS e o POSTEGRESQL intalados em sua máquina.
+Para conseguir rodar a solução é necessário possuir o __Node.js__ e o __PostgreSQL__ intalados em sua máquina.
+
+Link para download:
+
+> * [__Node.js__](https://nodejs.org/en/download/)
+> * [__PostgreSQL__](https://www.postgresql.org/download/)
 
 Baixe os arquivos contidos nesse diretório
 
-Instale os módulos necessários:
-através do prompt de comando vá até a pasta em que os arquivos baixados estão salvos e digite:
-npm install express
-npm install pg 
+### Instale os módulos necessários através do prompt de comando 
+
+Vá até a pasta em que os arquivos baixados estão salvos e digite:
+
+`npm install express`
+`npm install pg` 
 
 
-Criar um usuário e banco de dados no Postegresql que será aplicado no projeto:
-através do shell do postgresql, digite os seguinte comando.
+### Criar um usuário e banco de dados no Postegresql que será aplicado no projeto
 
-Para criar um usuário "me" com a senha "password"
-postgres=# CREATE ROLE me WITH LOGIN PASSWORD 'password';
+Através do shell do postgresql, digite os seguinte comando:
+
+> * *Para criar um usuário "me" com a senha "password"*
+> `postgres=# CREATE ROLE me WITH LOGIN PASSWORD 'password';`
 
 Alterar as permições desse usuário para conseguir criar um database.
 postgres=# ALTER ROLE me CREATEDB;
