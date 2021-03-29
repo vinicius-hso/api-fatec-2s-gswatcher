@@ -23,17 +23,21 @@ Vá até a pasta em que os arquivos baixados estão salvos e digite:
 
 Através do shell do postgresql, digite os seguinte comando:
 
-> * *Para criar um usuário "me" com a senha "password"*
+> * Para criar um usuário "me" com a senha "password":
+> 
 > `postgres=# CREATE ROLE me WITH LOGIN PASSWORD 'password';`
 
-Alterar as permições desse usuário para conseguir criar um database.
-postgres=# ALTER ROLE me CREATEDB;
+> * Alterar as permições desse usuário para conseguir criar um database:
+> 
+> `postgres=# ALTER ROLE me CREATEDB;`
 
-Então conecte-se ao usuário criado e crie o database através do comando:
-CREATE DATABASE api;
+> * Então conecte-se ao usuário criado e crie o database através do comando:
+> 
+> `CREATE DATABASE api;`
 
-Por fim, para se conectar a esse database criado, utilize o comando:
-\c
+> * Por fim, para se conectar a esse database criado, utilize o comando:
+>
+> `\c`
 
 
 CRIANDO AS TABELAS NO BANCO DE DADOS:
