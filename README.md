@@ -28,7 +28,7 @@ __GSWatcher__ é a proposta de solução oferecida pela equipe __Cluster 8__ em 
 
 ### ⏳ Planejamento
 * [x] __Kick-off__ - 28/02/2021 a 06/03/2021
-* [ ] __Sprint 1__ - 08/03/2021 a 28/03/2021
+* [x] __Sprint 1__ - 08/03/2021 a 28/03/2021
 * [ ] __Sprint 2__ - 29/03/2021 a 18/04/2021
 * [ ] __Sprint 3__ - 26/04/2021 a 16/05/2021
 * [ ] __Sprint 4__ - 17/05/2021 a 05/06/2021
