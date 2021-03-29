@@ -6,7 +6,7 @@ Na nossa modelagem de dados teórica foram dimensionadas e relacionadas também 
 Modelagem de Dados - Modelo Entidade Relacionamento:
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/modelo_logico_relacional_gswatcher.jpeg)
 
-Modelagem de dados implementada com Node.js e Postegresql:
+Implementação do Banco de Dados com Node.js e Postegresql:
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/modelagem_dados.gif)
 
 
