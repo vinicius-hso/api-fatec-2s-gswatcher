@@ -100,6 +100,8 @@ Acesse os links para visualizar:
 > * [Dicionário de Dados](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/dicionario_de_dados_gswatcher.pdf)
 > * [Modelo Lógico Relacional](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/modelo_logico_relacional_gswatcher.jpeg)
 > * [Código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Modelagem%20de%20Dados/CODIGO)
+> Modelagem de dados implementada com Node.js e Postegresql:
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/modelagem_dados.gif)
  
 ##### 7 - 🚲 Mínimo Produto Viável (MVP)
 
