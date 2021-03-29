@@ -99,12 +99,13 @@ Acesse os links para visualizar:
 
 > * [Dicionário de Dados](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/dicionario_de_dados_gswatcher.pdf)
 > * [Modelo Lógico Relacional](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/modelo_logico_relacional_gswatcher.jpeg)
+> * [Código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Modelagem%20de%20Dados/CODIGO)
  
 ##### 7 - 🚲 Mínimo Produto Viável (MVP)
 
 *O Gif abaixo mostra a página de visualização dos projetos em cards e um gráfico geral dos projetos:*
 
-* Acesse o [código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/vue_study/gswatcher)
+* [Código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/vue_study/gswatcher)
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Entregas/Minimum%20Viable%20Product/gswatcher.gif)
 
