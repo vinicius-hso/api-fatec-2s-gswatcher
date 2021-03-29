@@ -55,11 +55,11 @@ Nesta mesma pasta do prompt de comandos rode o comando:
 
 ### Exportando arquivos *.csv do PostgreSQL:
 
-Inicialmente deve-se criar os arquivos tbl_dev.csv tbl_projeto.csv, tbl_sistema.csv, tbl_git.csv, tbl_status.csv, tbl_task.csv, tbl_task_detalhes.csv no caminho:
+Inicialmente deve-se criar os arquivos __tbl_dev.csv__ __tbl_projeto.csv__, __tbl_sistema.csv__, __tbl_git.csv__, __tbl_status.csv__, __tbl_task.csv__, __tbl_task_detalhes.csv__ no caminho:
 
 > `C:/temp/`
 
-Então executar os seguinte comandos no psql:
+Então executar os seguinte comandos no __psql__:
 
 > `\COPY ( SELECT * FROM tbl_dev)  to 'C:/temp/tbl_dev.csv'  WITH DELIMITER AS ';' CSV HEADER`
 
