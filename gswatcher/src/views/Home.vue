@@ -67,15 +67,41 @@
          
         chartOptions: {
           chart: {
-            id: 'vuechart'
+            id: 'vuechart',
+            height: 350,
+            type: 'bar',
           },
           xaxis: {
-            categories: ["Enzo Gabriel", "Elísio", "Lucca", "Carlos", "Bernardo", "Antônio", "Matheus", "Cecília", "Kléber", "Elísio", "Bernardo", "Bernardo", "Lucca"]
-          }
+             labels: {
+                style: {fontSize: '6px'
+                }
+              },
+            categories: ["[Xavier EIRELI S.A.]", "[Costa Comércio Comércio]", "[Souza Comércio e Associados]", "[Pereira - Barros Comércio]", "[Costa Comércio Comércio]", "[Costa LTDA S.A.]", "[Albuquerque, Albuquerque and Carvalho Comércio]", "[Carvalho, Costa and Costa e Associados]", "[Santos - Batista Comércio]", "[Souza Comércio e Associados]"],
+            
+          },
+          yaxis: {
+             labels: {
+                style: {fontSize: '6px'
+                }
+              },
+            categories: ["Done", "In-Progress", ""],
+            
+          },
+            dataLabels: {
+              enabled: true,
+              formatter: function (val) {
+                return val + "%";
+              },
+              offsetY: -20,
+              style: {
+                fontSize: '12px',
+                colors: ["#304758"]
+              }
+            },
           
         },
         series: [{
-          name: 'series-1',
+          name: 'Projects',
           data: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         }]
       }
