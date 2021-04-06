@@ -2,7 +2,7 @@
 
     <div class="home">
       <v-container class="my-5">
-        <v-layout row class="mb-3">
+        <v-layout row class="mb-3 sb-1">
           <h1>General Graph</h1>
           <apexchart width="800" type="bar" :options="chartOptions" :series="series"></apexchart>
           <h1>Project Cards</h1>
@@ -73,7 +73,7 @@
           },
           xaxis: {
              labels: {
-                style: {fontSize: '6px'
+                style: {fontSize: '10px'
                 }
               },
             categories: ["[Xavier EIRELI S.A.]", "[Costa Comércio Comércio]", "[Souza Comércio e Associados]", "[Pereira - Barros Comércio]", "[Costa Comércio Comércio]", "[Costa LTDA S.A.]", "[Albuquerque, Albuquerque and Carvalho Comércio]", "[Carvalho, Costa and Costa e Associados]", "[Santos - Batista Comércio]", "[Souza Comércio e Associados]"],

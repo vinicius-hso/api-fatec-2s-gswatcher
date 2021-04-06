@@ -3,7 +3,10 @@
         <v-app-bar dense app>
             <v-app-bar-nav-icon @click="drawer = !drawer" ></v-app-bar-nav-icon>
             <v-toolbar-title>
-                <span class="font-weight-dark">GSWatcher</span>
+                
+                    <router-link class="font-weight-dark text-decoration-none" to="/">GSWatcher
+                    </router-link>
+    
                 <span class="font-weight-light text-uppercase grey--text"> - Gerenciador de Projetos</span>
             </v-toolbar-title>
             <v-spacer></v-spacer>
