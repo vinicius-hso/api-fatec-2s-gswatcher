@@ -1,82 +1,84 @@
-# 🎓 Aprendizado por Projeto Integrador
-> * FATEC São José dos Campos - Prof. Jessen Vidal
+# 📄 Instruções para rodar o código
+
+## 🖥️ Preparando a máquina
+
+Para conseguir rodar a solução é necessário possuir o __Node.js__ e o __PostgreSQL__ intalados em sua máquina.
+
+Link para download:
+
+> * [__Node.js__](https://nodejs.org/en/download/)
+> * [__PostgreSQL__](https://www.postgresql.org/download/)
+
+Baixe os arquivos contidos nesse diretório
+
+### Instale os módulos necessários através do prompt de comando 
+
+Vá até a pasta em que os arquivos baixados estão salvos e digite:
+
+`npm install express`
+
+`npm install pg` 
+
+
+### Criar um usuário e banco de dados no Postegresql que será aplicado no projeto
+
+Através do shell do postgresql, digite os seguinte comando:
+
+> * Para criar um usuário "me" com a senha "password":
 > 
-> * 2º Período - Turma "B"
+> `postgres=# CREATE ROLE me WITH LOGIN PASSWORD 'password';`
 
-## 💬 MOTIVAÇÃO
-> Em um mundo cada vez mais dinâmico onde a cada instante as coisas mudam de direção e é necessário se adaptar para sobreviver, ter relatórios sobre sua empresa e seus processos de forma fácil e rápida se tornou algo altamente desejado. Essa facilidade em visualizar quase em tempo real o que está acontecendo pode facilitar e muito as tomadas de decisões e consequentemente poupar muito dinheiro e esforço do desperdício.  
->
-> Nesse cenário volátil, a empresa [GSW](https://www.gsw.com.br/) que atua a mais de 29 anos na área de desenvolvimento de softwares sente a necessidade de acompanhar seus projetos mais de perto, sabendo o que está sendo produzido, o que está em atraso, o que foi concluído, quantas pessoas estão envolvidas, quantas horas de trabalho foram dedicadas a determinada atividade etc. Isso é possível através de seus sistemas de gerenciamento de projetos, porém esses sistemas variam de acordo com cada equipe, gerando fontes de dados sem padronização e dificultando a visualização panorâmica de seus projetos.
-
-## 🎯 DESAFIO
-> Desenvolver uma solução que unifique e trate os dados gerados pelos atuais sistemas de gerenciamento de projetos da empresa e apresente as informações da base de dados em um __Dashboard__ para o acompanhamento do desenvolvimento dos projetos.
-
-## 💡 SOLUÇÃO
-> A __Cluster 8__ traz uma solução que irá aproximar Diretores e projetos, proporcionando uma visão mais detalhada e atualizada do que está realmente acontecendo, fornecendo insights baseados em dados reais sobre seus projetos e facilitando a tomada de decisões. Através de uma __Aplicação Web__ oferecemos a visualização de informações em forma de gráficos a respeito de seus projetos. 
-
-## 📝 PROJETO: GSWATCHER 
-> __GSWatcher__ é a proposta de solução oferecida pela equipe __Cluster 8__ em forma de aplicação web para o problema apresentado pela empresa __GSW__
-
-### 📋 Product Backlog 
->
->
->
-### ⏳ Planejamento
-> * [x] __Kick-off__ - 28/02/2021 a 06/03/2021
-> * [ ] __Sprint 1__ - 08/03/2021 a 28/03/2021
-> * [ ] __Sprint 2__ - 29/03/2021 a 18/04/2021
-> * [ ] __Sprint 3__ - 26/04/2021 a 16/05/2021
-> * [ ] __Sprint 4__ - 17/05/2021 a 05/06/2021
-> * [ ] __Apresentação Final__ - 07/06/2021 a 11/06/2021
-> * [ ] __Feira de Soluções__ - 14/06/2021 a 18/06/2021
-
-
-### 🛠️ Ferramentas/Tecnologias
-
-> * __Front-End__
->
-> ![[]](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![[]](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![[]](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![[]](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
->
-> * __Back-End__
->
-> ![[]](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
->
-> * __Data-Base__
->
-> ![[]](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
->
-### 👨‍💻 👩‍💻 Equipe
->
-> ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/cluster8_logo.png)
->
-> * __Aline Trofino__ - *Developer Team* 
->
-> [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Acrispereira) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alinetrofino/)
->
-> * __Bruno Araújo__ - *Developer Team* 
->
-> [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dimorais1) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
->
-> * __Debora Faria__ - *Product Owner* 
->
-> [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/deborafaria01) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/debora-faria2109/)
->
-> * __Jean Gomes__ - *Developer Team* 
->
-> [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jeangomes3) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jean-santos-562b74200/?trk=public-profile-join-page)
->
-> * __Hariel Thums__ - *Developer Team* 
->
-> [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HarielThums) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hariel-thums/)
->
-> * __Henrique Alexandre__ - *Developer Team* 
+> * Alterar as permições desse usuário para conseguir criar um database:
 > 
-> [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/henriquesalex) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/henrique-souza-alexandre-30373016b/)
->
-> * __Mariana Assis__ - *Developer Team* 
+> `postgres=# ALTER ROLE me CREATEDB;`
+
+> * Então conecte-se ao usuário criado e crie o database através do comando:
 > 
-> [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mariana299) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariana-assis-23514061/)
+> `CREATE DATABASE api;`
+
+> * Por fim, para se conectar a esse database criado, utilize o comando:
 >
-> * __Vinícius Oliveira__ - *Scrum Master* 
+> `\c`
+
+
+### Criando as tabelas no banco de dados
+
+Vá até a pasta em que salvou os arquivos deste diretório pelo prompt de comandos e rode o arquivo 01_app.js, através do seguinte comando no prompt:
+
+> `node 01_app.js`
+
+### Populando as tabelas no PostgreSQL
+
+Nesta mesma pasta do prompt de comandos rode o comando:
+
+> `node 02_app.js`
+
+
+### Exportando arquivos *.csv do PostgreSQL:
+
+Inicialmente deve-se criar os arquivos __tbl_dev.csv__ __tbl_projeto.csv__, __tbl_sistema.csv__, __tbl_git.csv__, __tbl_status.csv__, __tbl_task.csv__, __tbl_task_detalhes.csv__ no caminho:
+
+> `C:/temp/`
+
+Então executar os seguinte comandos no __psql__:
+
+> `\COPY ( SELECT * FROM tbl_dev)  to 'C:/temp/tbl_dev.csv'  WITH DELIMITER AS ';' CSV HEADER`
 >
-> [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vinicius-hso) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/viniciushso/)
+> `\COPY ( SELECT * FROM tbl_projeto)  to 'C:/temp/tbl_projeto.csv'  WITH DELIMITER AS ';' CSV HEADER`
+>
+> `\COPY ( SELECT * FROM tbl_sistema)  to 'C:/temp/tbl_sistema.csv'  WITH DELIMITER AS ';' CSV HEADER`
+>
+> `\COPY ( SELECT * FROM tbl_git)  to 'C:/temp/tbl_git.csv'  WITH DELIMITER AS ';' CSV HEADER`
+>
+> `\COPY ( SELECT * FROM tbl_status)  to 'C:/temp/tbl_status.csv'  WITH DELIMITER AS ';' CSV HEADER`
+>
+> `\COPY ( SELECT * FROM tbl_task)  to 'C:/temp/tbl_task.csv'  WITH DELIMITER AS ';' CSV HEADER`
+>
+> `\COPY ( SELECT * FROM tbl_task_detalhes)  to 'C:/temp/tbl_task_detalhes.csv'  WITH DELIMITER AS ';' CSV HEADER`
+
+
+Os arquivos podem ser salvos em outro caminho desde que o camando \copy seja alterado para esse mesmo caminho também.
+
+Esses arquivos salvos estão dentro da pasta "CSV export".
+
+Na nossa modelagem de dados teórica foram dimensionadas e relacionadas também tabelas de recarga de dados e de usuários, que ainda não foram implementadas, pois em um primeiro momento, com apenas dois arquivos para a recarga dos dados não seria interessante, mas com a evolução do projeto e alimentação de mais dados a equipe irá implementar também essas tabelas no banco de dados, bem como otimizar o código utilizado nas tabelas já existentes. 
