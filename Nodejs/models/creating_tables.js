@@ -1,5 +1,5 @@
 const Pool = require('pg').Pool
-require('./models/database')
+require('./database')
 
 const creating_tables = function(){
 const pool = new Pool({

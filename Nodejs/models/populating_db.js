@@ -1,5 +1,5 @@
 const Pool = require('pg').Pool
-require('./models/database')
+require('./database')
 
 const populating_db = function(input){
 const pool = new Pool({
