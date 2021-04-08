@@ -1,24 +1,15 @@
 <template>
-<v-footer app dark padless height="200">
-    <v-card flat tile class=" white--text text-center">
+  <v-footer dark padless>
+    <v-card flat tile class="flex white--text text-center">
       <v-card-text>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4 white--text"
-          icon
-        >
+        <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon>
           <v-icon size="24px">
             {{ icon }}
           </v-icon>
         </v-btn>
       </v-card-text>
 
-      <v-card-text class="white--text pt-0">
-        
-        Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
-        
-      </v-card-text>
+      <v-card-text class="white--text pt-0"> Mussum </v-card-text>
 
       <v-divider></v-divider>
 
@@ -30,12 +21,9 @@
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      icons: [
-        'mdi-github',
-        'mdi-linkedin',
-      ],
-    }),
-  }
+export default {
+  data: () => ({
+    icons: ["mdi-github", "mdi-linkedin"],
+  }),
+};
 </script>
