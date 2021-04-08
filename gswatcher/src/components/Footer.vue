@@ -1,5 +1,5 @@
 <template>
-<v-footer app dark padless>
+<v-footer app dark padless height="200">
     <v-card flat tile class=" white--text text-center">
       <v-card-text>
         <v-btn

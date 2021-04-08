@@ -1,57 +1,69 @@
 <template>
-
-    <div class="home">
-      <v-container class="my-5">
-        <v-layout row class="mb-3 sb-1">
-          <h1>General Graph</h1>
-          <apexchart width="800" type="bar" :options="chartOptions" :series="series"></apexchart>
-          <h1>Project Cards</h1>
-        </v-layout>
-      </v-container>
-       <v-container class="my-5">
-        <v-layout row class="mb-3">      
-          <v-btn small flat color="grey" @click="sortBy('project')">
-            <v-icon left small>mdi-folder</v-icon>
-            <span class="caption text-lowercase">Projeto</span>
-          </v-btn>
-          <v-btn small flat color="grey" @click="sortBy('user._id')">
-            <v-icon left small>mdi-account</v-icon>
-            <span class="caption text-lowercase">Responsável</span>
-          </v-btn>
-          <v-btn small flat color="grey" @click="sortBy('status')">
-            <v-icon left small>mdi-list-status</v-icon>
-            <span class="caption text-lowercase">Status</span>
-          </v-btn>
-          <!-- <v-btn small flat color="grey" @click="upload(projects)">
+  <div class="home">
+    <v-container class="my-5">
+      <v-layout row class="mb-3 sb-1">
+        <h1>General Graph</h1>
+        <apexchart
+          width="800"
+          type="bar"
+          :options="chartOptions"
+          :series="series"
+        ></apexchart>
+        <h1>Project Cards</h1>
+      </v-layout>
+    </v-container>
+    <v-container class="my-5">
+      <v-layout row class="mb-3">
+        <v-btn small flat color="grey" @click="sortBy('project')">
+          <v-icon left small>mdi-folder</v-icon>
+          <span class="caption text-lowercase">Projeto</span>
+        </v-btn>
+        <v-btn small flat color="grey" @click="sortBy('user._id')">
+          <v-icon left small>mdi-account</v-icon>
+          <span class="caption text-lowercase">Responsável</span>
+        </v-btn>
+        <v-btn small flat color="grey" @click="sortBy('status')">
+          <v-icon left small>mdi-list-status</v-icon>
+          <span class="caption text-lowercase">Status</span>
+        </v-btn>
+        <!-- <v-btn small flat color="grey" @click="upload(projects)">
             <v-icon left small>mdi-upload</v-icon>
             <span class="caption text-lowercase">Upload</span>
           </v-btn> -->
-        </v-layout>
-
-          <v-row>
-          <v-col v-for="project in projects" :key="project.id" cols="4" >
-             <v-card :loading="loading" :class="`mx-auto my-12 project ${project.status}`" max-width="374">
-               <v-responsive>
-                   <v-img :src="project.user.avatar" height="250"></v-img>
-               </v-responsive>
-               
-               <v-card-title>{{ project.project }}</v-card-title>
-               <v-card-text>
-                  <div class="my-4 subtitle-1">
-                    X • {{ project.user.userName }} {{ project.user.userLastName }}
-                  </div>
-                  <div> {{ project.status }}</div>
-              </v-card-text>
-
-  
-  </v-card>
-          </v-col>
-        </v-row>
+      </v-layout>
       </v-container>
-   </div>
+
+      <v-spacer></v-spacer>
+    
+      <v-container>
+
+      <v-row>
+        <v-col v-for="project in projects" :key="project.id" cols="4">
+          <v-card
+            :loading="loading"
+            :class="`mx-auto my-12 project ${project.status}`"
+            max-width="374"
+          >
+            <v-responsive>
+              <v-img :src="project.user.avatar" height="250"></v-img>
+            </v-responsive>
+
+            <v-card-title>{{ project.project }}</v-card-title>
+            <v-card-text>
+              <div class="my-4 subtitle-1">
+                X • {{ project.user.userName }} {{ project.user.userLastName }}
+              </div>
+              <div>{{ project.status }}</div>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
 </template>
 
 <script>
+
 
 
   export default {

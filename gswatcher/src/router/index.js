@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Perfil from '../views/Perfil.vue'
+import Desenvolvedores from '../views/Desenvolvedores.vue'
 import Time from '../views/Time.vue'
 import Projetos from '../views/Projetos.vue'
 
@@ -25,6 +26,11 @@ const routes = [
     path: '/perfil',
     name: 'perfil',
     component: Perfil
+  },
+  {
+    path: '/desenvolvedores',
+    name: 'desenvolvedores',
+    component: Desenvolvedores
   },
   {
     path: '/time',
