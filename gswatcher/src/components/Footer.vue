@@ -9,7 +9,7 @@
         </v-btn>
       </v-card-text>
 
-      <v-card-text class="white--text pt-0"> Mussum </v-card-text>
+      <v-card-text class="white--text pt-0"> GSWatcher </v-card-text>
 
       <v-divider></v-divider>
 
