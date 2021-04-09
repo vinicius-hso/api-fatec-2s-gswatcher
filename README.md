@@ -48,61 +48,61 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 1__ conforme es
 
 Acesse os documentos clicando nos links abaixo:
 
-* [__Planejamento da Entrevista__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2301_gsw_kickoff_Planejamento%20da%20Entrevista.pdf) *Kick-off*
-* [__Ata da Reunião__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2302_gsw_kickoff_Ata%20de%20Reunia%CC%83o.pdf) *Kick-off*
-* [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2303_product_backlog.pdf)
-* [__Documento de Visão__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2304_documento_de_visao.pdf)
-* [__Diagrama de casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2305_diagrama_casos_de_uso.png)
-* [__Documento de Casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2306_documento_casos_de_uso.pdf)
-* [__Termo de Abertura do Projeto__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2307_Termo_de_Abertura_Projeto_GSW.pdf)
-* [__Termo Declaração de Escopo__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2308_Termo_Declaracao_Escopo_GSW.pdf)
-* [__Plano de Gerenciamento do Cronograma__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2309_Termo_Plano_de_Gerenc_Cronograma_GSW.pdf)
-* [__Plano de Gerenciamento dos Custos__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2310_Plano_de_Gerenciamento_dos_Custos_GSW.pdf)
+* [__Planejamento da Entrevista__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/documentation/%2301_gsw_kickoff_Planejamento%20da%20Entrevista.pdf) *Kick-off*
+* [__Ata da Reunião__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/documentation/%2302_gsw_kickoff_Ata%20de%20Reunia%CC%83o.pdf) *Kick-off*
+* [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/documentation/%2303_product_backlog.pdf)
+* [__Documento de Visão__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/documentation/%2304_documento_de_visao.pdf)
+* [__Diagrama de casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/documentation/%2305_diagrama_casos_de_uso.png)
+* [__Documento de Casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/documentation/%2306_documento_casos_de_uso.pdf)
+* [__Termo de Abertura do Projeto__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/documentation/%2307_Termo_de_Abertura_Projeto_GSW.pdf)
+* [__Termo Declaração de Escopo__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/documentation/%2308_Termo_Declaracao_Escopo_GSW.pdf)
+* [__Plano de Gerenciamento do Cronograma__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/documentation/%2309_Termo_Plano_de_Gerenc_Cronograma_GSW.pdf)
+* [__Plano de Gerenciamento dos Custos__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/documentation/%2310_Plano_de_Gerenciamento_dos_Custos_GSW.pdf)
 
 ##### 2 - 📅 Planejamento das Sprints:
 
 * 📋 Sprints Backlog
 
-*A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2303_product_backlog.pdf) foram distribuídos de acordo com as Sprints do projeto:*
+*A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/documentation/%2303_product_backlog.pdf) foram distribuídos de acordo com as Sprints do projeto:*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/sprint_backlog.jpg)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Images/sprint_backlog.jpg)
 
 * 🃏 Sprints Cards
 
 *A imagem abaixo mostra os itens definidos a serem produzidos a cada Sprint e seu respectivo grau de complexidade:*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/sprint_cards.jpg)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Images/sprint_cards.jpg)
 
 * 📉 Burndown Chart
 
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/burndown_sprint1.png)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Images/burndown_sprint1.png)
 
 ##### 3 - 📱 Wireframe Mobile
 
 Acesse os links para visualizar:
 
-> * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Wireframe/Mobile)
+> * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Docs/Wireframe/Mobile)
 > * [Protótipo interativo no Figma](https://www.figma.com/proto/HlvBPe52pr9g2V8ZiUIkPn/Wireframe-Mobile?node-id=1%3A2&scaling=scale-down&page-id=0%3A1)
 
 ##### 4 - 🖥️ Wireframe Desktop
 
 Acesse os links para visualizar:
 
-> * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Wireframe/Desktop)
+> * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Docs/Wireframe/Desktop)
 > * [Protótipo interativo no Figma](https://www.figma.com/proto/PfWwvxaXMKOjZhFJ6jK0qD/GSWatcher-Desktop?node-id=1%3A10&scaling=scale-down-width&page-id=0%3A1)
 
 ##### 6 - 🎲 Modelagem do Banco de Dados
 
 Acesse os links para visualizar:
 
-> * [Dicionário de Dados](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/dicionario_de_dados_gswatcher.pdf)
-> * [Modelo Lógico Relacional](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/modelo_logico_relacional_gswatcher.jpeg)
-> * [Código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Modelagem%20de%20Dados/CODIGO)
+> * [Dicionário de Dados](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Modelagem%20de%20Dados/dicionario_de_dados_gswatcher.pdf)
+> * [Modelo Lógico Relacional](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Modelagem%20de%20Dados/modelo_logico_relacional_gswatcher.jpeg)
+> * [Código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Docs/Modelagem%20de%20Dados/CODIGO)
 > * Implementação do Banco de Dados com Node.js e Postegresql:
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/modelagem_dados.gif)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Docs/Modelagem%20de%20Dados/modelagem_dados.gif)
  
 ##### 7 - 🚲 Mínimo Produto Viável (MVP)
 
@@ -110,7 +110,7 @@ Acesse os links para visualizar:
 
 * [Código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/vue_study/gswatcher)
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Entregas/Minimum%20Viable%20Product/gswatcher.gif)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Entregas/Minimum%20Viable%20Product/gswatcher.gif)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -130,19 +130,19 @@ Acesse os links para visualizar:
 
 * __Wireframe__
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/figma_logo.png)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Images/figma_logo.png)
 
 * __Project Management__
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/jira_software.png)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Images/jira_software.png)
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/ms_project.png)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Images/ms_project.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 👨‍💻 👩‍💻 Equipe
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/cluster8_logo.png)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Images/cluster8_logo.png)
 
 | Aluno            | Função           | GitHub                                                         | LinkedIn                                              |
 | ---------------- | ---------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
