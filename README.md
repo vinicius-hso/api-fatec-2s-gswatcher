@@ -102,7 +102,7 @@ Acesse os links para visualizar:
 > * [Código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Docs/Modelagem%20de%20Dados/CODIGO)
 > * Implementação do Banco de Dados com Node.js e Postegresql:
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Docs/Modelagem%20de%20Dados/modelagem_dados.gif)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Modelagem%20de%20Dados/modelagem_dados.gif)
  
 ##### 7 - 🚲 Mínimo Produto Viável (MVP)
 
@@ -110,7 +110,7 @@ Acesse os links para visualizar:
 
 * [Código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/vue_study/gswatcher)
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Entregas/Minimum%20Viable%20Product/gswatcher.gif)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Docs/Minimum%20Viable%20Product/gswatcher.gif)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
