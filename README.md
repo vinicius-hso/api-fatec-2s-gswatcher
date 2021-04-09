@@ -275,7 +275,7 @@ Na nossa modelagem de dados teórica foram dimensionadas e relacionadas também 
 | ---------------- | ---------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
 |__Aline Trofino__ | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/Acrispereira) | [![](https://bit.ly/2P1ZogM)](https://bit.ly/3foIiEX) |
 |__Bruno Araújo__  | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/dimorais1)    | [![](https://bit.ly/2P1ZogM)]()                       |
-|__Danielle Brito__  | *Developer Team*  | [![](https://bit.ly/3f9Xo0P)](https://github.com/DanielleBritoEvangelista)|
+|__Danielle Brito__  | *Developer Team*  | [![](https://bit.ly/3f9Xo0P)](https://github.com/DanielleBritoEvangelista)| [![](https://bit.ly/2P1ZogM)](https://bit.ly/2QwcT8R) |
 |__Debora Faria__  | *Product Owner*  | [![](https://bit.ly/3f9Xo0P)](https://github.com/deborafaria01)| [![](https://bit.ly/2P1ZogM)](https://bit.ly/2QwcT8R) |
 |__Jean Gomes__    | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/jeangomes3)   | [![](https://bit.ly/2P1ZogM)](https://bit.ly/39eZZ5T) |
 |__Hariel Thums__  | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/HarielThums)  | [![](https://bit.ly/2P1ZogM)](https://bit.ly/3f9bjUH) |
