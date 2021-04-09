@@ -158,13 +158,9 @@ Acesse os links para visualizar:
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Entregas/Minimum%20Viable%20Product/gswatcher.gif)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Nesta mesma pasta do prompt de comandos rode o comando:
-
-<<<<<<< HEAD
 > `node 02_app.js`
 
-<<<<<<< HEAD
+
 > * __Front-End__
 >
 > ![[]](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![[]](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![[]](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![[]](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
@@ -266,21 +262,3 @@ Na nossa modelagem de dados teórica foram dimensionadas e relacionadas também 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/ms_project.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-### 👨‍💻 👩‍💻 Equipe
-
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/cluster8_logo.png)
-
-| Aluno            | Função           | GitHub                                                         | LinkedIn                                              |
-| ---------------- | ---------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
-|__Aline Trofino__ | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/Acrispereira) | [![](https://bit.ly/2P1ZogM)](https://bit.ly/3foIiEX) |
-|__Bruno Araújo__  | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/dimorais1)    | [![](https://bit.ly/2P1ZogM)]()                       |
-|__Danielle Brito__  | *Developer Team*  | [![](https://bit.ly/3f9Xo0P)](https://github.com/DanielleBritoEvangelista)| [![](https://bit.ly/2P1ZogM)](https://bit.ly/2QwcT8R) |
-|__Debora Faria__  | *Product Owner*  | [![](https://bit.ly/3f9Xo0P)](https://github.com/deborafaria01)| [![](https://bit.ly/2P1ZogM)](https://bit.ly/2QwcT8R) |
-|__Jean Gomes__    | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/jeangomes3)   | [![](https://bit.ly/2P1ZogM)](https://bit.ly/39eZZ5T) |
-|__Hariel Thums__  | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/HarielThums)  | [![](https://bit.ly/2P1ZogM)](https://bit.ly/3f9bjUH) |
-|__Henrique Alexandre__| *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://bit.ly/3skFVGG)      | [![](https://bit.ly/2P1ZogM)](https://bit.ly/397ULc3) |
-|__Mariana Assis__ | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/mariana299)   | [![](https://bit.ly/2P1ZogM)](https://bit.ly/3foKv3d) |
-|__Vinícius Oliveira__| *Scrum Master*| [![](https://bit.ly/3f9Xo0P)](https://github.com/vinicius-hso) | [![](https://bit.ly/2P1ZogM)](https://bit.ly/3fdl0BE) |
->>>>>>> main
->>>>>>> main
