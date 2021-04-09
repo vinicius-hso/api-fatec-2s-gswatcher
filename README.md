@@ -1,3 +1,53 @@
+# 📄 Instruções para rodar o código
+
+## 🖥️ Preparando a máquina
+
+Para conseguir rodar a solução é necessário possuir o __Node.js__ e o __PostgreSQL__ intalados em sua máquina.
+
+Link para download:
+
+> * [__Node.js__](https://nodejs.org/en/download/)
+> * [__PostgreSQL__](https://www.postgresql.org/download/)
+
+Baixe os arquivos contidos nesse diretório
+
+### Instale os módulos necessários através do prompt de comando 
+
+Vá até a pasta em que os arquivos baixados estão salvos e digite:
+
+`npm install express`
+
+`npm install pg` 
+
+
+### Criar um usuário e banco de dados no Postegresql que será aplicado no projeto
+
+Através do shell do postgresql, digite os seguinte comando:
+
+> * Para criar um usuário "me" com a senha "password":
+> 
+> `postgres=# CREATE ROLE me WITH LOGIN PASSWORD 'password';`
+
+> * Alterar as permições desse usuário para conseguir criar um database:
+> 
+> `postgres=# ALTER ROLE me CREATEDB;`
+
+> * Então conecte-se ao usuário criado e crie o database através do comando:
+> 
+> `CREATE DATABASE api;`
+
+> * Por fim, para se conectar a esse database criado, utilize o comando:
+>
+> `\c`
+
+
+### Criando as tabelas no banco de dados
+
+Vá até a pasta em que salvou os arquivos deste diretório pelo prompt de comandos e rode o arquivo 01_app.js, através do seguinte comando no prompt:
+
+> `node 01_app.js`
+
+### Populando as tabelas no PostgreSQL
 # 🎓 Aprendizado por Projeto Integrador
 > * FATEC São José dos Campos - Prof. Jessen Vidal
 > 
@@ -22,17 +72,99 @@
 >
 >
 ### ⏳ Planejamento
-> * [x] __Kick-off__ - 28/02/2021 a 06/03/2021
-> * [ ] __Sprint 1__ - 08/03/2021 a 28/03/2021
-> * [ ] __Sprint 2__ - 29/03/2021 a 18/04/2021
-> * [ ] __Sprint 3__ - 26/04/2021 a 16/05/2021
-> * [ ] __Sprint 4__ - 17/05/2021 a 05/06/2021
-> * [ ] __Apresentação Final__ - 07/06/2021 a 11/06/2021
-> * [ ] __Feira de Soluções__ - 14/06/2021 a 18/06/2021
+* [x] __Kick-off__ - 28/02/2021 a 06/03/2021
+* [x] __Sprint 1__ - 08/03/2021 a 28/03/2021
+* [ ] __Sprint 2__ - 29/03/2021 a 18/04/2021
+* [ ] __Sprint 3__ - 26/04/2021 a 16/05/2021
+* [ ] __Sprint 4__ - 17/05/2021 a 05/06/2021
+* [ ] __Apresentação Final__ - 07/06/2021 a 11/06/2021
+* [ ] __Feira de Soluções__ - 14/06/2021 a 18/06/2021
 
 
-### 🛠️ Ferramentas/Tecnologias
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+### 📦 Entregas
+
+#### Sprint 1:
+
+Abaixo encontram-se todos os itens produzidos durante a __SPRINT 1__ conforme estabelecido previamente por meio do planejamento das entregas: 
+ 
+##### 1 - 📂 Artefatos: Documentação do Projeto
+
+Acesse os documentos clicando nos links abaixo:
+
+* [__Planejamento da Entrevista__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2301_gsw_kickoff_Planejamento%20da%20Entrevista.pdf) *Kick-off*
+* [__Ata da Reunião__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2302_gsw_kickoff_Ata%20de%20Reunia%CC%83o.pdf) *Kick-off*
+* [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2303_product_backlog.pdf)
+* [__Documento de Visão__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2304_documento_de_visao.pdf)
+* [__Diagrama de casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2305_diagrama_casos_de_uso.png)
+* [__Documento de Casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2306_documento_casos_de_uso.pdf)
+* [__Termo de Abertura do Projeto__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2307_Termo_de_Abertura_Projeto_GSW.pdf)
+* [__Termo Declaração de Escopo__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2308_Termo_Declaracao_Escopo_GSW.pdf)
+* [__Plano de Gerenciamento do Cronograma__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2309_Termo_Plano_de_Gerenc_Cronograma_GSW.pdf)
+* [__Plano de Gerenciamento dos Custos__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2310_Plano_de_Gerenciamento_dos_Custos_GSW.pdf)
+
+##### 2 - 📅 Planejamento das Sprints:
+
+* 📋 Sprints Backlog
+
+*A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/documentation/%2303_product_backlog.pdf) foram distribuídos de acordo com as Sprints do projeto:*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/sprint_backlog.jpg)
+
+* 🃏 Sprints Cards
+
+*A imagem abaixo mostra os itens definidos a serem produzidos a cada Sprint e seu respectivo grau de complexidade:*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/sprint_cards.jpg)
+
+* 📉 Burndown Chart
+
+*O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/burndown_sprint1.png)
+
+##### 3 - 📱 Wireframe Mobile
+
+Acesse os links para visualizar:
+
+> * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Wireframe/Mobile)
+> * [Protótipo interativo no Figma](https://www.figma.com/proto/HlvBPe52pr9g2V8ZiUIkPn/Wireframe-Mobile?node-id=1%3A2&scaling=scale-down&page-id=0%3A1)
+
+##### 4 - 🖥️ Wireframe Desktop
+
+Acesse os links para visualizar:
+
+> * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Wireframe/Desktop)
+> * [Protótipo interativo no Figma](https://www.figma.com/proto/PfWwvxaXMKOjZhFJ6jK0qD/GSWatcher-Desktop?node-id=1%3A10&scaling=scale-down-width&page-id=0%3A1)
+
+##### 6 - 🎲 Modelagem do Banco de Dados
+
+Acesse os links para visualizar:
+
+> * [Dicionário de Dados](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/dicionario_de_dados_gswatcher.pdf)
+> * [Modelo Lógico Relacional](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/modelo_logico_relacional_gswatcher.jpeg)
+> * [Código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/main/Modelagem%20de%20Dados/CODIGO)
+> * Implementação do Banco de Dados com Node.js e Postegresql:
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Modelagem%20de%20Dados/modelagem_dados.gif)
+ 
+##### 7 - 🚲 Mínimo Produto Viável (MVP)
+
+*O Gif abaixo mostra a página de visualização dos projetos em cards e um gráfico geral dos projetos:*
+
+* [Código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/vue_study/gswatcher)
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Entregas/Minimum%20Viable%20Product/gswatcher.gif)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Nesta mesma pasta do prompt de comandos rode o comando:
+
+<<<<<<< HEAD
+> `node 02_app.js`
+
+<<<<<<< HEAD
 > * __Front-End__
 >
 > ![[]](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![[]](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![[]](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![[]](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
@@ -80,3 +212,75 @@
 > * __Vinícius Oliveira__ - *Scrum Master* 
 >
 > [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vinicius-hso) [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/viniciushso/)
+=======
+
+### Exportando arquivos *.csv do PostgreSQL:
+
+Inicialmente deve-se criar os arquivos __tbl_dev.csv__ __tbl_projeto.csv__, __tbl_sistema.csv__, __tbl_git.csv__, __tbl_status.csv__, __tbl_task.csv__, __tbl_task_detalhes.csv__ no caminho:
+
+> `C:/temp/`
+
+Então executar os seguinte comandos no __psql__:
+
+> `\COPY ( SELECT * FROM tbl_dev)  to 'C:/temp/tbl_dev.csv'  WITH DELIMITER AS ';' CSV HEADER`
+>
+> `\COPY ( SELECT * FROM tbl_projeto)  to 'C:/temp/tbl_projeto.csv'  WITH DELIMITER AS ';' CSV HEADER`
+>
+> `\COPY ( SELECT * FROM tbl_sistema)  to 'C:/temp/tbl_sistema.csv'  WITH DELIMITER AS ';' CSV HEADER`
+>
+> `\COPY ( SELECT * FROM tbl_git)  to 'C:/temp/tbl_git.csv'  WITH DELIMITER AS ';' CSV HEADER`
+>
+> `\COPY ( SELECT * FROM tbl_status)  to 'C:/temp/tbl_status.csv'  WITH DELIMITER AS ';' CSV HEADER`
+>
+> `\COPY ( SELECT * FROM tbl_task)  to 'C:/temp/tbl_task.csv'  WITH DELIMITER AS ';' CSV HEADER`
+>
+> `\COPY ( SELECT * FROM tbl_task_detalhes)  to 'C:/temp/tbl_task_detalhes.csv'  WITH DELIMITER AS ';' CSV HEADER`
+
+
+Os arquivos podem ser salvos em outro caminho desde que o camando \copy seja alterado para esse mesmo caminho também.
+
+Esses arquivos salvos estão dentro da pasta "CSV export".
+
+Na nossa modelagem de dados teórica foram dimensionadas e relacionadas também tabelas de recarga de dados e de usuários, que ainda não foram implementadas, pois em um primeiro momento, com apenas dois arquivos para a recarga dos dados não seria interessante, mas com a evolução do projeto e alimentação de mais dados a equipe irá implementar também essas tabelas no banco de dados, bem como otimizar o código utilizado nas tabelas já existentes. 
+=======
+* __Front-End__
+
+![[]](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![[]](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![[]](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![[]](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+
+* __Back-End__
+
+![[]](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+
+* __Data-Base__
+
+![[]](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+
+* __Wireframe__
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/figma_logo.png)
+
+* __Project Management__
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/jira_software.png)
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/ms_project.png)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### 👨‍💻 👩‍💻 Equipe
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/main/Images/cluster8_logo.png)
+
+| Aluno            | Função           | GitHub                                                         | LinkedIn                                              |
+| ---------------- | ---------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
+|__Aline Trofino__ | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/Acrispereira) | [![](https://bit.ly/2P1ZogM)](https://bit.ly/3foIiEX) |
+|__Bruno Araújo__  | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/dimorais1)    | [![](https://bit.ly/2P1ZogM)]()                       |
+|__Danielle Brito__  | *Developer Team*  | [![](https://bit.ly/3f9Xo0P)](https://github.com/DanielleBritoEvangelista)|
+|__Debora Faria__  | *Product Owner*  | [![](https://bit.ly/3f9Xo0P)](https://github.com/deborafaria01)| [![](https://bit.ly/2P1ZogM)](https://bit.ly/2QwcT8R) |
+|__Jean Gomes__    | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/jeangomes3)   | [![](https://bit.ly/2P1ZogM)](https://bit.ly/39eZZ5T) |
+|__Hariel Thums__  | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/HarielThums)  | [![](https://bit.ly/2P1ZogM)](https://bit.ly/3f9bjUH) |
+|__Henrique Alexandre__| *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://bit.ly/3skFVGG)      | [![](https://bit.ly/2P1ZogM)](https://bit.ly/397ULc3) |
+|__Mariana Assis__ | *Developer Team* | [![](https://bit.ly/3f9Xo0P)](https://github.com/mariana299)   | [![](https://bit.ly/2P1ZogM)](https://bit.ly/3foKv3d) |
+|__Vinícius Oliveira__| *Scrum Master*| [![](https://bit.ly/3f9Xo0P)](https://github.com/vinicius-hso) | [![](https://bit.ly/2P1ZogM)](https://bit.ly/3fdl0BE) |
+>>>>>>> main
+>>>>>>> main
