@@ -68,4 +68,4 @@ Acesse os links para visualizar:
 
 * [Código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/vue_study/gswatcher)
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-1/Minimum%20Viable%20Product)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Minimum%20Viable%20Product/gswatcher.gif)
