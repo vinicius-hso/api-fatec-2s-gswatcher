@@ -38,6 +38,20 @@ Acesse a *branch* referente a entrega da sprint clicando no link:
 * [ ] __Apresentação Final__ - 07/06/2021 a 11/06/2021
 * [ ] __Feira de Soluções__ - 14/06/2021 a 18/06/2021
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### 📋 Product Backlog por Sprint
+
+*A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_product_backlog.pdf) foram distribuídos de acordo com as Sprints do projeto:*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/sprint_backlog.jpg)
+
+### 🃏 Sprints Cards
+
+*A imagem abaixo mostra os itens definidos a serem produzidos a cada Sprint e seu respectivo grau de complexidade:*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/sprint_cards.jpg)
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
