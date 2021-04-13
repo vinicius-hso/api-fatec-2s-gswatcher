@@ -4,21 +4,19 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 1__ conforme es
  
 ## 1 - 📂 Artefatos: Documentação do Projeto
 
-## 2 - 📅 Planejamento das Sprints:
+## 2 - 📅 Planejamento da Sprint:
 
-* 📋 Sprint Backlog
+### 📋 Sprint Backlog
 
-*A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_product_backlog.pdf) foram distribuídos de acordo com as Sprints do projeto:*
+*A imagem abaixo mostra os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_product_backlog.pdf) a serem desenvolvidos durante essa Sprint 2:*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/sprint2.png)
 
-* 🃏 Sprint Card
-
-*A imagem abaixo mostra os itens definidos a serem produzidos a cada Sprint e seu respectivo grau de complexidade:*
+### 🃏 Sprint Card
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/card_sprint2.jpg)
 
-* 📉 Burndown Chart
+### 📉 Burndown Chart
 
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
 
