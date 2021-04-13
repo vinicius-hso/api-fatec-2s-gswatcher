@@ -19,17 +19,17 @@ Acesse os documentos clicando nos links abaixo:
 
 ## 2 - 📅 Planejamento da Sprint:
 
-* 📋 Sprint Backlog
+### 📋 Sprint Backlog
 
 *A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_product_backlog.pdf) a serem desenvolvidos durante essa Sprint 1:*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/sprint1.png)
 
-* 🃏 Sprint Card
+### 🃏 Sprint Card
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/card_sprint1.jpg)
 
-* 📉 Burndown Chart
+### 📉 Burndown Chart
 
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
 
