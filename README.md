@@ -17,19 +17,19 @@ Acesse os documentos clicando nos links abaixo:
 * [__Plano de Gerenciamento do Cronograma__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2309_Termo_Plano_de_Gerenc_Cronograma_GSW.pdf)
 * [__Plano de Gerenciamento dos Custos__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2310_Termo_Plano_Custo_GSW.pdf)
 
-## 2 - 📅 Planejamento das Sprints:
+## 2 - 📅 Planejamento da Sprint:
 
-* 📋 Sprints Backlog
+* 📋 Sprint Backlog
 
 *A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_product_backlog.pdf) foram distribuídos de acordo com as Sprints do projeto:*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/sprint_backlog.jpg)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/sprint1.png)
 
-* 🃏 Sprints Cards
+* 🃏 Sprint Card
 
 *A imagem abaixo mostra os itens definidos a serem produzidos a cada Sprint e seu respectivo grau de complexidade:*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/sprint_cards.jpg)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/card_sprint1.jpg)
 
 * 📉 Burndown Chart
 
