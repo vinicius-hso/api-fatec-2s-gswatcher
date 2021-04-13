@@ -30,13 +30,13 @@ __GSWatcher__ é a proposta de solução oferecida pela equipe __Cluster 8__ em 
 
 Acesse a *branch* referente a entrega da sprint clicando no link:
 
-* [x] __Kick-off__ - 28/02/2021 a 06/03/2021
-* [x] [__Sprint 1__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-1) - 08/03/2021 a 28/03/2021
-* [ ] __Sprint 2__ - 29/03/2021 a 18/04/2021
-* [ ] __Sprint 3__ - 26/04/2021 a 16/05/2021
+* [x] __Kick-off__ - 28/02/2021 a 06/03/2021 - ✅
+* [x] [__Sprint 1__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-1) - 08/03/2021 a 28/03/2021 - ✅
+* [ ] __Sprint 2__ - 29/03/2021 a 18/04/2021 - 🚧
+* [ ] __Sprint 3__ - 26/04/2021 a 16/05/2021 - 🚧
 * [ ] __Sprint 4__ - 17/05/2021 a 05/06/2021
-* [ ] __Apresentação Final__ - 07/06/2021 a 11/06/2021
-* [ ] __Feira de Soluções__ - 14/06/2021 a 18/06/2021
+* [ ] __Apresentação Final__ - 07/06/2021 a 11/06/2021 - 🚧
+* [ ] __Feira de Soluções__ - 14/06/2021 a 18/06/2021 - 🚧
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
