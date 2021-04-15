@@ -10,11 +10,7 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 1__ conforme es
 
 *A imagem abaixo mostra os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_product_backlog.pdf) a serem desenvolvidos durante essa Sprint 2:*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/sprint2.png)
-
-### 🃏 Sprint Card
-
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/card_sprint2.jpg)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/sprint2_backlog.png)
 
 ### 📉 Burndown Chart
 
