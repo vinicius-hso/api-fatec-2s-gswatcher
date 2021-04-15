@@ -23,11 +23,7 @@ Acesse os documentos clicando nos links abaixo:
 
 *A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_product_backlog.pdf) a serem desenvolvidos durante essa Sprint 1:*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/sprint1.png)
-
-### 🃏 Sprint Card
-
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/card_sprint1.jpg)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/sprint1_backlog.png)
 
 ### 📉 Burndown Chart
 
