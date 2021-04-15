@@ -17,5 +17,5 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 1__ conforme es
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
 
 
-## 3 - ➕ Implementações
+## 3 - ✨ Implementações
 
