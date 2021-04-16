@@ -28,7 +28,7 @@ Através do shell do postgresql, digite os seguinte comando:
 > 
 > `postgres=# CREATE ROLE me WITH LOGIN PASSWORD 'password';`
 
-> * Alterar as permições desse usuário para conseguir criar um database:
+> * Alterar as permissões desse usuário para conseguir criar um database:
 > 
 > `postgres=# ALTER ROLE me CREATEDB;`
 
