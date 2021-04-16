@@ -48,6 +48,22 @@ Acesse a *branch* referente a entrega da sprint clicando no link:
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+### 📱 Wireframe Mobile
+
+Acesse os links para visualizar:
+
+> * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-1/Wireframe/Mobile)
+> * [Protótipo interativo no Figma](https://www.figma.com/proto/HlvBPe52pr9g2V8ZiUIkPn/Wireframe-Mobile?node-id=1%3A2&scaling=scale-down&page-id=0%3A1)
+
+### 🖥️ Wireframe Desktop
+
+Acesse os links para visualizar:
+
+> * [Imagens](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-1/Wireframe/Desktop)
+> * [Protótipo interativo no Figma](https://www.figma.com/proto/PfWwvxaXMKOjZhFJ6jK0qD/GSWatcher-Desktop?node-id=1%3A10&scaling=scale-down-width&page-id=0%3A1)
+ 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### 🛠️ Ferramentas/Tecnologias
 
 * __Front-End__
