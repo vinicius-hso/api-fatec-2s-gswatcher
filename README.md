@@ -14,7 +14,7 @@ Acesse os documentos clicando nos links abaixo:
 * [__Documento de Casos de Uso__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2306_documento_casos_de_uso.pdf)
 * [__Termo de Abertura do Projeto__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2307_Termo_de_Abertura_Projeto_GSW.pdf)
 * [__Termo Declaração de Escopo__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Documentation/Gerenciamento%20do%20Escopo.pdf)
-* [__Plano de Gerenciamento do Cronograma__]()Colocar o doc e o link
+* [__Plano de Gerenciamento do Cronograma__]()   (Colocar o doc e o link)
 * [__Plano de Gerenciamento de Qualidade__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Documentation/Gerenciamento%20de%20Qualidade.pdf)
 
 ## 2 - 📅 Planejamento da Sprint:
