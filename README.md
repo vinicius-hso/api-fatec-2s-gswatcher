@@ -24,6 +24,8 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
 
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/burndown_sprint2.png)
+
 
 ## 3 - ✨ Implementações
 
