@@ -47,7 +47,7 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 ### ❌ Tasks Abertas:
 
-![](Gif)
+![Gif]()
 
 ## 7 - 🍕 Porcentagem de tasks concluídas: Gráfico de Pizza
 
