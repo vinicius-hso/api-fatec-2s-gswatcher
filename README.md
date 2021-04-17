@@ -16,7 +16,7 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 2__ conforme es
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/burndown_sprint2.png)
 
-## 2 - 📂 Artefatos: Documentação do Projeto
+## 2 - 📂 Artefatos II: Documentação do Projeto
 
 Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
