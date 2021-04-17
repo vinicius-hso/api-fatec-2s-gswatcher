@@ -44,7 +44,7 @@ Acesse a *branch* referente a entrega da sprint clicando no link:
 
 *A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_product_backlog.pdf) foram distribuídos de acordo com as Sprints do projeto:*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/sprints_backlog.png)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/sprintsBacklog.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
