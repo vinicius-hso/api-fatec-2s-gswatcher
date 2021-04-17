@@ -14,7 +14,7 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 2__ conforme es
 
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/burndown_sprint2.png)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/burndownSprint2.png)
 
 ## 2 - 📂 Artefatos II: Documentação do Projeto
 
