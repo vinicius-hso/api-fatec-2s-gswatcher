@@ -1,8 +1,22 @@
 # 📦 Entrega: __Sprint 1__
 
 Abaixo encontram-se todos os itens produzidos durante a __SPRINT 1__ conforme estabelecido previamente por meio do planejamento das entregas: 
- 
-## 1 - 📂 Artefatos: Documentação do Projeto
+
+## 1 - 📅 Planejamento da Sprint:
+
+### 📋 Sprint Backlog
+
+*A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_product_backlog.pdf) a serem desenvolvidos durante essa Sprint 1:*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/sprint1_backlog.png)
+
+### 📉 Burndown Chart
+
+*O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/burndown_sprint1.png)
+
+## 2 - 📂 Artefatos I: Documentação do Projeto
 
 Acesse os documentos clicando nos links abaixo:
 
@@ -16,20 +30,6 @@ Acesse os documentos clicando nos links abaixo:
 * [__Termo Declaração de Escopo__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2308_Termo_Declaracao_Escopo_GSW.pdf)
 * [__Plano de Gerenciamento do Cronograma__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2309_Termo_Plano_de_Gerenc_Cronograma_GSW.pdf)
 * [__Plano de Gerenciamento dos Custos__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2310_Termo_Plano_Custo_GSW.pdf)
-
-## 2 - 📅 Planejamento da Sprint:
-
-### 📋 Sprint Backlog
-
-*A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_product_backlog.pdf) a serem desenvolvidos durante essa Sprint 1:*
-
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/sprint1_backlog.png)
-
-### 📉 Burndown Chart
-
-*O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
-
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/burndown_sprint1.png)
 
 ## 3 - 📱 Wireframe Mobile
 
