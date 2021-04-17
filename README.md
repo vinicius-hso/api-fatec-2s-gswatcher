@@ -26,5 +26,33 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 *Clique [aqui](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-1#1----artefatos-documenta%C3%A7%C3%A3o-do-projeto) para acessar os documentos produzidos anteriormente.*
 
-## 3 - ✨ Implementações
+## 3 - 🔘 Botão de Upload de arquivo json
 
+![Gif]()
+
+
+## 4 - 📊 Tasks de um projeto: Gráfico de Barras
+
+![Gif]()
+
+## 5 - 📈 Horas trabalhadas em um projeto: Gráfico de Linha
+
+![Gif]()
+
+## 6 - 📋 Desenvolvedores em um projeto: Tabela
+
+### ✔️ Tasks Completas:
+
+![Gif]()
+
+### ❌ Tasks Abertas:
+
+![](Gif)
+
+## 7 - 🍕 Porcentagem de tasks concluídas: Gráfico de Pizza
+
+![Gif]()
+
+## 8 - 🔗 Integração da página Main com o Banco de Dados
+
+![Gif]()
