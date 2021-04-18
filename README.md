@@ -32,24 +32,24 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 *Clique [aqui para visualizar o código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-2/GSW_integrado/gswatcher)*
 
-### 1 - 🔘 Botão de Upload de arquivo json
+### 3.1 - 🔘 Botão de Upload de arquivo json
 
 ![Gif]()
 
 
-### 2 - 📊 Tasks de um projeto: Gráfico de Barras
+### 3.2 - 📊 Tasks de um projeto: Gráfico de Barras
 
 *Gráfico de barras que apresenta a contagem de tasks de acordo com seus status.*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/project_tasks.gif)
 
-### 3 - 📈 Horas trabalhadas em um projeto: Gráfico de Linha
+### 3.3 - 📈 Horas trabalhadas em um projeto: Gráfico de Linha
 
 *Gráfico de linha que apresenta o total de horas trabalhadas no projeto por determinado período*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/total_hours.gif)
 
-### 4 - 📋 Desenvolvedores em um projeto: Tabela
+### 3.4 - 📋 Desenvolvedores em um projeto: Tabela
 
 #### ✔️ Tasks Completas:
 
@@ -70,13 +70,13 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/devs_incompleted_tasks.gif)
 
-### 5 - 🍕 Porcentagem de tasks concluídas: Gráfico de Pizza
+### 3.5 - 🍕 Porcentagem de tasks concluídas: Gráfico de Pizza
 
 *Gráfico de Pizza que apresenta a porcentagem de Tasks Completas e Incompletas do projeto*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/percentage.gif)
 
-### 6 - 🔗 Integração parcial da página Main com o Banco de Dados
+### 3.6 - 🔗 Integração parcial da página Main com o Banco de Dados
 
 * *Os botões de "My Projects":*
 > * *__'project'__:* ordena os projetos por ordem alfabética
@@ -84,7 +84,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/main.gif)
 
-### 7 - 🖥️ Visão Geral da Aplicação em tela Desktop
+### 3.7 - 🖥️ Visão Geral da Aplicação em tela Desktop
 
 *O Gif abaixo mostra de uma forma geral como a aplicação deve ser em telas Desktop*
 
