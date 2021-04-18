@@ -41,7 +41,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 *Gráfico de barras que apresenta a contagem de tasks de acordo com seus status.*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/project_tasks.gif)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/%2302_project_tasks_mobile.gif)
 
 ### 3.3 - 📈 Horas trabalhadas em um projeto: Gráfico de Linha
 
