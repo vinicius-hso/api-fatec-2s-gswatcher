@@ -26,11 +26,11 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 *Clique [aqui](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-1#1----artefatos-documenta%C3%A7%C3%A3o-do-projeto) para acessar os documentos produzidos anteriormente.*
 
-## 3 - Implementações
+## 3 - 💫 Implementações
 
 Os gifs abaixam são referentes as implementações realizadas durante essa Sprint 2.
 
-*Clique [aqui para visualizar o código]*(https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-2/GSW_integrado/gswatcher)
+*Clique [aqui para visualizar o código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-2/GSW_integrado/gswatcher)*
 
 ### 1 - 🔘 Botão de Upload de arquivo json
 
