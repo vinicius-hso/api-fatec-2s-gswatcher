@@ -47,7 +47,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 *Gráfico de linha que apresenta o total de horas trabalhadas no projeto por determinado período*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/total_hours.gif)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/%2303_total_hours_mobile.gif)
 
 ### 3.4 - 📋 Desenvolvedores em um projeto: Tabela
 
