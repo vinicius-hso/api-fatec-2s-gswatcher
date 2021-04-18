@@ -68,13 +68,13 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 > * *Total de Tasks Abertas*
 > * *Data de Início*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/devs_incompleted_tasks.gif)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/%2305_devs_incompleted_tasks_mobile.gif)
 
 ### 3.5 - 🍕 Porcentagem de tasks concluídas: Gráfico de Pizza
 
 *Gráfico de Pizza que apresenta a porcentagem de Tasks Completas e Incompletas do projeto*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/percentage.gif)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/%2306_percentage_mobile.gif)
 
 ### 3.6 - 🔗 Integração parcial da página Main com o Banco de Dados
 
