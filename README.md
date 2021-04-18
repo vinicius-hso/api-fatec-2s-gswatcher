@@ -59,7 +59,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 > * *Data de Início*
 > * *Total de Horas*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/devs_completed_tasks.gif)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/%2304_devs_completed_tasks_mobile.gif)
 
 #### ❌ Tasks Abertas:
 
