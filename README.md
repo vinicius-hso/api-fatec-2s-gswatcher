@@ -84,8 +84,6 @@ Os gifs abaixam são referentes as implementações realizadas durante essa Spri
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/main.gif)
 
-*Acesse o vídeo original: [vídeo](https://youtu.be/7FyT6QYjG6w)*
-
 ### 7 - 🖥️ Visão Geral da Aplicação em tela Desktop
 
 *O Gif abaixo mostra de uma forma geral como a aplicação deve ser em telas Desktop*
