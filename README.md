@@ -57,7 +57,12 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 ### ❌ Tasks Abertas:
 
-![Gif]()
+*Tabela/lista que apresenta todos os desenvolvedores do projeto, podendo ser ordenada por:*
+> * *Nome*
+> * *Total de Tasks Abertas*
+> * *Data de Início*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/devs_incompleted_tasks.gif)
 
 ## 7 - 🍕 Porcentagem de tasks concluídas: Gráfico de Pizza
 
