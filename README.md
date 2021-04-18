@@ -91,3 +91,9 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 *O Gif abaixo mostra de uma forma geral como a aplicação deve ser em telas Desktop*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/geral_desktop.gif)
+
+### 3.8 - :hammer_and_wrench: Rotas da API:
+
+*O Gif a seguir demostra todas as rotas criadas que irão ser consumidas pelo front-end.*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/Gif_API.gif)
