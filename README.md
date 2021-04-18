@@ -26,26 +26,30 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 *Clique [aqui](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-1#1----artefatos-documenta%C3%A7%C3%A3o-do-projeto) para acessar os documentos produzidos anteriormente.*
 
-## 3 - 🔘 Botão de Upload de arquivo json
+## 3 - Implementações
+
+Os gifs abaixam são referentes as implementações realizadas durante essa Sprint 2. Para visualizar o código, clique [aqui](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-2/GSW_integrado/gswatcher)
+
+### 1 - 🔘 Botão de Upload de arquivo json
 
 ![Gif]()
 
 
-## 4 - 📊 Tasks de um projeto: Gráfico de Barras
+### 2 - 📊 Tasks de um projeto: Gráfico de Barras
 
 *Gráfico de barras que apresenta a contagem de tasks de acordo com seus status.*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/project_tasks.gif)
 
-## 5 - 📈 Horas trabalhadas em um projeto: Gráfico de Linha
+### 3 - 📈 Horas trabalhadas em um projeto: Gráfico de Linha
 
 *Gráfico de linha que apresenta o total de horas trabalhadas no projeto por determinado período*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/total_hours.gif)
 
-## 6 - 📋 Desenvolvedores em um projeto: Tabela
+### 4 - 📋 Desenvolvedores em um projeto: Tabela
 
-### ✔️ Tasks Completas:
+#### ✔️ Tasks Completas:
 
 *Tabela/Lista que apresenta todos desenvolvedores do projeto, podendo ser ordenada por:*
 > * *Nome*
@@ -55,7 +59,7 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/devs_completed_tasks.gif)
 
-### ❌ Tasks Abertas:
+#### ❌ Tasks Abertas:
 
 *Tabela/lista que apresenta todos os desenvolvedores do projeto, podendo ser ordenada por:*
 > * *Nome*
@@ -64,13 +68,13 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/devs_incompleted_tasks.gif)
 
-## 7 - 🍕 Porcentagem de tasks concluídas: Gráfico de Pizza
+### 5 - 🍕 Porcentagem de tasks concluídas: Gráfico de Pizza
 
 *Gráfico de Pizza que apresenta a porcentagem de Tasks Completas e Incompletas do projeto*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/percentage.gif)
 
-## 8 - 🔗 Integração parcial da página Main com o Banco de Dados
+### 6 - 🔗 Integração parcial da página Main com o Banco de Dados
 
 * *Os botões de "My Projects":*
 > * *__'project'__:* ordena os projetos por ordem alfabética
@@ -78,7 +82,7 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/main.gif)
 
-## 9 - 🖥️ Visão Geral da Aplicação em tela Desktop
+### 7 - 🖥️ Visão Geral da Aplicação em tela Desktop
 
 *O Gif abaixo mostra de uma forma geral como a aplicação deve ser em telas Desktop*
 
