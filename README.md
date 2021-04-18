@@ -55,8 +55,6 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 ## 8 - 🔗 Integração parcial da página Main com o Banco de Dados
 
-* Os dados apresentados nos cards dos projetos são provenientes do banco de dados.
-
 * Os botões de "My Projects":
 > * 'project': ordena os projetos por ordem alfabética
 > * 'total tasks': ordena os projetos por ordem crescente de total de tasks
