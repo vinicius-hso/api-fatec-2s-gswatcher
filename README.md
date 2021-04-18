@@ -96,4 +96,6 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 *O Gif a seguir demostra todas as rotas criadas que irão ser consumidas pelo front-end.*
 
+Para visualizar o código da API, [clique aqui.](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-2/GSW_integrado/Nodejs)
+
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/Gif_API.gif)
