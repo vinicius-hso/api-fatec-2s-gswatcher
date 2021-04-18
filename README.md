@@ -33,13 +33,13 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 ## 4 - 📊 Tasks de um projeto: Gráfico de Barras
 
-*Um gráfico de barras que apresenta a contagem de tasks de acordo com seus status.*
+*Gráfico de barras que apresenta a contagem de tasks de acordo com seus status.*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/project_tasks.gif)
 
 ## 5 - 📈 Horas trabalhadas em um projeto: Gráfico de Linha
 
-*Um gráfico de linha que apresenta o total de horas trabalhadas no projeto por determinado período*
+*Gráfico de linha que apresenta o total de horas trabalhadas no projeto por determinado período*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/total_hours.gif)
 
@@ -47,7 +47,13 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 ### ✔️ Tasks Completas:
 
-![Gif]()
+*Tabela/Lista que apresenta todos desenvolvedores do projeto, podendo ser ordenada por:*
+> * *Nome*
+> * *Total de Tasks Completas*
+> * *Data de Início*
+> * *Total de Horas*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/devs_completed_tasks.gif)
 
 ### ❌ Tasks Abertas:
 
