@@ -84,7 +84,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 > * *__'project'__:* ordena os projetos por ordem alfabética
 > * *__'total tasks'__:* ordena os projetos por ordem crescente de total de tasks
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/%2301_main_mobile.gif)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/%2301_mainMobile.gif)
 
 ### 3.7 - 🖥️ Visão Geral da Aplicação em tela Desktop
 
