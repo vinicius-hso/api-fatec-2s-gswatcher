@@ -39,7 +39,9 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 ## 5 - 📈 Horas trabalhadas em um projeto: Gráfico de Linha
 
-![Gif]()
+*Um gráfico de linha que apresenta o total de horas trabalhadas no projeto por determinado período*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/total_hours.gif)
 
 ## 6 - 📋 Desenvolvedores em um projeto: Tabela
 
