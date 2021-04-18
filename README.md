@@ -36,7 +36,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ### 3.1 - 🔘 Botão de Upload de arquivo json
 
-![Gif]()
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/upload_button_mobile.gif)
 
 
 ### 3.2 - 📊 Tasks de um projeto: Gráfico de Barras
