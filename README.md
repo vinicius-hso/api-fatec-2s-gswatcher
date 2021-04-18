@@ -66,7 +66,9 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 ## 7 - 🍕 Porcentagem de tasks concluídas: Gráfico de Pizza
 
-![Gif]()
+*Gráfico de Pizza que apresenta a porcentagem de Tasks Completas e Incompletas do projeto*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/percentage.gif)
 
 ## 8 - 🔗 Integração parcial da página Main com o Banco de Dados
 
