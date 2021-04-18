@@ -33,7 +33,9 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 ## 4 - 📊 Tasks de um projeto: Gráfico de Barras
 
-![Gif]()
+*Um gráfico de barras que apresenta a contagem de tasks de acordo com seus status.*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/project_tasks.gif)
 
 ## 5 - 📈 Horas trabalhadas em um projeto: Gráfico de Linha
 
@@ -55,8 +57,8 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 ## 8 - 🔗 Integração parcial da página Main com o Banco de Dados
 
-* Os botões de "My Projects":
-> * 'project': ordena os projetos por ordem alfabética
-> * 'total tasks': ordena os projetos por ordem crescente de total de tasks
+* *Os botões de "My Projects":*
+> * *__'project'__:* ordena os projetos por ordem alfabética
+> * *__'total tasks'__:* ordena os projetos por ordem crescente de total de tasks
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/main.gif)
