@@ -20,10 +20,6 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 2__ conforme es
 
 Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
-* [__Plano de Gerenciamento do Escopo__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Documentation/Gerenciamento%20do%20Escopo.pdf)
-* [__Plano de Gerenciamento do Cronograma__](Colocar o doc e o link)
-* [__Plano de Gerenciamento de Qualidade__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Documentation/Gerenciamento%20de%20Qualidade.pdf)
-
 * [__Gerenciamento do Escopo__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Documentation/Gerenciamento%20do%20Escopo.pdf)
 * [__Gerenciamento do Cronograma__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Documentation/Gerenciamento%20de%20Cronograma.pdf)
 * [__Gerenciamento de Qualidade__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Documentation/Gerenciamento%20de%20Qualidade.pdf)
