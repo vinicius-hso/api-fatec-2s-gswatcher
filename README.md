@@ -77,3 +77,9 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 > * *__'total tasks'__:* ordena os projetos por ordem crescente de total de tasks
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/main.gif)
+
+## 9 - 🖥️ Visão Geral da Aplicação em tela Desktop
+
+*O Gif abaixo mostra de uma forma geral como a aplicação deve ser em telas Desktop*
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/geral_desktop.gif)
