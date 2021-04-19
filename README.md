@@ -6,6 +6,8 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 2__ conforme es
 
 ### 📝 User Stories
 
+A tabela abaixo mostra as __Histórias de Usuário__ selecionadas para serem desenvolvidas durante a Sprint 2:
+
 | ID     | Prioridade | User Story                       | Planning Poker                                                 |
 | -------| ---------- | -------------------------------- | -------------------------------------------------------------- | 
 | US_07  | Essencial  | Eu, como usuário, gostaria de ter todo o processo de desenvolvimento do projeto documentado | 13 |
