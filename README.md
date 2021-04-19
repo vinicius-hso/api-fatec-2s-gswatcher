@@ -10,7 +10,7 @@ A tabela abaixo mostra as __Histórias de Usuário__ selecionadas para serem des
 
 | ID     | Prioridade | User Story                       | Planning Poker                                                 |
 | -------| ---------- | -------------------------------- | -------------------------------------------------------------- | 
-| US_07  | Essencial  | Eu, como usuário, gostaria de ter todo o processo de desenvolvimento do projeto documentado | 13 |
+| US_07  | Essencial  | Eu, como cliente, gostaria de ter todo o processo de desenvolvimento do projeto documentado | 13 |
 | US_08  | Essencial  | Eu, como usuário, gostaria de ter os dados dos arquivos *__Jira__* e *__Trello__* unificados e armazenados em um banco de dados | 8 |
 | US_09  | Essencial  | Eu, como usuário, gostaria de carragar os dados em formato *__.json__* na aplicação para gerar as visualizações | 13 |
 | US_10  | Essencial  | Eu, como usuário, gostaria de saber quantas tasks *__completas__* e *__incompletas__* um projeto possui, para medir seu adamento | 8 |
