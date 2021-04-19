@@ -4,6 +4,8 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 1__ conforme es
 
 ## 1 - 📅 Planejamento da Sprint:
 
+### 📝 User Stories
+
 A tabela abaixo mostra as __Histórias de Usuário__ selecionadas para serem desenvolvidas durante a Sprint 1:
 
 | ID     | Prioridade | User Story                       | Planning Poker                                                 |
