@@ -1,7 +1,6 @@
 # app integrado front-end e back-end.
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Modelagem%20de%20Dados/modelo_logico_relacional_gswatcher.jpeg)
-https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/arquitetura.png
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/arquitetura.png)
 
 # 📄 Instruções para rodar o código
 
@@ -44,7 +43,7 @@ Através do shell do postgresql, digite os seguinte comando:
 > `\c`
 
 
-### não esqueça de criar o arquivo .env na pasta "Nodejs"
+### Não esqueça de criar o arquivo .env na pasta "Nodejs"!
 
 DATABASE_URL=postgres://me:password@localhost:5432/api
 
