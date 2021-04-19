@@ -59,4 +59,7 @@ na pasta "gswatcher" rode pelo prompt:
 > `npm run serve`
 
 
+###  Acesse o aplicativo através do link:
+
+http://localhost:8080/
 
