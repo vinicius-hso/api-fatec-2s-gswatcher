@@ -10,7 +10,14 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 2__ conforme es
 
 | ID     | Uer Story                       | Planning Poker                                                 |
 | -------| ------------------------------- | -------------------------------------------------------------- | 
-| US_07  | Eu, como usuário, gostaria de ter todo o processo de desenvolvimento do projeto documentado | 13 |
+| US_07  | Essencial | Eu, como usuário, gostaria de ter todo o processo de desenvolvimento do projeto documentado | 13 |
+| US_08  | Essencial | Eu, como usuário, gostaria de ter os dados dos arquivos Jira e Trello unificados e armazenados em um banco de dados | 8 |
+| US_09  | Essencial | Eu, como usuário, gostaria de carragar os dados em formato .json na aplicação para gerar as visualizações | 13 |
+| US_10  | Essencial | Eu, como usuário, gostaria de saber quantas tasks completas e incompletas um projeto possui, para medir seu adamento | 8 |
+| US_11  | Essencial | Eu, como usuário, gostaria de visualizar as informações dos projetos armazenadas no banco de dados | 13 |
+| US_12  | Importante | Eu, como usuário, gostaria de visualizar o total de horas trabalhadas em um projeto por período | 8 |
+| US_13  | Importante | Eu, como usuário, gostaria de visualizar a porcentagem de tasks concluídas em um projeto | 8 |
+| US_14  | Desejável | Eu, como usuário, gostaria de visualizar quantos e quais desenvolvedores estão trabalhando em um projeto para saber quem são os envolvidos | 8 |
 
 *A imagem abaixo mostra os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_backlog_v3.pdf) a serem desenvolvidos durante essa Sprint 2:*
 
