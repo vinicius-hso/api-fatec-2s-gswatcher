@@ -6,7 +6,7 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 2__ conforme es
 
 ### 📋 Sprint Backlog
 
-### User Stories
+### 📝 User Stories
 
 | ID     | Prioridade| User Story                       | Planning Poker |
 | -------| ----------|-------------------- | -------------------------------------------------------------- | 
