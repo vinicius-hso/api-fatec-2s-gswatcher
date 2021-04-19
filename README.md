@@ -4,22 +4,13 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 2__ conforme es
 
 ## 1 - 📅 Planejamento da Sprint:
 
-### 📝 User Stories
-
-A tabela abaixo mostra as __Histórias de Usuário__ selecionadas para serem desenvolvidas durante a Sprint 2:
-
-| ID     | Prioridade | User Story                       | Planning Poker                                                 |
-| -------| ---------- | -------------------------------- | -------------------------------------------------------------- | 
-| US_07  | Essencial  | Eu, como cliente, gostaria de ter todo o processo de desenvolvimento do projeto documentado | 13 |
-| US_08  | Essencial  | Eu, como usuário, gostaria de ter os dados dos arquivos *__Jira__* e *__Trello__* unificados e armazenados em um banco de dados | 8 |
-| US_09  | Essencial  | Eu, como usuário, gostaria de carragar os dados em formato *__.json__* na aplicação para gerar as visualizações | 13 |
-| US_10  | Essencial  | Eu, como usuário, gostaria de saber quantas tasks *__completas__* e *__incompletas__* um projeto possui, para medir seu adamento | 8 |
-| US_11  | Essencial  | Eu, como usuário, gostaria de visualizar as informações dos projetos *__armazenadas no banco de dados__* | 13 |
-| US_12  | Importante | Eu, como usuário, gostaria de visualizar o *__total de horas trabalhadas__* em um projeto *__por período__* | 8 |
-| US_13  | Importante | Eu, como usuário, gostaria de visualizar a *__porcentagem de tasks concluídas__* em um projeto | 8 |
-| US_14  | Desejável  | Eu, como usuário, gostaria de visualizar quantos e quais desenvolvedores estão trabalhando em um projeto para saber quem são os envolvidos | 8 |
-
 ### 📋 Sprint Backlog
+
+### User Stories
+
+| ID     | Uer Story                       | Planning Poker                                                 |
+| -------| ------------------------------- | -------------------------------------------------------------- | 
+| US_07  | Eu, como usuário, gostaria de ter todo o processo de desenvolvimento do projeto documentado | 13 |
 
 *A imagem abaixo mostra os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_backlog_v3.pdf) a serem desenvolvidos durante essa Sprint 2:*
 
@@ -114,3 +105,16 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 Para visualizar o código da API, [clique aqui.](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-2/GSW_integrado/Nodejs)
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/Gif_API.gif)
+
+
+### 3.9 - :hammer_and_wrench: Implementação do Banco de Dados:
+
+A nossa implementação do banco de dados é fiel ao modelo lógico proposto ([link modelo lógico](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Modelagem%20de%20Dados/modelo_logico_relacional_gswatcher.jpeg)), sendo robusta para lidar com atualização dos dados no banco sem que os dados anteriores sejam perdidos. 
+Nós modelamos a tabela *“tbl_recarga”* e a *“tbl_task_detalhes”*, que permitem a inserção da mesma task (mesmo ID de task), mas com status diferentes. Então, é mantido o histórico de todas as recargas de dados realizadas no banco, podendo rastrear a evolução de status das tasks. 
+
+* Verifique abaixo a sequência de execução de comando para a implementação do banco de dados.*
+
+Para visualizar o código da Implementação do Banco de dados, [clique aqui.](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/GSW_integrado/Nodejs/src/controller/upload_data.js)
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/fluxograma_upload_dados.png)
+
