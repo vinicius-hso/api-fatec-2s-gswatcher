@@ -4,6 +4,17 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 1__ conforme es
 
 ## 1 - 📅 Planejamento da Sprint:
 
+A tabela abaixo mostra as __Histórias de Usuário__ selecionadas para serem desenvolvidas durante a Sprint 1:
+
+| ID     | Prioridade | User Story                       | Planning Poker                                                 |
+| -------| ---------- | -------------------------------- | -------------------------------------------------------------- | 
+| US_01  | Essencial  | Eu, como cliente, gostaria de ter todo o processo de desenvolvimento documentado para poder acompanha-lo | 13 |
+| US_02  | Essencial  | Eu, como cliente, gostaria de visualizar o layout da interface da aplicação através de um protótipo | 8 |
+| US_03  | Essencial  | Eu, como cliente, gostaria de ter um planejamento total do desenvolvimento do projeto para poder acompanha-lo | 13 |
+| US_04  | Essencial  | Eu, como usuário, gostaria de visualizar os projetos carregados em cards para poder escolher dentre eles qual visualizar| 8 |
+| US_05  | Essencial  | Eu, como usuário, gostaria de ter os dados dos arquivos Jira e Trello uniﬁcados e armazenados em um banco de dados| 8 |
+| US_06  | Importante | Eu, como usuário, gostaria de visualizar todos os projetos carregados em um gráﬁco geral que possibilite uma visualização panorâmica de todos os projetos para poder escolher dentre eles qual visualizar| 8 |
+
 ### 📋 Sprint Backlog
 
 *A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_backlog_v3.pdf) a serem desenvolvidos durante essa Sprint 1:*
