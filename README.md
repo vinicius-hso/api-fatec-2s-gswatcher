@@ -8,7 +8,7 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 2__ conforme es
 
 ### User Stories
 
-| ID     | Uer Story                       | Planning Poker                                                 |
+| ID     | Prioridade | User Story                       | Planning Poker                                                 |
 | -------| ------------------------------- | -------------------------------------------------------------- | 
 | US_07  | Essencial | Eu, como usuário, gostaria de ter todo o processo de desenvolvimento do projeto documentado | 13 |
 | US_08  | Essencial | Eu, como usuário, gostaria de ter os dados dos arquivos Jira e Trello unificados e armazenados em um banco de dados | 8 |
