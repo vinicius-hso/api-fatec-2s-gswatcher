@@ -110,9 +110,9 @@ Para visualizar o código da API, [clique aqui.](https://github.com/vinicius-hso
 ### 3.9 - :hammer_and_wrench: Implementação do Banco de Dados:
 
 A nossa implementação do banco de dados é fiel ao modelo lógico proposto ([link modelo lógico](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Modelagem%20de%20Dados/modelo_logico_relacional_gswatcher.jpeg)), sendo robusta para lidar com atualização dos dados no banco sem que os dados anteriores sejam perdidos. 
-Nós modelamos a tabela *“tbl_recarga”* e a *“tbl_task_detalhes”*, que permitem a inserção da mesma task (mesmo ID de task), mas com status diferentes. Então, é mantido o histórico de todas as recargas de dados realizadas no banco, podendo rastrear a evolução de status das tasks. 
+Nós modelamos a tabela *“tbl_recarga”* e a *“tbl_task_detalhes”*, que permitem a inserção da mesma task (mesmo ID de *task*), mas com *status* diferentes. Então, é mantido o histórico de todas as recargas de dados realizadas no banco, podendo rastrear a evolução de status das *tasks*. 
 
-* Verifique abaixo a sequência de execução de comando para a implementação do banco de dados.*
+*Verifique abaixo a sequência de execução de comando para a implementação do banco de dados.*
 
 Para visualizar o código da Implementação do Banco de dados, [clique aqui.](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/GSW_integrado/Nodejs/src/controller/upload_data.js)
 
