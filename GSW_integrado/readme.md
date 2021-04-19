@@ -1,4 +1,4 @@
-# app integrado front-end e back-end.
+# App integrado front-end e back-end.
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-2/Images/arquitetura.png)
 
