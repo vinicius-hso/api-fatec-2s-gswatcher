@@ -4,9 +4,7 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 2__ conforme es
 
 ## 1 - 📅 Planejamento da Sprint:
 
-### 📋 Sprint Backlog
-
-### User Stories
+### 📝 User Stories
 
 | ID     | Prioridade | User Story                       | Planning Poker                                                 |
 | -------| ---------- | -------------------------------- | -------------------------------------------------------------- | 
@@ -18,6 +16,8 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 2__ conforme es
 | US_12  | Importante | Eu, como usuário, gostaria de visualizar o *__total de horas trabalhadas__* em um projeto *__por período__* | 8 |
 | US_13  | Importante | Eu, como usuário, gostaria de visualizar a *__porcentagem de tasks concluídas__* em um projeto | 8 |
 | US_14  | Desejável  | Eu, como usuário, gostaria de visualizar quantos e quais desenvolvedores estão trabalhando em um projeto para saber quem são os envolvidos | 8 |
+
+### 📋 Sprint Backlog
 
 *A imagem abaixo mostra os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_backlog_v3.pdf) a serem desenvolvidos durante essa Sprint 2:*
 
