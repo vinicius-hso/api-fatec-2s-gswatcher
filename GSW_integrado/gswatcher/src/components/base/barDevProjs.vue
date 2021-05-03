@@ -2,6 +2,7 @@
   <div>
     <apexchart
       width="350"
+      height="400"
       type="bar"
       :options="chartOptions"
       :series="series"
@@ -73,8 +74,8 @@ export default {
           bar: {
             horizontal: true,
             borderRadius: 4,
-            columnWidth: "100%",
-            barHeight: "50%",
+            columnWidth: "50%",
+            barHeight: "75%",
             //distributed: false,
             //rangeBarOverlap: true,
             //rangeBarGroupRows: true,
@@ -96,6 +97,7 @@ export default {
             },
           },
         },
+
         dataLabels: {
           enabled: true,
           offsetX: 15,
