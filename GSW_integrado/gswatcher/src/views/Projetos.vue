@@ -54,17 +54,11 @@
                   disable-pagination
                   :hide-default-footer="true"
                 >
-
-
-
-
                   <v-responsive>
                     <!-- <v-img :src="project.user.avatar" height="120"></v-img> -->
                   </v-responsive>
 
-                  <v-card-title class="title">{{
-                    project.nome
-                  }}</v-card-title>
+                  <v-card-title class="title">{{ project.nome }}</v-card-title>
                   <v-card-text>
                     <div class="my-0 subtitle-1">
                       <!--ALTERAÇÃO-->
@@ -99,20 +93,20 @@ var projectReq = {};
 
 export default {
   name: "Projetos",
-    data() {
-      return {
-        projs: [],
-        test: [],
-        title: "",
-        headers: [
-          { text: "Id", align: "start", sortable: false, value: "id" },
-          { text: "Nome", value: "nome", sortable: false },
-          { text: "Sobrenome", value: "sobrenome", sortable: false },
-          { text: "Foto", value:"foto", sortable: false },
-        ],
-      };
-    },
-    methods: {
+  data() {
+    return {
+      projs: [],
+      test: [],
+      title: "",
+      headers: [
+        { text: "Id", align: "start", sortable: false, value: "id" },
+        { text: "Nome", value: "nome", sortable: false },
+        { text: "Sobrenome", value: "sobrenome", sortable: false },
+        { text: "Foto", value: "foto", sortable: false },
+      ],
+    };
+  },
+  methods: {
     sortBy(prop) {
       this.projects.sort((a, b) => (a[prop] < b[prop] ? -1 : 1));
       // console.log(this.projects);
@@ -134,7 +128,7 @@ export default {
           projectReq = response.data;
           // console.log(projectReq);
           projectReq = JSON.stringify(projectReq);
-          localStorage.setItem('dataReq', projectReq);
+          localStorage.setItem("dataReq", projectReq);
           console.log(this.projs);
         })
         .catch((e) => {
@@ -142,16 +136,19 @@ export default {
         });
     },
     getDisplayProjs(proj, test) {
-
-        DataService.getAllTasksById(proj.projeto_id)
-        .then((response) =>{
-          // console.log(response.data);
-          let total =  response.data.length
-          console.log(total);
-          test = {id: proj.projeto_id, name: proj.projeto_nome, projeto: response.data, total: total};
-          // console.log(test);
-        })
-        // console.log(proj.projeto_id);
+      DataService.getAllTasksById(proj.projeto_id).then((response) => {
+        // console.log(response.data);
+        let total = response.data.length;
+        console.log(total);
+        test = {
+          id: proj.projeto_id,
+          name: proj.projeto_nome,
+          projeto: response.data,
+          total: total,
+        };
+        // console.log(test);
+      });
+      // console.log(proj.projeto_id);
 
       // console.log(proj);
       // console.log(proj.projeto_id);
@@ -159,11 +156,10 @@ export default {
         id: proj.projeto_id,
         nome: proj.projeto_nome,
         test: test,
-
       };
     },
   },
-   mounted() {
+  mounted() {
     this.retrieveProjs();
   },
 };
