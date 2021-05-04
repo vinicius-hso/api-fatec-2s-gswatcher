@@ -5,6 +5,9 @@
     <v-row align="center" class="list px-3 mx-auto">
       <v-col cols="12" md="8">
         <v-text-field v-model="title" label="Search by Title"></v-text-field>
+        <v-col cols="12" md="4">
+          <v-btn small @click="searchTitle"> Search </v-btn>
+        </v-col>
       </v-col>
 
       <v-col v-for="dev in devs" :key="dev.id">
@@ -41,10 +44,6 @@
 
           <!---------------------------------------------------------------------------------->
         </v-flex>
-      </v-col>
-
-      <v-col cols="12" md="4">
-        <v-btn small @click="searchTitle"> Search </v-btn>
       </v-col>
 
       <v-col cols="12" sm="12">
