@@ -99,10 +99,10 @@ export default {
         },
         dataLabels: {
           enabled: true,
-          offsetX: 15,
-          offsetY: 0,
+          offsetX: 12,
+          offsetY: 2,
           style: {
-            fontSize: "12px",
+            fontSize: "8px",
             colors: ["#000"],
           },
         },

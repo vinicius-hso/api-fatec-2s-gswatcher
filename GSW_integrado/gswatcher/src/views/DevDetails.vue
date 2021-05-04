@@ -1,13 +1,14 @@
 <template>
   <div>
     <h1>DEV Robinho</h1>
+    <!-- Gráfico de barras -->
     <v-container>
       <h3>Tasks per Project</h3>
       <v-divider></v-divider>
       <barDevProjs />
     </v-container>
+    <!-- Visualização dos projetos em cards-->
     <v-container>
-      <!-- Visualização dos projetos em cards-->
       <h3>Projects</h3>
       <v-divider></v-divider>
       <!-- Botões de ordenação -->
