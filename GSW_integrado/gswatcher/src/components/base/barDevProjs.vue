@@ -2,7 +2,7 @@
   <div>
     <apexchart
       width="350"
-      height="400"
+      height="500"
       type="bar"
       :options="chartOptions"
       :series="series"
@@ -97,7 +97,6 @@ export default {
             },
           },
         },
-
         dataLabels: {
           enabled: true,
           offsetX: 15,
@@ -105,6 +104,36 @@ export default {
           style: {
             fontSize: "12px",
             colors: ["#000"],
+          },
+        },
+        grid: {
+          show: true,
+          borderColor: "#90A4AE",
+          strokeDashArray: 0,
+          position: "back",
+          xaxis: {
+            lines: {
+              show: false,
+            },
+          },
+          yaxis: {
+            lines: {
+              show: false,
+            },
+          },
+          row: {
+            colors: undefined,
+            opacity: 0.5,
+          },
+          column: {
+            colors: undefined,
+            opacity: 0.5,
+          },
+          padding: {
+            top: 0,
+            right: 30,
+            bottom: 0,
+            left: 0,
           },
         },
         stroke: {
