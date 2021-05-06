@@ -14,12 +14,6 @@ const controller = require('../controller/controller');
 
     router.get('/tasks_detalhes', controller.listAll_Task_detalhes)
 
-    router.get('/status', controller.listAll_Status)
-    
     router.get('/git', controller.listAll_git)
-
-    router.get('/teste/:id', controller.TESTE) // tasks done
-    router.get('/teste2/:id', controller.TESTE2) // count tasks
-    router.get('/teste3/:id', controller.TESTE3) // todas as tasks
 
 module.exports = router
