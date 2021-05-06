@@ -15,13 +15,10 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-
 // database start
 const main = require('../controller/upload_data')
 let resposta = main(dados)
 console.log(resposta)
-
-
 
 // Rotas da API;
 const index = require('../routes/index')
