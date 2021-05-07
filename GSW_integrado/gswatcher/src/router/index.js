@@ -6,6 +6,7 @@ import Perfil from '../views/Perfil.vue'
 import Desenvolvedores from '../views/Desenvolvedores.vue'
 import Upload from '../views/Upload.vue'
 import Projetos from '../views/Projetos.vue'
+import Projects from '../views/Projects.vue'
 import Projeto from '../views/Projeto.vue'
 import FirstAccess from '../views/FirstAccess.vue'
 import DevDetails from '../views/DevDetails.vue'
@@ -55,6 +56,11 @@ const routes = [
     path: '/projetos',
     name: 'projetos',
     component: Projetos
+  },
+  {
+    path: '/projects',
+    name: 'projects',
+    component: Projects
   },
   {
     path: '/firstaccess',
