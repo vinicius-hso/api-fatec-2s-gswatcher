@@ -1,12 +1,14 @@
 <template>
-  <div>
-    <apexchart
-      width="350"
-      height="500"
-      type="bar"
-      :options="chartOptions"
-      :series="series"
-    ></apexchart>
+  <div class="chart">
+    <div>
+      <apexchart
+        min-width="350"
+        height="500"
+        type="bar"
+        :options="chartOptions"
+        :series="series"
+      ></apexchart>
+    </div>
   </div>
 </template>
 
@@ -234,5 +236,12 @@ div.chart-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.chart {
+  padding: 10px 10px 0px 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 50px grey;
 }
 </style>
