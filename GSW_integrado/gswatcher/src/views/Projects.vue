@@ -12,7 +12,7 @@
     <v-divider></v-divider>
     <v-container class="my-5">
       <v-layout row class="mb-3">
-        <v-btn small flat color="grey" @click="sortBy('nome')">
+        <v-btn small flat color="grey" @click="sortBy('name')">
           <v-icon left small>mdi-folder</v-icon>
           <span class="caption text-lowercase">Project</span>
         </v-btn>
@@ -20,7 +20,7 @@
           <v-icon left small>mdi-calendar</v-icon>
           <span class="caption text-lowercase">Started At</span>
         </v-btn> -->
-        <v-btn small flat color="grey" @click="sortBy('total')">
+        <v-btn small flat color="grey" @click="sortBy('tasks')">
           <v-icon left small>mdi-list-status</v-icon>
           <span class="caption text-lowercase">Total Tasks</span>
         </v-btn>
@@ -102,6 +102,10 @@ export default {
     };
   },
   methods: {
+    sortBy(prop) {
+      this.projects.sort((a, b) => (a[prop] < b[prop] ? -1 : 1));
+      console.log(this.projects);
+    },
   },
   computed: {
     projects() {
