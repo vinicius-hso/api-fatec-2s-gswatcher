@@ -12,19 +12,30 @@ exports.TESTE = async (req, res) => {
     );
     res.status(200).send(response.rows);
   }; 
+
 // TESTE
 exports.TESTE2 = async (req, res) => {
   const input = req.params.id
+  const input2 = req.params.hr
   const response = await db.query(
-    `select count(*) from tbl_projeto 
+    `select * from tbl_projeto 
     inner join tbl_task on tbl_task.projeto_id = tbl_projeto.projeto_id
-    inner join tbl_task_detalhes on tbl_task.task_detalhes = tbl_task_detalhes.task_detalhes_id 
+    inner join tbl_task_detalhes on tbl_task.task_detalhes = tbl_task_detalhes.task_detalhes_id
     inner join tbl_status on tbl_task_detalhes.task_status_id = tbl_status.status_id
-    where tbl_projeto.projeto_id = '${input}'
-    group by tbl_status.status_nome`,
+    where tbl_task.dev_id = '${input}'`,
     );
-    res.status(200).send(response.rows);
+    if (input2 == 'null') {
+      let hrsNull = await response.rows.filter(hr => hr.horas == null) 
+      res.status(200).send(hrsNull)
+    } else if (input2 == 'notnull') {
+      let hrsNull = await response.rows.filter(hr => hr.horas != null)
+      res.status(200).send(hrsNull)
+    } else {
+      res.status(200).send(response.rows)
+    }
+    // console.log(hrsNull.length)
   }; 
+
 // TESTE
 exports.TESTE3 = async (req, res) => {
   const input = req.params.id
