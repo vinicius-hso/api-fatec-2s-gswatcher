@@ -10,6 +10,9 @@ import Projects from '../views/Projects.vue'
 import Projeto from '../views/Projeto.vue'
 import FirstAccess from '../views/FirstAccess.vue'
 import DevDetails from '../views/DevDetails.vue'
+import TotalHoursDev from '../views/TotalHoursDev.vue'
+
+
 
 Vue.use(VueRouter)
 
@@ -71,6 +74,11 @@ const routes = [
     path: '/devdetails',
     name: 'devdetails',
     component: DevDetails
+  },
+  {
+    path: '/totalhoursdev',
+    name: 'totalhoursdev',
+    component: TotalHoursDev
   }
 ]
 

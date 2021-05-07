@@ -59,7 +59,7 @@
                       </div>
                     </v-card-text>
                     <v-card-actions class="my-0">
-                      <v-btn :to="`/about/${project.id}`" outlined text>
+                      <v-btn :to="`/totalhoursdev/`" outlined text>
                         Details
                         <v-icon>mdi-google-analytics</v-icon>
                       </v-btn>
