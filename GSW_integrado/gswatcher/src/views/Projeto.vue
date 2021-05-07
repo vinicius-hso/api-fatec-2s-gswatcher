@@ -1,15 +1,12 @@
 <template>
   <div class="projeto">
     <h1>Project</h1>
-    <h2 class="pa-2 font-weight-light text-uppercase grey--text">
-      [Albuquerque Albuquerque and Carvalho Comércio] - Mandatory human-resource
-      open architecture
-    </h2>
+    <h2 class="pa-2 font-weight-light text-uppercase grey--text">{{this.$route.params.name}}</h2>
 
     <v-container class="my-5">
       <h3>Tasks Per Status</h3>
       <v-divider></v-divider>
-      <barChart />
+      <barChart v-bind:projeto="projeto"> </barChart>
     </v-container>
 
     <v-container class="my-5">
@@ -40,6 +37,7 @@
 
 <script>
 // @ is an alias to /src
+import axios from "axios";
 
 import barChart from "@/components/base/barChart";
 import lineChart from "@/components/base/lineChart";
@@ -99,6 +97,19 @@ export default {
         console.log(this.post);
       }
     },
+  },
+   mounted() {
+    var id = parseInt(this.$route.params.id);
+    axios
+      .get("http://127.0.0.1:3000/api/teste3/" + id, { crossDomain: true })
+      .then((response) => {
+        this.projeto = response.data;
+        console.log(this.projeto);
+        this.loading = false;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   },
 };
 </script>

@@ -1,7 +1,5 @@
 <template>
   <div class="barChart">
-    <h3>Tasks Per Status</h3>
-    <v-divider></v-divider>
     <div id="chart" class="chart-wrapper">
       <apexchart
         class="my-8"
@@ -18,7 +16,10 @@
 <script>
 export default {
   name: "barChart",
+  props: ['project'],
+
   data() {
+    
     return {
       series: [
         {
@@ -30,7 +31,7 @@ export default {
       chartOptions: {
         chart: {
           width: "100%",
-          height: "auto",
+          height: "100%",
           type: "bar",
         },
         plotOptions: {
@@ -100,20 +101,43 @@ export default {
             },
           },
         },
-        //title: {
-        //text: "Tasks Per Status",
-        //floating: true,
-        //   offsetY: 330,
-        //offsetY: -5,
-        //align: "left",
-        //style: {
-        //color: "#444",
-        //fontSize: "15px",
-        //},
-        //},
         colors: ["#304758"],
       },
     };
+  },
+  mounted(){
+    console.log("BarChart mounted!");
+    this.count(this.project);
+  },
+  
+  methods: {
+    count(project) {
+      const counts = {};
+      let status = [];
+      let statusValue = [];
+
+      project.forEach((r) => {
+        counts[r["status_nome"]] = (counts[r["status_nome"]] || 0) + 1;
+      });
+
+      for (const key in counts) {
+        console.log(`${key} : ${counts[key]}`);
+        status.push(key);
+        statusValue.push(counts[key]);
+      }
+
+      console.log(status);
+      console.log(statusValue);
+      
+        this.series = [{
+          data: statusValue
+        }]
+        this.chartOptions = {...this.chartOptions, ...{
+          xaxis: {
+            categories: status
+          }
+        }}
+      },    
   },
 };
 </script>

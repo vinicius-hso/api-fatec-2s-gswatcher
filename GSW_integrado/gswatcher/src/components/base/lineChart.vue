@@ -1,7 +1,5 @@
 <template>
   <div>
-    <h3>Total Hours Per Period</h3>
-    <v-divider></v-divider>
     <div class="chart-wrapper">
       <apexchart
         class="my-8"
@@ -21,6 +19,7 @@
 // numeric
 export default {
   name: "lineChart",
+  props: ['project'],
   data: () => ({
     options: {
       chart: {

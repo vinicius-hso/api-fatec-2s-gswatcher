@@ -60,7 +60,7 @@
                     <div>Total Tasks: {{ project.total_de_task }}</div>
                   </v-card-text>
                   <v-card-actions class="my-0">
-                    <v-btn :to="`/about/${project.id}`" outlined text>
+                    <v-btn :to="{ name: 'projetos', params: {id: project.projeto_id, name: project.projeto_nome}}" outlined text>
                       <!-- ROTA DE TESTE  -->
                       <!-- /about - carrega depois de alterar a página -->
                       Details
