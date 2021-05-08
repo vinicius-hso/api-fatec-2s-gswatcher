@@ -232,7 +232,7 @@ export default {
         // *** CONFIGURAÇÕES PARA TELAS MENORES DE 500px ***
         responsive: [
           {
-            breakpoint: 500,
+            breakpoint: 700,
             options: {
               plotOptions: {
                 bar: {
