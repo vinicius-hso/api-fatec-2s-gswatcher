@@ -192,6 +192,6 @@ div.chart-wrapper {
   padding: 10px 10px 0px 10px;
   border: 2px solid white;
   border-radius: 5px;
-  box-shadow: 5px 5px 50px grey;
+  box-shadow: 5px 5px 5px 2px grey;
 }
 </style>

@@ -74,7 +74,7 @@ export default {
         },
         plotOptions: {
           bar: {
-            horizontal: true,
+            horizontal: false,
             borderRadius: 4,
             columnWidth: "50%",
             barHeight: "75%",
@@ -225,6 +225,20 @@ export default {
           horizontalAlign: "left",
           offsetX: 40,
         },
+        responsive: [
+          {
+            breakpoint: 500,
+            options: {
+              plotOptions: {
+                bar: {
+                  horizontal: true,
+                  columnWidth: "50%",
+                  barHeight: "75%",
+                },
+              },
+            },
+          },
+        ],
       },
     };
   },
@@ -242,6 +256,6 @@ div.chart-wrapper {
   padding: 10px 10px 0px 10px;
   border: 2px solid white;
   border-radius: 5px;
-  box-shadow: 5px 5px 50px grey;
+  box-shadow: 5px 5px 10px grey;
 }
 </style>
