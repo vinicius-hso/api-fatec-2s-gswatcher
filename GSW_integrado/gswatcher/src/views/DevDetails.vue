@@ -10,11 +10,12 @@
     <!-- Visualização dos projetos em cards-->
     <v-container>
       <h3>Projects</h3>
+      <v-btn @click="log(devProjects)"></v-btn>
       <v-divider></v-divider>
       <!-- Botões de ordenação -->
       <v-container class="my-5">
         <v-layout row class="mb-3">
-          <v-btn small flat color="grey" @click="sortBy('nome')">
+          <!-- <v-btn small flat color="grey" @click="sortBy('nome')">
             <v-icon left small>mdi-folder</v-icon>
             <span class="caption text-lowercase">Project</span>
           </v-btn>
@@ -29,33 +30,33 @@
           <v-btn small flat color="grey" @click="sortBy('id')">
             <v-icon left small>mdi-calendar</v-icon>
             <span class="caption text-lowercase">Started At</span>
-          </v-btn>
+          </v-btn> -->
         </v-layout>
       </v-container>
       <!-- Cards dos projetos -->
       <v-container>
         <v-row>
-          <v-col v-for="project in projs" :key="project.id">
+          <v-col v-for="devProject in devProjects" :key="devProject.projeto_id" :devProject="devProject">
             <v-flex>
               <v-layout row wrap>
                 <v-flex xs12 lg12>
                   <v-card
                     :loading="loading"
-                    :class="`mx-auto my-4 project ${project.id}`"
+                    :class="`mx-auto my-4 devProject ${devProject.projeto_id}`"
                     width="420"
                   >
                     <v-card-title class="title">{{
-                      project.nome
+                      devProject.projeto_nome
                     }}</v-card-title>
                     <v-card-text>
                       <div>
-                        <span>Total Tasks: {{ project.total }}</span>
+                        <span>Total Tasks: {{ devProject.task_id }}</span>
                       </div>
                       <div>
-                        <span>Total Hours: {{ project.total }}</span>
+                        <span>Total Hours: {{ devProject.task_id }}</span>
                       </div>
                       <div>
-                        <span>Start Date: {{ project.total }}</span>
+                        <span>Start Date: {{ devProject.task_id }}</span>
                       </div>
                     </v-card-text>
                     <v-card-actions class="my-0">
@@ -76,7 +77,7 @@
 </template>
 
 <script>
-import DataService from "../services/DataService";
+// import DataService from "../services/DataService";
 import barDevProjs from "@/components/base/barDevProjs";
 
 export default {
@@ -91,34 +92,51 @@ export default {
   },
   methods: {
     log(data) {
-      console.log("data");
-      console.log(data.id);
-    },
-    sortBy(prop) {
-      this.projs.sort((a, b) => (a[prop] < b[prop] ? -1 : 1));
-      console.log(this.projs);
-    },
-    retrieveProjs() {
-      DataService.getAllProjs()
-        .then((response) => {
-          this.projs = response.data.map(this.getDisplayProjs);
-          // console.log(response.data);
-        })
-        .catch((e) => {
-          console.log(e);
-        });
-    },
-    getDisplayProjs(proj) {
-      return {
-        id: proj.projeto_id,
-        nome: proj.projeto_nome,
-        total: proj.total_de_task,
-      };
-    },
+      console.log("Objeto")
+      console.log(typeof(data))
+      console.log(data);
+    }
+
+    // log(data) {
+    //   console.log("data");
+    //   console.log(data.id);
+    // },
+    // sortBy(prop) {
+    //   this.projs.sort((a, b) => (a[prop] < b[prop] ? -1 : 1));
+    //   console.log(this.projs);
+    // },
+    // retrieveProjs() {
+    //   DataService.getAllProjs()
+    //     .then((response) => {
+    //       this.projs = response.data.map(this.getDisplayProjs);
+    //       // console.log(response.data);
+    //     })
+    //     .catch((e) => {
+    //       console.log(e);
+    //     });
+    // },
+    // getDisplayProjs(proj) {
+    //   return {
+    //     id: proj.projeto_id,
+    //     nome: proj.projeto_nome,
+    //     total: proj.total_de_task,
+    //   };
+    // },
+  },
+  // mounted() {
+  //   this.retrieveProjs();
+  // },
+
+  computed: {
+    devProjects() {
+      return this.$store.state.devProjects;
+    }
   },
   mounted() {
-    this.retrieveProjs();
+    this.$store.dispatch('getDevProjects', this.$route.params.id);
+
   },
+
 };
 </script>
 

@@ -13,3 +13,10 @@ export const getProject = ({ commit }, projectId) =>{
         commit('SET_PROJECT', response.data);
     })
 }
+
+export const getDevProjects = ({ commit }, devId) =>{
+    axios.get(`http://127.0.0.1:3000/api/teste2/${devId}?hrs=notnull`) //ip local para prevenir CORS
+    .then(response => {
+        commit('SET_DEVPROJECTS', response.data);
+    })
+};
