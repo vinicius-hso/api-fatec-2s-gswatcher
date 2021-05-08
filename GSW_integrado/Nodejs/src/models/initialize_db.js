@@ -2,14 +2,27 @@
 const FuncUnique = require("./unique");
 const FuncUniqueDev = require("./devs_unique");
 
+// Find the system of input
+function sistema(input){
+	var firstKey = Object.keys(input[0])[0];
+
+	if (firstKey == '_id'){
+		input.forEach(input => {input['sistema'] = 'Trello'});
+	}
+	else if (firstKey == 'id'){
+		input.forEach(input => {input['sistema'] = 'Jira'});
+	}
+	return input;
+}
+
 // Dados
-const dadosjira = require('../app/dadosJSON/jira.json')
-dadosjira.forEach(dadosjira => {dadosjira['sistema'] = 'Jira'});
-const dadostrello = require('../app/dadosJSON/trello.json')
-dadostrello.forEach(dadostrello => {dadostrello['sistema'] = 'Trello'});
+let dadosjira = require('../app/dadosJSON/jira.json')
+dadosjira = sistema(dadosjira)
+
+let dadostrello = require('../app/dadosJSON/trello.json')
+dadostrello = sistema(dadostrello)
 
 const dados = dadostrello.concat(dadosjira)
-
 
 //Unificando os dados dos 2 arquivos
 let sl = JSON.stringify(dados)

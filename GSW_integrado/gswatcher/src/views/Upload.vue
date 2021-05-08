@@ -51,7 +51,7 @@
                 <v-btn color="blue darken-1" text @click="dialog = false">
                   Close
                 </v-btn>
-                <v-btn color="blue darken-1" text @click="handleFileUpload()">
+                <v-btn color="blue darken-1" text @click="submitFile()">
                   Save
                 </v-btn>
               </v-card-actions>
@@ -59,18 +59,23 @@
           </v-dialog>
         </v-row>
       </div>
-
-
-  
-
+      <div class="pt-10 ma-2">
+      <v-row justify="center">
+      <v-btn color="blue darken-1" text @click="populate_db()">Save Data</v-btn>
+    </v-row>
+    </div>
   </div>
 
+
+   
 
 </template>
 
 <script>
 // @ is an alias to /src
-import Upload from '../services/upload'
+//import axios from "axios";
+
+import DataService from '../services/DataService'
 
 //objetivo final é transformar esse caminho em um modal
 
@@ -78,19 +83,29 @@ export default {
   data(){
     return{
       dialog: false,
-      file: "",
+      file: '',
     }
   },
   name: 'Upload',
   methods: {
-    upload(){
-      console.log("TESTE");
-      Upload.retornarArquivo();
+    submitFile(){
+      let formData = new FormData();
+      formData.append('file', this.file);
+
+      //let teste = require('../data/jira')
+
+     DataService.create(formData)
+
+
+      this.dialog = false;
     },
     handleFileUpload() {
-      this.dialog = false;
       this.file = this.$refs.file.files[0];
     },
+
+    populate_db(){
+      DataService.uploadButton()
+    }
   }
  
 }

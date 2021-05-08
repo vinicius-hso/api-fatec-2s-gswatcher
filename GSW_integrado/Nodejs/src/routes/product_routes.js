@@ -20,4 +20,9 @@ const controller = require('../controller/controller');
     router.get('/teste2/:id', controller.TESTE2)
     router.get('/teste3/:id', controller.TESTE3)
 
+
+    router.post('/',controller.singlefile)
+
+    router.get('/uploadButton',controller.uploadButton)
+
 module.exports = router
