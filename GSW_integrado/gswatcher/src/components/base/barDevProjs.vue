@@ -16,6 +16,7 @@
 export default {
   data: function () {
     return {
+      // *** DADOS QUE SERÃO APRESENTADOS NOS GRÁFICOS ***
       series: [
         {
           name: "Completed Tasks",
@@ -66,6 +67,7 @@ export default {
           ],
         },
       ],
+      // *** FORMATAÇÃO DO GRÁFICO ***
       chartOptions: {
         chart: {
           type: "bar",
@@ -99,12 +101,13 @@ export default {
             },
           },
         },
+        // *** NÚMEROS APRESENTADOS EM CADA BARRA ***
         dataLabels: {
           enabled: true,
-          offsetX: 12,
-          offsetY: 2,
+          offsetX: 0,
+          offsetY: -15,
           style: {
-            fontSize: "8px",
+            fontSize: "12px",
             colors: ["#000"],
           },
         },
@@ -154,6 +157,7 @@ export default {
           style: {
             fontSize: "10px",
           },
+          // *** NOME DOS PROJETOS ****
           categories: [
             "[Albuquerque Albuquerque and Carvalho Comércio]",
             "[Batista Moreira and Pereira LTDA]",
@@ -225,6 +229,7 @@ export default {
           horizontalAlign: "left",
           offsetX: 40,
         },
+        // *** CONFIGURAÇÕES PARA TELAS MENORES DE 500px ***
         responsive: [
           {
             breakpoint: 500,
@@ -234,6 +239,15 @@ export default {
                   horizontal: true,
                   columnWidth: "50%",
                   barHeight: "75%",
+                },
+              },
+              dataLabels: {
+                enabled: true,
+                offsetX: 12,
+                offsetY: 1,
+                style: {
+                  fontSize: "9px",
+                  colors: ["#000"],
                 },
               },
             },
@@ -256,6 +270,6 @@ div.chart-wrapper {
   padding: 10px 10px 0px 10px;
   border: 2px solid white;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px grey;
+  box-shadow: 0px 0px 4px grey;
 }
 </style>
