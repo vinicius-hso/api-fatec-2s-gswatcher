@@ -78,7 +78,7 @@ export default {
           bar: {
             horizontal: false,
             borderRadius: 4,
-            columnWidth: "50%",
+            columnWidth: "90%",
             barHeight: "75%",
             //distributed: false,
             //rangeBarOverlap: true,
