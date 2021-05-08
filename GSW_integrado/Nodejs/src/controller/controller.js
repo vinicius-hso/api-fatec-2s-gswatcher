@@ -16,7 +16,7 @@ exports.TESTE = async (req, res) => {
 // TESTE
 exports.TESTE2 = async (req, res) => {
   const input = req.params.id
-  const input2 = req.params.hr
+  const input2 = req.query.hrs
   const response = await db.query(
     `select * from tbl_projeto 
     inner join tbl_task on tbl_task.projeto_id = tbl_projeto.projeto_id
@@ -24,16 +24,15 @@ exports.TESTE2 = async (req, res) => {
     inner join tbl_status on tbl_task_detalhes.task_status_id = tbl_status.status_id
     where tbl_task.dev_id = '${input}'`,
     );
-    if (input2 == 'null') {
+    if (input2 === 'null') {
       let hrsNull = await response.rows.filter(hr => hr.horas == null) 
       res.status(200).send(hrsNull)
-    } else if (input2 == 'notnull') {
+    } else if (input2 === 'notnull') {
       let hrsNull = await response.rows.filter(hr => hr.horas != null)
       res.status(200).send(hrsNull)
-    } else {
+    } else if (input2 === undefined) {
       res.status(200).send(response.rows)
     }
-    // console.log(hrsNull.length)
   }; 
 
 // TESTE
