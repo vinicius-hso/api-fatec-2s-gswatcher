@@ -29,7 +29,7 @@
                   <v-btn
                     :to="{
                       name: 'devdetails',
-                      params: { id: dev.id, name: dev.nome },
+                      params: { id: dev.id, name: dev.nome, sobrenome: dev.sobrenome },
                     }"
                     outlined
                     text

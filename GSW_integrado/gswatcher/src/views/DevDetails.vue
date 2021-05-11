@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>DEV Robinho</h1>
+    <h1>{{this.$route.params.name}} {{this.$route.params.sobrenome}}</h1>
     <!-- Gráfico de barras -->
     <v-container>
       <h3>Tasks per Project</h3>
