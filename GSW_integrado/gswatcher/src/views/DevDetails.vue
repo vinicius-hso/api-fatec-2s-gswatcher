@@ -7,12 +7,12 @@
       <v-divider></v-divider>
       <barDevProjs />
     </v-container>
-    <!-- Visualização dos projetos em cards-->
+    <!-- VISUALIZAÇÃO DOS PROJETOS EM CARDS -->
     <v-container>
       <h3>Projects</h3>
       <v-btn @click="log(devProjects)"></v-btn>
       <v-divider></v-divider>
-      <!-- Botões de ordenação -->
+      <!-- BOTÕES DE ORDENAÇÃO  -->
       <v-container class="my-5">
         <v-layout row class="mb-3">
           <!-- <v-btn small flat color="grey" @click="sortBy('nome')">
@@ -33,10 +33,14 @@
           </v-btn> -->
         </v-layout>
       </v-container>
-      <!-- Cards dos projetos -->
+      <!-- CARDS DOS PROJETOS -->
       <v-container>
         <v-row>
-          <v-col v-for="devProject in devProjects" :key="devProject.projeto_id" :devProject="devProject">
+          <v-col
+            v-for="devProject in devProjects"
+            :key="devProject.projeto_id"
+            :devProject="devProject"
+          >
             <v-flex>
               <v-layout row wrap>
                 <v-flex xs12 lg12>
@@ -92,10 +96,10 @@ export default {
   },
   methods: {
     log(data) {
-      console.log("Objeto")
-      console.log(typeof(data))
+      console.log("Objeto");
+      console.log(typeof data);
       console.log(data);
-    }
+    },
 
     // log(data) {
     //   console.log("data");
@@ -130,13 +134,11 @@ export default {
   computed: {
     devProjects() {
       return this.$store.state.devProjects;
-    }
+    },
   },
   mounted() {
-    this.$store.dispatch('getDevProjects', this.$route.params.id);
-
+    this.$store.dispatch("getDevProjects", this.$route.params.id);
   },
-
 };
 </script>
 

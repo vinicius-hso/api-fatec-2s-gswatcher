@@ -1,13 +1,11 @@
 <template>
   <div>
-    <h1> DEV Robinho </h1>
+    <h1>DEV Robinho</h1>
     <!-- gráfico de barras -->
     <v-container>
-      <h2> Worked Hours </h2>
-      <v-divider></v-divider>
       <HoursBarChart />
     </v-container>
- </div>
+  </div>
 </template>   
 
 <script>
@@ -55,9 +53,7 @@ export default {
     this.retrieveProjs();
   },
 };
-
-
-  </script>
+</script>
 
 
 <style scoped>
@@ -66,5 +62,4 @@ div.chart-wrapper {
   align-items: center;
   justify-content: center;
 }
-
 </style>

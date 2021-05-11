@@ -1,5 +1,7 @@
 <template>
   <div class>
+    <h3>Completed Tasks</h3>
+    <v-divider></v-divider>
     <v-card class="my-8">
       <v-card-title>
         <v-icon>mdi-account-search</v-icon>
@@ -22,7 +24,7 @@
 <script>
 export default {
   name: "table01",
-  props: ['project'],
+  props: ["project"],
   data() {
     return {
       search: "",

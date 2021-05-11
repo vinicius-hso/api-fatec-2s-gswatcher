@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <h3>Percentage of Completed and Incompleted Tasks</h3>
-    <v-divider></v-divider>
+  <div class="chart">
     <div class="chart-wrapper" id="chart">
       <apexchart
         class="my-3"
         type="pie"
+        height="300"
+        width="100%"
         :options="chartOptions"
         :series="series"
       ></apexchart>
@@ -47,9 +47,9 @@ export default {
           },
         },
       },
-      //title: {
-      //  text: "Monochrome Pie",
-      //},
+      title: {
+        text: "Percentage of Completed Tasks",
+      },
       dataLabels: {
         unable: false,
         unableOnSeries: undefined,
@@ -80,5 +80,12 @@ div.chart-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.chart {
+  padding: 10px 10px 0px 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px grey;
 }
 </style>

@@ -1,6 +1,14 @@
 <template>
   <div class="home">
-    <h1>Tasks Per Project</h1>
+    <h1>Main</h1>
+    <p>
+      Welcome to the <strong>GSWatcher Web Application</strong>. Take a look in
+      your projects down below.
+    </p>
+
+    <v-divider></v-divider>
+    <br />
+    <h2>Tasks Per Project</h2>
     <v-divider></v-divider>
     <v-container class="my-5">
       <v-layout row class="mb-3 sb-1"> </v-layout>
@@ -8,7 +16,7 @@
       <v-layout> </v-layout>
     </v-container>
 
-    <h1>My Projects</h1>
+    <h2>My Projects</h2>
     <v-divider></v-divider>
     <v-container class="my-5">
       <v-layout row class="mb-3">
