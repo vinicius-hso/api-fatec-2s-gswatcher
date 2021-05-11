@@ -2,7 +2,7 @@
   <div class="chart">
     <div class="chart-wrapper" id="chart">
       <apexchart
-        class="my-3"
+        class="my-2"
         type="pie"
         height="300"
         width="100%"
@@ -14,22 +14,23 @@
 </template>
 
 <script>
-// category
-// datetime
-// numeric
+
 export default {
-  name: "lineChart",
+  name: "pieChart",
   data: () => ({
-    series: [87.5, 12.5],
+    series: [18.7, 81.3],
     chartOptions: {
       chart: {
         width: "100%",
         type: "pie",
       },
-      labels: ["Complete", "Incomplete"],
+      labels: ["DEV Robinho", "Other developers"],
       theme: {
         monochrome: {
-          enabled: false,
+          enabled: true,
+          color: '#5F27CD',
+          shadeTo: 'light',
+          shadeIntensity: 0.70
         },
       },
       plotOptions: {
@@ -48,7 +49,10 @@ export default {
         },
       },
       title: {
-        text: "Percentage of Completed Tasks",
+        text: "Project Contribution",
+          style: {
+            fontSize: "16px",
+          },
       },
       dataLabels: {
         unable: false,

@@ -1,5 +1,9 @@
 const router = require('express-promise-router')()
 const controller = require('../controller/controller');
+const authMiddleware = require('../middlewares/auth')
+
+// Middleware
+    // router.use(authMiddleware)
 
 // >> Definindo as rotas.
     router.get('/devs', controller.listAll_TBL_DEV)
@@ -19,5 +23,9 @@ const controller = require('../controller/controller');
     router.get('/teste/:id', controller.TESTE)
     router.get('/teste2/:id', controller.TESTE2)
     router.get('/teste3/:id', controller.TESTE3)
+
+    router.post('/',controller.singlefile)
+
+    router.get('/uploadButton',controller.uploadButton)
 
 module.exports = router

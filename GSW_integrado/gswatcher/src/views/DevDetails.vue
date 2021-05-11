@@ -7,12 +7,12 @@
       <v-divider></v-divider>
       <barDevProjs />
     </v-container>
-    <!-- Visualização dos projetos em cards-->
+    <!-- VISUALIZAÇÃO DOS PROJETOS EM CARDS -->
     <v-container>
       <h3>Projects</h3>
       <v-btn @click="treatCycle(info, devProjects)"></v-btn>
       <v-divider></v-divider>
-      <!-- Botões de ordenação -->
+      <!-- BOTÕES DE ORDENAÇÃO  -->
       <v-container class="my-5">
         <v-layout row class="mb-3">
           <!-- <v-btn small flat color="grey" @click="sortBy('nome')">
@@ -33,12 +33,17 @@
           </v-btn> -->
         </v-layout>
       </v-container>
-      <!-- Cards dos projetos -->
+      <!-- CARDS DOS PROJETOS -->
       <v-container>
         <v-row>
           <v-col
+<<<<<<< HEAD
             v-for="devProject in info"
             :key="devProject.name"
+=======
+            v-for="devProject in devProjects"
+            :key="devProject.projeto_id"
+>>>>>>> 8afd9b537722a10757f21222e78b98f6adc11b22
             :devProject="devProject"
           >
             <v-flex>
@@ -111,6 +116,7 @@ export default {
     };
   },
   methods: {
+<<<<<<< HEAD
     treatCycle(info, projs) {
       let devProjTasks = [];
       let devProjs = this.devProjectsSet(projs);
@@ -126,6 +132,12 @@ export default {
       });
       console.log(devProjTasks);
       this.info = devProjTasks;
+=======
+    log(data) {
+      console.log("Objeto");
+      console.log(typeof data);
+      console.log(data);
+>>>>>>> 8afd9b537722a10757f21222e78b98f6adc11b22
     },
 
     // *** DEV PROJECTS ***
@@ -181,11 +193,8 @@ export default {
   },
 
   computed: {
-    devProjects: {
-      get: function () {
-        return this.$store.state.devProjects;
-      },
-      set: function () {},
+    devProjects() {
+      return this.$store.state.devProjects;
     },
   },
   mounted() {

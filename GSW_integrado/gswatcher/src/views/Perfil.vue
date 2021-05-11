@@ -1,7 +1,7 @@
 <template>
   <div class="perfil">
     <h1>Perfil</h1>
-
+    <v-divider></v-divider>
   </div>
 </template>
 
@@ -9,7 +9,6 @@
 // @ is an alias to /src
 
 export default {
-  name: 'Perfil',
- 
-}
+  name: "Perfil",
+};
 </script>

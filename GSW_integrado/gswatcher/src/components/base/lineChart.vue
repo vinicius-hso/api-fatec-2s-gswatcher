@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <div class="chart">
     <div class="chart-wrapper">
       <apexchart
         class="my-8"
+        height="300"
         width="100%"
         type="line"
         :options="options"
@@ -19,21 +20,37 @@
 // numeric
 export default {
   name: "lineChart",
-  props: ['project'],
+  props: ["project"],
   data: () => ({
     options: {
       chart: {
         title: "Nome",
         id: "vuechart-example",
       },
-      //title: {
-      //  text: "Total Hours Per Period",
-      //  align: "left",
-      //  style: {
-      //    color: "#444",
-      //    fontSize: "15px",
-      //  },
-      //},
+
+      // *** Título do Gráfico ***
+      title: {
+        text: "Total Hours",
+        align: "left",
+        style: {
+          color: "#444",
+          fontSize: "15px",
+        },
+      },
+
+      // *** Dados (números) na Linha do Gráfico ***
+      dataLabels: {
+        enabled: true,
+        formatter: function (val) {
+          return val; /*original: + " tasks"*/
+        },
+        offsetY: -20,
+        style: {
+          fontSize: "14px",
+          colors: ["#333333"],
+        },
+      },
+
       stroke: {
         curve: "smooth",
       },
@@ -235,5 +252,11 @@ div.chart-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.chart {
+  padding: 10px 10px 0px 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px grey;
 }
 </style>

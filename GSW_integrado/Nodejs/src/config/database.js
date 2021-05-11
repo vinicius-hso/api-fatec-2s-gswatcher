@@ -9,7 +9,7 @@ const pool = new Pool({
   })
 
   pool.on('connect', () => {
-      console.log('Base de dados conectado!')
+      //console.log('Base de dados conectado!')
   })
 
   module.exports = {

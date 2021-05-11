@@ -17,6 +17,14 @@ class DataService {
      return http.get(`/tutorials/${id}`);
    }
 
+  uploadButton() {
+    return http.get("/uploadButton");
+  }
+
+  create(data) {
+    return http.post("/", data);
+  }
+
   // create(data) {
   //   return http.post("/tutorials", data);
   // }

@@ -1,23 +1,37 @@
 <template>
   <div>
     <h1> DEV Robinho </h1>
-    <!-- gráfico de barras -->
-    <v-container>
-      <h2> Worked Hours </h2>
-      <v-divider></v-divider>
-      <HoursBarChart />
+    <v-divider></v-divider>
+    <br />
+    
+     <h2 class="pa-2 font-weight-light text-uppercase grey--text">
+      [Batista, Moreira and Pereira LTDA] - Monitored multi-state installation
+    </h2>
+
+    <!-- gráfico de linhas -->
+    <v-container class="my-5">
+      <lineTotalHours />
     </v-container>
- </div>
+
+    <!-- gráfico de pizza -->
+     <v-container class="my-5">
+      <pieDevContribution />
+    </v-container>
+  </div>
 </template>   
 
 <script>
+
+import lineTotalHours from "@/components/base/lineTotalHours";
+import pieDevContribution from "@/components/base/pieDevContribution";
+
 import DataService from "../services/DataService";
-import HoursBarChart from "@/components/base/HoursBarChart";
 
 export default {
   name: "TotalHoursDev",
   components: {
-    HoursBarChart,
+    lineTotalHours,
+    pieDevContribution,
   },
   data: function () {
     return {
@@ -55,9 +69,7 @@ export default {
     this.retrieveProjs();
   },
 };
-
-
-  </script>
+</script>
 
 
 <style scoped>
@@ -66,5 +78,4 @@ div.chart-wrapper {
   align-items: center;
   justify-content: center;
 }
-
 </style>
