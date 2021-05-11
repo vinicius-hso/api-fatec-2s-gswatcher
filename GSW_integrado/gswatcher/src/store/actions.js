@@ -15,8 +15,15 @@ export const getProject = ({ commit }, projectId) =>{
 }
 
 export const getDevProjects = ({ commit }, devId) =>{
-    axios.get(`http://127.0.0.1:3000/api/teste2/${devId}?hrs=notnull`) //ip local para prevenir CORS
+    axios.get(`http://127.0.0.1:3000/api/teste2/${devId}`) //ip local para prevenir CORS
     .then(response => {
         commit('SET_DEVPROJECTS', response.data);
+    })
+};
+
+export const getunfinishedDevProjectsnfinished = ({ commit }, devId) =>{
+    axios.get(`http://127.0.0.1:3000/api/teste2/${devId}?hrs=null`) //ip local para prevenir CORS
+    .then(response => {
+        commit('SET_DEVPROJECTS_UNFINISHED', response.data);
     })
 };

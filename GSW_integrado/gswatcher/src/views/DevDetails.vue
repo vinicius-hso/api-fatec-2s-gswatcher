@@ -10,7 +10,7 @@
     <!-- Visualização dos projetos em cards-->
     <v-container>
       <h3>Projects</h3>
-      <v-btn @click="log(devProjects)"></v-btn>
+      <v-btn @click="treatCycle(info, devProjects)"></v-btn>
       <v-divider></v-divider>
       <!-- Botões de ordenação -->
       <v-container class="my-5">
@@ -36,27 +36,47 @@
       <!-- Cards dos projetos -->
       <v-container>
         <v-row>
-          <v-col v-for="devProject in devProjects" :key="devProject.projeto_id" :devProject="devProject">
+          <v-col
+            v-for="devProject in info"
+            :key="devProject.name"
+            :devProject="devProject"
+          >
             <v-flex>
               <v-layout row wrap>
                 <v-flex xs12 lg12>
                   <v-card
                     :loading="loading"
-                    :class="`mx-auto my-4 devProject ${devProject.projeto_id}`"
+                    :class="`mx-auto my-4 devProject ${devProject.name}`"
                     width="420"
                   >
                     <v-card-title class="title">{{
-                      devProject.projeto_nome
+                      devProject.name
                     }}</v-card-title>
                     <v-card-text>
                       <div>
-                        <span>Total Tasks: {{ devProject.task_id }}</span>
+                        <span
+                          >Total Tasks: {{ devProject.data.totalTasks }}</span
+                        >
                       </div>
                       <div>
-                        <span>Total Hours: {{ devProject.task_id }}</span>
+                        <span
+                          >Complete Tasks:
+                          {{ devProject.data.tasksCompletas }}</span
+                        >
                       </div>
                       <div>
-                        <span>Start Date: {{ devProject.task_id }}</span>
+                        <span
+                          >Incomplete Tasks:
+                          {{ devProject.data.tasksIncompletas }}</span
+                        >
+                      </div>
+                      <div>
+                        <span>Total Hours: {{ devProject.data.horas }}</span>
+                      </div>
+                      <div>
+                        <span
+                          >Start Date: {{ devProject.data.dataInicio }}</span
+                        >
                       </div>
                     </v-card-text>
                     <v-card-actions class="my-0">
@@ -77,7 +97,6 @@
 </template>
 
 <script>
-// import DataService from "../services/DataService";
 import barDevProjs from "@/components/base/barDevProjs";
 
 export default {
@@ -88,55 +107,90 @@ export default {
   data: function () {
     return {
       projs: [],
+      info: {},
     };
   },
   methods: {
-    log(data) {
-      console.log("Objeto")
-      console.log(typeof(data))
-      console.log(data);
-    }
+    treatCycle(info, projs) {
+      let devProjTasks = [];
+      let devProjs = this.devProjectsSet(projs);
 
-    // log(data) {
-    //   console.log("data");
-    //   console.log(data.id);
-    // },
-    // sortBy(prop) {
-    //   this.projs.sort((a, b) => (a[prop] < b[prop] ? -1 : 1));
-    //   console.log(this.projs);
-    // },
-    // retrieveProjs() {
-    //   DataService.getAllProjs()
-    //     .then((response) => {
-    //       this.projs = response.data.map(this.getDisplayProjs);
-    //       // console.log(response.data);
-    //     })
-    //     .catch((e) => {
-    //       console.log(e);
-    //     });
-    // },
-    // getDisplayProjs(proj) {
-    //   return {
-    //     id: proj.projeto_id,
-    //     nome: proj.projeto_nome,
-    //     total: proj.total_de_task,
-    //   };
-    // },
+      console.log(devProjs);
+
+      devProjs.forEach((elem) => {
+        let data = this.dataStats(elem, projs);
+        devProjTasks.push({
+          name: elem,
+          data: data,
+        });
+      });
+      console.log(devProjTasks);
+      this.info = devProjTasks;
+    },
+
+    // *** DEV PROJECTS ***
+    // Retorna um array com os projetos de um dev
+
+    devProjectsSet(projectObject) {
+      // console.log(projectObject) //entrada
+      var p = [];
+      var projetos = [];
+
+      projectObject.forEach((elem, index) => {
+        p[index] = projectObject[index].projeto_nome;
+        if (projetos.includes(p[index]) == false) {
+          projetos.push(p[index]);
+        }
+      });
+      return projetos;
+    },
+
+    // *** DATA STATS***
+    // Retorna o total de tasks (completas) de um projeto
+    // Retorna o total de horas de um dev em um projeto
+    // Retorna a data da task mais antiga de um projeto
+
+    dataStats(projectName, projectObject) {
+      var menor = projectObject[0].inicio;
+      var horas = 0;
+      var t = 0;
+      var c = 0;
+      var ic = 0;
+      projectObject.forEach((elem) => {
+        if (elem.projeto_nome == projectName) {
+          if (elem.horas != null) {
+            c++;
+            horas += elem.horas;
+          } else if (elem.horas == null) {
+            ic++;
+          }
+          t++;
+          if (elem.inicio < menor) {
+            menor = elem.inicio;
+          }
+        }
+      });
+      return {
+        totalTasks: t,
+        tasksCompletas: c,
+        tasksIncompletas: ic,
+        horas: horas,
+        dataInicio: menor,
+      };
+    },
   },
-  // mounted() {
-  //   this.retrieveProjs();
-  // },
 
   computed: {
-    devProjects() {
-      return this.$store.state.devProjects;
-    }
+    devProjects: {
+      get: function () {
+        return this.$store.state.devProjects;
+      },
+      set: function () {},
+    },
   },
   mounted() {
-    this.$store.dispatch('getDevProjects', this.$route.params.id);
-
+    this.$store.dispatch("getDevProjects", this.$route.params.id);
   },
-
 };
 </script>
 
