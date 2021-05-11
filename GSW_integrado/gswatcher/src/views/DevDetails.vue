@@ -116,7 +116,6 @@ export default {
     };
   },
   methods: {
-<<<<<<< HEAD
     treatCycle(info, projs) {
       let devProjTasks = [];
       let devProjs = this.devProjectsSet(projs);
@@ -132,12 +131,6 @@ export default {
       });
       console.log(devProjTasks);
       this.info = devProjTasks;
-=======
-    log(data) {
-      console.log("Objeto");
-      console.log(typeof data);
-      console.log(data);
->>>>>>> 8afd9b537722a10757f21222e78b98f6adc11b22
     },
 
     // *** DEV PROJECTS ***
