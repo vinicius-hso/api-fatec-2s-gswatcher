@@ -1,14 +1,16 @@
 <template>
-  <div class="barChart">
-    <div id="chart" class="chart-wrapper">
-      <apexchart
-        class="my-8"
-        type="bar"
-        height="350"
-        width="100%"
-        :options="chartOptions"
-        :series="series"
-      ></apexchart>
+  <div class="chart">
+    <div class="barChart">
+      <div id="chart" class="chart-wrapper">
+        <apexchart
+          class="my-8"
+          type="bar"
+          height="300"
+          width="100%"
+          :options="chartOptions"
+          :series="series"
+        ></apexchart>
+      </div>
     </div>
   </div>
 </template>
@@ -16,10 +18,9 @@
 <script>
 export default {
   name: "barChart",
-  props: ['project'],
+  props: ["project"],
 
   data() {
-    
     return {
       series: [
         {
@@ -41,6 +42,9 @@ export default {
               position: "top", // top, center, bottom
             },
           },
+        },
+        title: {
+          text: "Tasks by Status",
         },
         dataLabels: {
           enabled: true,
@@ -105,11 +109,11 @@ export default {
       },
     };
   },
-  mounted(){
+  mounted() {
     console.log("BarChart mounted!");
     this.count(this.project);
   },
-  
+
   methods: {
     count(project) {
       const counts = {};
@@ -128,16 +132,21 @@ export default {
 
       console.log(status);
       console.log(statusValue);
-      
-        this.series = [{
-          data: statusValue
-        }]
-        this.chartOptions = {...this.chartOptions, ...{
+
+      this.series = [
+        {
+          data: statusValue,
+        },
+      ];
+      this.chartOptions = {
+        ...this.chartOptions,
+        ...{
           xaxis: {
-            categories: status
-          }
-        }}
-      },    
+            categories: status,
+          },
+        },
+      };
+    },
   },
 };
 </script>
@@ -148,5 +157,12 @@ div.chart-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.chart {
+  padding: 10px 10px 0px 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px grey;
 }
 </style>
