@@ -37,13 +37,8 @@
       <v-container>
         <v-row>
           <v-col
-<<<<<<< HEAD
             v-for="devProject in info"
             :key="devProject.name"
-=======
-            v-for="devProject in devProjects"
-            :key="devProject.projeto_id"
->>>>>>> 8afd9b537722a10757f21222e78b98f6adc11b22
             :devProject="devProject"
           >
             <v-flex>
