@@ -5,7 +5,7 @@
     <br />
     <div class="p">
       <div class="buttons">
-        <h3>How to ppload your JSON file</h3>
+        <h3>How to upload your JSON file</h3>
         <br />
         <ol>
           <li>Click on <strong>UPLOAD</strong></li>
