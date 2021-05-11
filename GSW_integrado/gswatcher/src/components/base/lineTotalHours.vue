@@ -121,7 +121,7 @@ export default {
           align: "left",
           style: {
             color: "#444",
-            fontSize: "15px",
+            fontSize: "16px",
           },
         },
         dataLabels: {
