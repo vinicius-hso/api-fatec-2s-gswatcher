@@ -18,6 +18,8 @@ const authMiddleware = require('../middlewares/auth')
 
     router.get('/tasks_detalhes', controller.listAll_Task_detalhes)
 
+    router.get('/status', controller.listAll_Status)
+
     router.get('/git', controller.listAll_git)
 
     router.get('/teste/:id', controller.TESTE)
@@ -27,5 +29,6 @@ const authMiddleware = require('../middlewares/auth')
     router.post('/',controller.singlefile)
 
     router.get('/uploadButton',controller.uploadButton)
+    router.get('/main_chart',controller.main_chart)
 
 module.exports = router

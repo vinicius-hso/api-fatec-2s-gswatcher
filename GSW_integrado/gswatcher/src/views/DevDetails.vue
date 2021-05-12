@@ -1,16 +1,26 @@
 <template>
   <div>
-    <h1>{{this.$route.params.name}} {{this.$route.params.sobrenome}}</h1>
+    <br />
+    <h1>Developer</h1>
+    <v-divider></v-divider>
+    <h2 class="pa-2 font-weight-strong text-uppercase blue--text">
+      {{ this.$route.params.name }} {{ this.$route.params.sobrenome }}
+    </h2>
     <!-- Gráfico de barras -->
     <v-container>
-      <h3>Tasks per Project</h3>
       <v-divider></v-divider>
       <barDevProjs />
     </v-container>
     <!-- VISUALIZAÇÃO DOS PROJETOS EM CARDS -->
     <v-container>
-      <h3>Projects</h3>
-      <v-btn @click="treatCycle(info, devProjects)"></v-btn>
+      <h2>Projects</h2>
+      <v-col cols="12" sm="3">
+        <v-btn rounded color="blue" dark @click="treatCycle(info, devProjects)">
+          Show {{ this.$route.params.name }}
+          {{ this.$route.params.sobrenome }}'s projects
+        </v-btn>
+      </v-col>
+      <!-- <v-btn @click="treatCycle(info, devProjects)"></v-btn> -->
       <v-divider></v-divider>
       <!-- BOTÕES DE ORDENAÇÃO  -->
       <v-container class="my-5">
@@ -53,29 +63,34 @@
                       devProject.name
                     }}</v-card-title>
                     <v-card-text>
-                      <div>
+                      <div class="my-0 subtitle-1">
                         <span
-                          >Total Tasks: {{ devProject.data.totalTasks }}</span
+                          ><strong>Total Tasks:</strong>
+                          {{ devProject.data.totalTasks }}</span
                         >
                       </div>
-                      <div>
+                      <div class="my-0 subtitle-1">
                         <span
-                          >Complete Tasks:
+                          ><strong>Complete Tasks:</strong>
                           {{ devProject.data.tasksCompletas }}</span
                         >
                       </div>
-                      <div>
+                      <div class="my-0 subtitle-1">
                         <span
-                          >Incomplete Tasks:
+                          ><strong>Incomplete Tasks:</strong>
                           {{ devProject.data.tasksIncompletas }}</span
                         >
                       </div>
-                      <div>
-                        <span>Total Hours: {{ devProject.data.horas }}</span>
-                      </div>
-                      <div>
+                      <div class="my-0 subtitle-1">
                         <span
-                          >Start Date: {{ devProject.data.dataInicio }}</span
+                          ><strong>Total Hours:</strong>
+                          {{ devProject.data.horas }}</span
+                        >
+                      </div>
+                      <div class="my-0 subtitle-1">
+                        <span
+                          ><strong>Start Date:</strong>
+                          {{ devProject.data.dataInicio }}</span
                         >
                       </div>
                     </v-card-text>
@@ -167,6 +182,7 @@ export default {
           t++;
           if (elem.inicio < menor) {
             menor = elem.inicio;
+            menor = new Date(menor);
           }
         }
       });
@@ -174,7 +190,7 @@ export default {
         totalTasks: t,
         tasksCompletas: c,
         tasksIncompletas: ic,
-        horas: horas,
+        horas: horas.toFixed(2),
         dataInicio: menor,
       };
     },

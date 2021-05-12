@@ -1,7 +1,10 @@
 <template>
   <div class="projetos">
-    <h1>Projeto</h1>
-    <h2 class="pa-2 font-weight-light text-uppercase grey--text">{{this.$route.params.name}}</h2>
+    <h1>Project Details</h1>
+    <v-divider></v-divider>
+    <h2 class="pa-2 font-weight-strong text-uppercase blue--text">
+      {{ this.$route.params.name }}
+    </h2>
 
     <!-- <v-container v-if="loading">
       <div class="text-xs-center">
@@ -11,33 +14,29 @@
     </v-container> -->
 
     <v-container class="my-5">
-      <h3>Tasks Per Status</h3>
       <v-divider></v-divider>
       <barChart v-bind:project="project"> </barChart>
     </v-container>
 
     <v-container class="my-5">
-      <h3>Total Hours Per Period</h3>
       <v-divider></v-divider>
       <lineChart v-bind:project="project"></lineChart>
     </v-container>
 
     <v-container class="my-5">
-      <h3>DEVs - Completed Tasks</h3>
       <v-divider></v-divider>
+      <pieChart />
+    </v-container>
+
+    <h2>Project Developers</h2>
+    <v-divider></v-divider>
+
+    <v-container class="my-5">
       <table01 v-bind:project="project"></table01>
     </v-container>
 
     <v-container class="my-5">
-      <h3>DEVs - Incompleted Tasks</h3>
-      <v-divider></v-divider>
       <table02 />
-    </v-container>
-
-    <v-container class="my-5">
-      <h3>Conclusion Percentage</h3>
-      <v-divider></v-divider>
-      <pieChart />
     </v-container>
   </div>
 </template>
@@ -52,7 +51,7 @@ import table02 from "@/components/base/tableDevs02";
 
 export default {
   name: "projetos",
-  props: ['id'],
+  props: ["id"],
   components: {
     barChart,
     lineChart,
@@ -69,11 +68,11 @@ export default {
   computed: {
     project() {
       return this.$store.state.project;
-    }
+    },
   },
 
   mounted() {
-    this.$store.dispatch('getProject', this.$route.params.id)
+    this.$store.dispatch("getProject", this.$route.params.id);
   },
 
   // methods: {
