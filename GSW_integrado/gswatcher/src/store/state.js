@@ -2,5 +2,6 @@ export default {
     projects: [],
     project: null,
     devProjects: [],
-    unfinishedDevProjects: []
+    unfinishedDevProjects: [],
+    developers: []
 }

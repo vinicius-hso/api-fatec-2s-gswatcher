@@ -24,7 +24,7 @@ export default {
     return {
       series: [
         {
-          data: [13, 12, 11, 20, 94, 21, 9],
+          data: [0, 0, 0, 0, 0, 0, 0],
         },
       ],
       // array 'series' trata dos valores de cada status dentro do projeto

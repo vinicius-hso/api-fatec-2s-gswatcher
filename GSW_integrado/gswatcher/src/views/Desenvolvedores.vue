@@ -2,116 +2,154 @@
   <div>
     <h1>Developers</h1>
     <v-divider></v-divider>
-    <v-row align="center" class="list px-3 mx-auto">
-      <v-col cols="12" md="8">
-        <v-text-field v-model="title" label="Search by Title"></v-text-field>
-        <v-col cols="12" md="4">
-          <v-btn small @click="searchTitle"> Search </v-btn>
+
+    <v-container class="pa-5">
+      <v-row align="align">
+        <v-col>
+
+
+<template>
+  <v-card>
+    <v-card-title>
+      <v-text-field
+        v-model="search"
+        append-icon="mdi-magnify"
+        label="Search"
+        single-line
+        hide-details
+      ></v-text-field>
+    </v-card-title>
+    <v-data-table
+      :headers="headers"
+      :items="arr"
+      :search="search"
+    ></v-data-table>
+  </v-card>
+</template>
+          
+          <!-- <v-simple-table>
+            <template v-slot:default>
+              <thead>
+                <tr>
+                  <th class="text-left">Name</th>
+                  <th class="text-left">Tasks</th>
+                  <th class="text-left">Detalhes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="item in developers" :key="item.nome">
+                  <td>{{ item.nome }} {{ item.sobrenome }}</td>
+                  <td>{{ item.dev_id }}</td>
+                  <td> 
+                    <v-btn :to="{ name: 'devdetails', params: { id: dev.id, name: dev.nome, sobrenome: dev.sobrenome }}" outlined text>
+                
+                    </v-btn>
+                  </td>
+                </tr>
+              </tbody>
+            </template>
+          </v-simple-table> -->
+
+
+
         </v-col>
-      </v-col>
-
-      <v-col v-for="dev in devs" :key="dev.id">
-        <!-- Arrumar o tamanho dos Cards -->
-        <v-flex>
-          <!--xs6 sm4 md6---------------------------------------------------------------------->
-          <v-layout row wrap>
-            <v-flex xs12 lg12>
-              <v-card
-                :loading="loading"
-                :class="`mx-auto my-4 project ${dev.id}`"
-                width="420"
-              >
-                <v-card-title class="title">{{ dev.nome }}</v-card-title>
-                <v-card-text>
-                  <div>Total Tasks: {{ dev.nome }}</div>
-                </v-card-text>
-                <v-card-actions class="my-0">
-                  <v-btn
-                    :to="{
-                      name: 'devdetails',
-                      params: { id: dev.id, name: dev.nome, sobrenome: dev.sobrenome },
-                    }"
-                    outlined
-                    text
-                  >
-                    Details
-                    <v-icon>mdi-google-analytics</v-icon>
-                  </v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-flex>
-          </v-layout>
-
-          <!---------------------------------------------------------------------------------->
-        </v-flex>
-      </v-col>
-
-      <v-col cols="12" sm="12">
-        <v-card class="mx-auto" tile>
-          <v-card-title>Tutorials</v-card-title>
-
-          <v-data-table
-            :headers="headers"
-            :items="devs"
-            disable-pagination
-            :hide-default-footer="true"
-          >
-          </v-data-table>
-        </v-card>
-      </v-col>
-    </v-row>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
-import DataService from "../services/DataService";
-
-// @ is an alias to /src
-
-// import barChart from '@/components/base/barChart';
-// import lineChart from '@/components/base/lineChart';
-
 export default {
   name: "Desenvolvedores",
-  //   components: {
-  //     barChart,
-  //     lineChart,
-  //   },
-  data() {
-    return {
-      devs: [],
-      title: "",
-      headers: [
-        { text: "Id", align: "start", sortable: false, value: "id" },
-        { text: "Nome", value: "nome", sortable: false },
-        { text: "Sobrenome", value: "sobrenome", sortable: false },
-        { text: "Foto", value: "foto", sortable: false },
-      ],
-    };
-  },
-  methods: {
-    retrieveDevs() {
-      DataService.getAllDevs()
-        .then((response) => {
-          this.devs = response.data.map(this.getDisplayDevs);
-          console.log(response.data);
-        })
-        .catch((e) => {
-          console.log(e);
-        });
-    },
-    getDisplayDevs(devs) {
+  data () {
       return {
-        id: devs.dev_id,
-        nome: devs.nome,
-        sobrenome: devs.sobrenome,
-        email: devs.email,
-        foto: devs.foto,
-      };
+        search: '',
+        arr: [],
+        jso: {},
+        headers: [
+          {
+            text: 'Dessert (100g serving)',
+            align: 'start',
+            filterable: false,
+            value: 'name',
+          },
+          { text: 'Calories', value: 'calories' },
+          { text: 'Fat (g)', value: 'fat' },
+        ],
+        desserts: [
+          {
+            name: 'Frozen Yogurt',
+            calories: 159,
+            fat: 6.0,
+          },
+          {
+            name: 'Ice cream sandwich',
+            calories: 237,
+            fat: 9.0,
+          },
+          {
+            name: 'Eclair',
+            calories: 262,
+            fat: 16.0,
+          },
+          {
+            name: 'Cupcake',
+            calories: 305,
+            fat: 3.7,
+          },
+          {
+            name: 'Gingerbread',
+            calories: 356,
+            fat: 16.0,
+          },
+          {
+            name: 'Jelly bean',
+            calories: 375,
+            fat: 0.0,
+          },
+          {
+            name: 'Lollipop',
+            calories: 392,
+            fat: 0.2,
+          },
+          {
+            name: 'Honeycomb',
+            calories: 408,
+            fat: 3.2,
+          },
+          {
+            name: 'Donut',
+            calories: 452,
+            fat: 25.0,
+          },
+          {
+            name: 'KitKat',
+            calories: 518,
+            fat: 26.0,
+          },
+        ],
+      }
+    },
+    methods: {
+      setArray(){
+        this.developers.forEach((elem) =>{
+          this.jso = {
+            nome: elem.nome + elem.sobrenome,
+            dev_id: elem.dev_id,
+            email: elem.email
+          }
+          this.arr.push(this.jso)
+        })
+      }
+
+    },
+  computed: {
+    developers() {
+      return this.$store.state.developers;
     },
   },
   mounted() {
-    this.retrieveDevs();
+    this.$store.dispatch("getDevelopers");
   },
 };
 </script>

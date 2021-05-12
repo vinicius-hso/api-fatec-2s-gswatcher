@@ -27,3 +27,10 @@ export const getunfinishedDevProjectsnfinished = ({ commit }, devId) =>{
         commit('SET_DEVPROJECTS_UNFINISHED', response.data);
     })
 };
+
+export const getDevelopers = ({ commit }) =>{
+    axios.get('http://127.0.0.1:3000/api/devs') //ip local para prevenir CORS
+    .then(response => {
+        commit('SET_DEVELOPERS', response.data);
+    })
+};

@@ -10,3 +10,6 @@ export const SET_DEVPROJECTS = (state, devProjects) => {
 export const SET_DEVPROJECTS_UNFINISHED = (state, unfinishedDevProjects) => {
     state.unfinishedDevProjects = unfinishedDevProjects;
 }
+export const SET_DEVELOPERS = (state, developers) => {
+    state.developers = developers;
+}

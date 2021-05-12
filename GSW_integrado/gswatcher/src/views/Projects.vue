@@ -1,5 +1,5 @@
 <template>
-  <div class="projects">
+  <div class="home">
     <h1>Tasks Per Project</h1>
     <v-divider></v-divider>
     <v-container class="my-5">
@@ -91,7 +91,7 @@ import mainBarChart from "@/components/base/mainBarChart";
 // import DataService from "../services/DataService";
 
 export default {
-  name: "Projects",
+  name: "Home",
   components: {
     mainBarChart,
   },
@@ -114,7 +114,6 @@ export default {
   },
   mounted() {
     this.$store.dispatch('getProjects');
-
   },
 };
 </script>
