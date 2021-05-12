@@ -18,6 +18,8 @@ const authMiddleware = require('../middlewares/auth')
 
     router.get('/tasks_detalhes', controller.listAll_Task_detalhes)
 
+    router.get('/status', controller.listAll_Status)
+
     router.get('/git', controller.listAll_git)
 
     router.get('/teste/:id', controller.TESTE)

@@ -2,50 +2,52 @@ const db = require('../config/database')
 
 // TESTE
 exports.TESTE = async (req, res) => {
-  const input = req.params.id
+  const id = req.params.id
   const response = await db.query(
     `select * from tbl_projeto 
     inner join tbl_task on tbl_task.projeto_id = tbl_projeto.projeto_id
     inner join tbl_task_detalhes on tbl_task.task_detalhes = tbl_task_detalhes.task_detalhes_id
     inner join tbl_status on tbl_task_detalhes.task_status_id = tbl_status.status_id
-    where tbl_projeto.projeto_id = '${input}' and tbl_status.status_nome = 'DONE'`,
+    where tbl_projeto.projeto_id = '${id}' and tbl_status.status_nome = 'DONE'`,
     );
     res.status(200).send(response.rows);
   }; 
 
 // TESTE
 exports.TESTE2 = async (req, res) => {
-  const input = req.params.id
-  const input2 = req.query.hrs
-  const input3 = req.query.proj
+  const id = req.params.id
+  const hrs = req.query.hrs
+  const project = req.query.proj
 
   const response = await db.query(
-    `select * from tbl_projeto 
+    `select tbl_projeto.projeto_id, tbl_projeto.projeto_nome, tbl_task.task_id,tbl_task.dev_id,
+     tbl_task.nome, tbl_task_detalhes.inicio, tbl_task_detalhes.termino, tbl_task_Detalhes.horas,
+      tbl_status.status_id, tbl_status.status_nome from tbl_projeto 
     inner join tbl_task on tbl_task.projeto_id = tbl_projeto.projeto_id
     inner join tbl_task_detalhes on tbl_task.task_detalhes = tbl_task_detalhes.task_detalhes_id
     inner join tbl_status on tbl_task_detalhes.task_status_id = tbl_status.status_id
-    where tbl_task.dev_id = '${input}'`,
+    where tbl_task.dev_id = '${id}'`,
     );
     
-    if (input2 != undefined || input3 != undefined){
-      if (input2 == 'null') {
+    if (hrs != undefined || project != undefined){
+      if (hrs == 'null') {
         let hrsNull = await response.rows.filter(hr => hr.horas == null) 
-        if (input3 != undefined){
-          let proj = await hrsNull.filter(proj => proj.projeto_id == input3)
+        if (project != undefined){
+          let proj = await hrsNull.filter(proj => proj.projeto_id == project)
           res.status(200).send(proj)
         } else {
           res.status(200).send(hrsNull)
         }
-      } else if (input2 == 'notnull') {
+      } else if (hrs == 'notnull') {
         let hrsNull = await response.rows.filter(hr => hr.horas != null)
-        if (input3 != undefined){
-          let proj = await hrsNull.filter(proj => proj.projeto_id == input3)
+        if (project != undefined){
+          let proj = await hrsNull.filter(proj => proj.projeto_id == project)
           res.status(200).send(proj)
         } else {
           res.status(200).send(hrsNull)
         }
-      } else if (input3 != undefined){
-        let proj = await response.rows.filter(proj => proj.projeto_id == input3)
+      } else if (project != undefined){
+        let proj = await response.rows.filter(proj => proj.projeto_id == project)
         res.status(200).send(proj)
       }
     } else res.status(200).send(response.rows)
@@ -53,13 +55,15 @@ exports.TESTE2 = async (req, res) => {
 
 // TESTE
 exports.TESTE3 = async (req, res) => {
-  const input = req.params.id
+  const id = req.params.id
   const response = await db.query(
-    `select * from tbl_projeto 
+    `select tbl_projeto.projeto_id, tbl_projeto.projeto_nome, tbl_task.task_id,tbl_task.dev_id,
+     tbl_task.nome, tbl_task_detalhes.inicio, tbl_task_detalhes.termino, tbl_task_Detalhes.horas,
+      tbl_status.status_id, tbl_status.status_nome from tbl_projeto 
     inner join tbl_task on tbl_task.projeto_id = tbl_projeto.projeto_id
     inner join tbl_task_detalhes on tbl_task.task_detalhes = tbl_task_detalhes.task_detalhes_id
     inner join tbl_status on tbl_task_detalhes.task_status_id = tbl_status.status_id
-    where tbl_projeto.projeto_id = '${input}'`,
+    where tbl_projeto.projeto_id = '${id}'`,
     );
     res.status(200).send(response.rows);
   }; 
@@ -67,7 +71,8 @@ exports.TESTE3 = async (req, res) => {
 // buscando todos os devs
 exports.listAll_TBL_DEV = async (req, res) => {
     const response = await db.query(
-      `SELECT D.nome,(D.Sobrenome),(D.email),(D.foto),(SELECT D.dev_id),(SELECT COUNT(T.dev_id) FROM tbl_task T WHERE T.dev_id = D.dev_id) AS total_de_task FROM tbl_dev D GROUP BY D.dev_id`,
+      `SELECT D.nome, D.Sobrenome , D.email , D.foto, D.dev_id ,(SELECT COUNT(T.dev_id) 
+      FROM tbl_task T WHERE T.dev_id = D.dev_id) AS total_de_task FROM tbl_dev D GROUP BY D.dev_id`,
     );
     res.status(200).send(response.rows);
   };
@@ -82,7 +87,8 @@ exports.findDevByID = async (req,res) => {
 // buscando todos os projetos
 exports.listAll_Projects = async (req, res) => {
     const response = await db.query(
-        `SELECT P.projeto_nome,(SELECT P.projeto_id),(SELECT COUNT(T.projeto_id) FROM tbl_task T WHERE T.projeto_id = P.projeto_id) AS total_de_task FROM tbl_projeto P GROUP BY P.projeto_id`,
+        `SELECT P.projeto_nome,(SELECT P.projeto_id),(SELECT COUNT(T.projeto_id) 
+        FROM tbl_task T WHERE T.projeto_id = P.projeto_id) AS total_de_task FROM tbl_projeto P GROUP BY P.projeto_id`,
       );
       res.status(200).send(response.rows);
     };
@@ -128,21 +134,6 @@ exports.listAll_Status = async (req, res) => {
     );
     res.status(200).send(response.rows);
   };    
-  
-// Buscando quantas tasks tem um project // Rota desnecessaria, dado incluido na rota /projetos
-/*
-exports.listAll_Task_per_project = async (req, res) => {
-  const proj = req.params.id
-  const response = await db.query( 
-    `select count(*) from tbl_task where projeto_id = ${proj}`,
-    );
-    
-    res.status(200).send(response.rows)
-  };
-
-*/
-
-
 
 //POST route
 exports.uploadButton = async (req, res) => {
@@ -159,10 +150,7 @@ exports.uploadButton = async (req, res) => {
 
 };
 
-  
-
   exports.singlefile = async (req, res) => {
-
 
     if (!req.files) {
         return res.status(500).send({ msg: "file is not found" })
@@ -181,7 +169,6 @@ exports.uploadButton = async (req, res) => {
     });
 
 }
-
 
 // TESTE
 exports.main_chart = async (req, res) => {
