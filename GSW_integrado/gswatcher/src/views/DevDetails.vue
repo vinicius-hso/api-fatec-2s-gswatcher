@@ -60,27 +60,32 @@
                     <v-card-text>
                       <div>
                         <span
-                          >Total Tasks: {{ devProject.data.totalTasks }}</span
+                          ><strong>Total Tasks:</strong>
+                          {{ devProject.data.totalTasks }}</span
                         >
                       </div>
                       <div>
                         <span
-                          >Complete Tasks:
+                          ><strong>Complete Tasks:</strong>
                           {{ devProject.data.tasksCompletas }}</span
                         >
                       </div>
                       <div>
                         <span
-                          >Incomplete Tasks:
+                          ><strong>Incomplete Tasks:</strong>
                           {{ devProject.data.tasksIncompletas }}</span
                         >
                       </div>
                       <div>
-                        <span>Total Hours: {{ devProject.data.horas }}</span>
+                        <span
+                          ><strong>Total Hours:</strong>
+                          {{ devProject.data.horas }}</span
+                        >
                       </div>
                       <div>
                         <span
-                          >Start Date: {{ devProject.data.dataInicio }}</span
+                          ><strong>Start Date:</strong>
+                          {{ devProject.data.dataInicio }}</span
                         >
                       </div>
                     </v-card-text>
@@ -172,6 +177,7 @@ export default {
           t++;
           if (elem.inicio < menor) {
             menor = elem.inicio;
+            menor = new Date(menor);
           }
         }
       });
@@ -179,7 +185,7 @@ export default {
         totalTasks: t,
         tasksCompletas: c,
         tasksIncompletas: ic,
-        horas: horas,
+        horas: horas.toFixed(2),
         dataInicio: menor,
       };
     },
