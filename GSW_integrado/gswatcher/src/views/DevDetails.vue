@@ -1,6 +1,11 @@
 <template>
   <div>
-    <h1>{{this.$route.params.name}} {{this.$route.params.sobrenome}}</h1>
+    <br />
+    <h1>Developer</h1>
+    <v-divider></v-divider>
+    <h2 class="pa-2 font-weight-strong text-uppercase blue--text">
+      {{ this.$route.params.name }} {{ this.$route.params.sobrenome }}
+    </h2>
     <!-- Gráfico de barras -->
     <v-container>
       <h3>Tasks per Project</h3>
