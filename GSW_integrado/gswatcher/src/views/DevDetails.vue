@@ -63,31 +63,31 @@
                       devProject.name
                     }}</v-card-title>
                     <v-card-text>
-                      <div>
+                      <div class="my-0 subtitle-1">
                         <span
                           ><strong>Total Tasks:</strong>
                           {{ devProject.data.totalTasks }}</span
                         >
                       </div>
-                      <div>
+                      <div class="my-0 subtitle-1">
                         <span
                           ><strong>Complete Tasks:</strong>
                           {{ devProject.data.tasksCompletas }}</span
                         >
                       </div>
-                      <div>
+                      <div class="my-0 subtitle-1">
                         <span
                           ><strong>Incomplete Tasks:</strong>
                           {{ devProject.data.tasksIncompletas }}</span
                         >
                       </div>
-                      <div>
+                      <div class="my-0 subtitle-1">
                         <span
                           ><strong>Total Hours:</strong>
                           {{ devProject.data.horas }}</span
                         >
                       </div>
-                      <div>
+                      <div class="my-0 subtitle-1">
                         <span
                           ><strong>Start Date:</strong>
                           {{ devProject.data.dataInicio }}</span

@@ -23,7 +23,10 @@
               >
                 <v-card-title class="title">{{ dev.nome }}</v-card-title>
                 <v-card-text>
-                  <div>Total Tasks: {{ dev.nome }}</div>
+                  <div class="my-0 subtitle-1">
+                    <span><strong>Total Tasks: </strong></span>
+                    <span>{{ dev.nome }}</span>
+                  </div>
                 </v-card-text>
                 <v-card-actions class="my-0">
                   <v-btn

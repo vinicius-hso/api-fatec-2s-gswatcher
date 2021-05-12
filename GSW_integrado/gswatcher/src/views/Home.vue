@@ -20,7 +20,7 @@
     <v-divider></v-divider>
     <v-container class="my-5">
       <v-layout row class="mb-3">
-       <v-btn small flat color="grey" @click="sortBy('name')">
+        <v-btn small flat color="grey" @click="sortBy('name')">
           <v-icon left small>mdi-folder</v-icon>
           <span class="caption text-lowercase">Project</span>
         </v-btn>
@@ -44,7 +44,11 @@
     <v-container>
       <v-row>
         <!--ALTERAÇÃO NO COLS-->
-        <v-col v-for="project in projects" :key="project.projeto_id" :project="project">
+        <v-col
+          v-for="project in projects"
+          :key="project.projeto_id"
+          :project="project"
+        >
           <!-- Arrumar o tamanho dos Cards -->
           <v-flex>
             <!--xs6 sm4 md6---------------------------------------------------------------------->
@@ -59,16 +63,31 @@
                     <!-- <v-img :src="project.user.avatar" height="120"></v-img> -->
                   </v-responsive>
 
-                  <v-card-title class="title">{{ project.projeto_nome }}</v-card-title>
+                  <v-card-title class="title">{{
+                    project.projeto_nome
+                  }}</v-card-title>
                   <v-card-text>
                     <div class="my-0 subtitle-1">
-                      <!--ALTERAÇÃO-->
-                      <p>||</p>
+                      <span><strong>Start Date: </strong></span>
+                      <span>||</span>
                     </div>
-                    <div>Total Tasks: {{ project.total_de_task }}</div>
+                    <div class="my-0 subtitle-1">
+                      <span><strong>Total Tasks: </strong></span>
+                      <span>{{ project.total_de_task }}</span>
+                    </div>
                   </v-card-text>
                   <v-card-actions class="my-0">
-                    <v-btn :to="{ name: 'projetos', params: {id: project.projeto_id, name: project.projeto_nome}}" outlined text>
+                    <v-btn
+                      :to="{
+                        name: 'projetos',
+                        params: {
+                          id: project.projeto_id,
+                          name: project.projeto_nome,
+                        },
+                      }"
+                      outlined
+                      text
+                    >
                       <!-- ROTA DE TESTE  -->
                       <!-- /about - carrega depois de alterar a página -->
                       Details
@@ -118,11 +137,10 @@ export default {
   computed: {
     projects() {
       return this.$store.state.projects;
-    }
+    },
   },
   mounted() {
-    this.$store.dispatch('getProjects');
-
+    this.$store.dispatch("getProjects");
   },
 };
 </script>
