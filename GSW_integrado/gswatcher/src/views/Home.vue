@@ -20,7 +20,7 @@
     <v-divider></v-divider>
     <v-container class="my-5">
       <v-layout row class="mb-3">
-        <v-btn small flat color="grey" @click="sortBy('nome')">
+       <v-btn small flat color="grey" @click="sortBy('name')">
           <v-icon left small>mdi-folder</v-icon>
           <span class="caption text-lowercase">Project</span>
         </v-btn>
@@ -28,7 +28,7 @@
           <v-icon left small>mdi-calendar</v-icon>
           <span class="caption text-lowercase">Started At</span>
         </v-btn> -->
-        <v-btn small flat color="grey" @click="sortBy('total')">
+        <v-btn small flat color="grey" @click="sortBy('tasks')">
           <v-icon left small>mdi-list-status</v-icon>
           <span class="caption text-lowercase">Total Tasks</span>
         </v-btn>
@@ -44,7 +44,7 @@
     <v-container>
       <v-row>
         <!--ALTERAÇÃO NO COLS-->
-        <v-col v-for="project in projs" :key="project.id">
+        <v-col v-for="project in projects" :key="project.projeto_id" :project="project">
           <!-- Arrumar o tamanho dos Cards -->
           <v-flex>
             <!--xs6 sm4 md6---------------------------------------------------------------------->
@@ -52,23 +52,23 @@
               <v-flex xs12 lg12>
                 <v-card
                   :loading="loading"
-                  :class="`mx-auto my-4 project ${project.id}`"
+                  :class="`mx-auto my-4 project ${project.projeto_id}`"
                   width="420"
                 >
                   <v-responsive>
                     <!-- <v-img :src="project.user.avatar" height="120"></v-img> -->
                   </v-responsive>
 
-                  <v-card-title class="title">{{ project.nome }}</v-card-title>
+                  <v-card-title class="title">{{ project.projeto_nome }}</v-card-title>
                   <v-card-text>
                     <div class="my-0 subtitle-1">
                       <!--ALTERAÇÃO-->
                       <p>||</p>
                     </div>
-                    <div>Total Tasks: {{ project.total }}</div>
+                    <div>Total Tasks: {{ project.total_de_task }}</div>
                   </v-card-text>
                   <v-card-actions class="my-0">
-                    <v-btn :to="`/about/${project.id}`" outlined text>
+                    <v-btn :to="{ name: 'projetos', params: {id: project.projeto_id, name: project.projeto_nome}}" outlined text>
                       <!-- ROTA DE TESTE  -->
                       <!-- /about - carrega depois de alterar a página -->
                       Details
@@ -96,10 +96,10 @@
 
 <script>
 import mainBarChart from "@/components/base/mainBarChart";
-import DataService from "../services/DataService";
+// import DataService from "../services/DataService";
 
 export default {
-  name: "Home",
+  name: "Projects",
   components: {
     mainBarChart,
   },
@@ -110,34 +110,19 @@ export default {
     };
   },
   methods: {
-    log(data) {
-      console.log("data");
-      console.log(data.id);
-    },
     sortBy(prop) {
-      this.projs.sort((a, b) => (a[prop] < b[prop] ? -1 : 1));
-      console.log(this.projs);
-    },
-    retrieveProjs() {
-      DataService.getAllProjs()
-        .then((response) => {
-          this.projs = response.data.map(this.getDisplayProjs);
-          // console.log(response.data);
-        })
-        .catch((e) => {
-          console.log(e);
-        });
-    },
-    getDisplayProjs(proj) {
-      return {
-        id: proj.projeto_id,
-        nome: proj.projeto_nome,
-        total: proj.total_de_task,
-      };
+      this.projects.sort((a, b) => (a[prop] < b[prop] ? -1 : 1));
+      console.log(this.projects);
     },
   },
+  computed: {
+    projects() {
+      return this.$store.state.projects;
+    }
+  },
   mounted() {
-    this.retrieveProjs();
+    this.$store.dispatch('getProjects');
+
   },
 };
 </script>
