@@ -29,7 +29,11 @@
                   <v-btn
                     :to="{
                       name: 'devdetails',
-                      params: { id: dev.id, name: dev.nome, sobrenome: dev.sobrenome },
+                      params: {
+                        id: dev.id,
+                        name: dev.nome,
+                        sobrenome: dev.sobrenome,
+                      },
                     }"
                     outlined
                     text
@@ -46,10 +50,9 @@
         </v-flex>
       </v-col>
 
-      <v-col cols="12" sm="12">
+      <!-- <v-col cols="12" sm="12">
         <v-card class="mx-auto" tile>
           <v-card-title>Tutorials</v-card-title>
-
           <v-data-table
             :headers="headers"
             :items="devs"
@@ -58,7 +61,7 @@
           >
           </v-data-table>
         </v-card>
-      </v-col>
+      </v-col> -->
     </v-row>
   </div>
 </template>
