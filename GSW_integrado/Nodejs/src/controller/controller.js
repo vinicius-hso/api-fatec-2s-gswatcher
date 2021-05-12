@@ -67,7 +67,7 @@ exports.TESTE3 = async (req, res) => {
 // buscando todos os devs
 exports.listAll_TBL_DEV = async (req, res) => {
     const response = await db.query(
-      'SELECT * FROM TBL_DEV ORDER BY nome ASC',
+      `SELECT D.nome,(D.Sobrenome),(D.email),(D.foto),(SELECT D.dev_id),(SELECT COUNT(T.dev_id) FROM tbl_task T WHERE T.dev_id = D.dev_id) AS total_de_task FROM tbl_dev D GROUP BY D.dev_id`,
     );
     res.status(200).send(response.rows);
   };

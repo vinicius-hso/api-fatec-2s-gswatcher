@@ -4,7 +4,6 @@ const crypto = require('crypto')
 const jwt = require('jsonwebtoken')
 const authConfig = require('../config/auth.json')
 
-
 function generateToken(params = {}){
     return jwt.sign(params, authConfig.secret, {
         expiresIn: 86400, // token expira a cada 24 horas
@@ -27,7 +26,7 @@ exports.register = async (req, res) => {
                 token: generateToken({ id: user.id })
             })
         } catch (error) {
-            res.send({ error: 'Registration failed. catch '})
+            return res.status(400).send({ error: 'Registration failed.' })
         }
     }
 
@@ -37,10 +36,10 @@ exports.authenticate = async (req,res) => {
         const user = await User.findOne({where: { email }})
 
         if (!user)
-            return res.status(400).send({ error: 'User not found'})
+            return res.status(400).send({ error: 'User not found' })
         
         if (!await bcrypt.compare(password, user.password)) // comparando senha que o user está tentando com a que está armazenada no db
-            return res.status(400).send({error: 'Invalid password'})
+            return res.status(400).send({error: 'Invalid password' })
 
         user.password = undefined // para a senha não voltar no corpo da requisição
 
