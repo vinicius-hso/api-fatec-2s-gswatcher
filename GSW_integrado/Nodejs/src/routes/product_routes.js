@@ -27,5 +27,6 @@ const authMiddleware = require('../middlewares/auth')
     router.post('/',controller.singlefile)
 
     router.get('/uploadButton',controller.uploadButton)
+    router.get('/main_chart',controller.main_chart)
 
 module.exports = router

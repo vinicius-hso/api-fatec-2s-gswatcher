@@ -183,6 +183,32 @@ exports.uploadButton = async (req, res) => {
 }
 
 
+// TESTE
+exports.main_chart = async (req, res) => {
+  const saveTableContent = require('../models/saveTableContent')
+  const count_completas = require('../models/count_completas')
+  const count_incompletas = require('../models/count_incompletas')
+
+        const tbl_projeto = await saveTableContent('tbl_projeto')
+
+        let output = tbl_projeto.map(tbl_projeto => {
+        let properties = {
+        "projeto_nome":tbl_projeto.projeto_nome,
+        "tasks_completas": 0,
+        "tasks_incompletas": 0,
+        };
+        return properties;});
+
+        for (var i = 0, l = tbl_projeto.length; i < l; i++) {
+            output[i].tasks_completas = await count_completas(tbl_projeto[i].projeto_nome);
+            output[i].tasks_incompletas = await count_incompletas(tbl_projeto[i].projeto_nome);
+        }
+
+    res.status(200).send(output);
+  }; 
+
+
+
 
 
 
