@@ -8,14 +8,19 @@
     </h2>
     <!-- Gráfico de barras -->
     <v-container>
-      <h3>Tasks per Project</h3>
       <v-divider></v-divider>
       <barDevProjs />
     </v-container>
     <!-- VISUALIZAÇÃO DOS PROJETOS EM CARDS -->
     <v-container>
-      <h3>Projects</h3>
-      <v-btn @click="treatCycle(info, devProjects)"></v-btn>
+      <h2>Projects</h2>
+      <v-col cols="12" sm="3">
+        <v-btn rounded color="blue" dark @click="treatCycle(info, devProjects)">
+          Show {{ this.$route.params.name }}
+          {{ this.$route.params.sobrenome }}'s projects
+        </v-btn>
+      </v-col>
+      <!-- <v-btn @click="treatCycle(info, devProjects)"></v-btn> -->
       <v-divider></v-divider>
       <!-- BOTÕES DE ORDENAÇÃO  -->
       <v-container class="my-5">

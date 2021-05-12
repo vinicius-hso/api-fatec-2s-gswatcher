@@ -74,6 +74,7 @@ export default {
           height: "auto",
           width: "100%",
         },
+
         plotOptions: {
           bar: {
             horizontal: false,
@@ -147,7 +148,7 @@ export default {
           colors: ["#fff"],
         },
         title: {
-          text: "",
+          text: "Tasks by Project",
         },
         xaxis: {
           labels: {
