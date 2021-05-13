@@ -41,9 +41,9 @@
               </template>
               <template v-slot:expanded-item="{ headers, item }">
                 <td :colspan="headers.length">
-                  More info about {{ item.nome }}
+                  More info about 
                   <a :href="'/devdetails/' + item.dev_id + '?nome=' + item.nome" class="text-decoration-none"
-                    >Non-underlined link</a
+                    > {{ item.nome }}</a
                   >
                 </td>
 
