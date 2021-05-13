@@ -97,7 +97,9 @@
                       </div>
                     </v-card-text>
                     <v-card-actions class="my-0">
-                      <v-btn :to="`/totalhoursdev/`" outlined text>
+                      <!-- <v-btn :to="`/totalhoursdev/`" outlined text> -->
+                      <v-btn :to="{ name: 'totalhoursdev', params: {id: devProject.data.id, project_name: devProject.name, name: dev_name, dev_id: dev_id}}" outlined text>
+
                         Details
                         <v-icon>mdi-google-analytics</v-icon>
                       </v-btn>
@@ -123,6 +125,8 @@ export default {
   },
   data: function () {
     return {
+      dev_name: this.$route.query.nome,
+      dev_id: this.$route.params.id,
       projs: [],
       info: {},
     };
@@ -173,6 +177,7 @@ export default {
       var t = 0;
       var c = 0;
       var ic = 0;
+      var id = '';
       projectObject.forEach((elem) => {
         if (elem.projeto_nome == projectName) {
           if (elem.horas != null) {
@@ -187,8 +192,10 @@ export default {
             menor = new Date(menor);
           }
         }
+        id = elem.projeto_id
       });
       return {
+        id: id,
         totalTasks: t,
         tasksCompletas: c,
         tasksIncompletas: ic,

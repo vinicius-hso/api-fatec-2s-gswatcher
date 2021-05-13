@@ -13,3 +13,9 @@ export const SET_DEVPROJECTS_UNFINISHED = (state, unfinishedDevProjects) => {
 export const SET_DEVELOPERS = (state, developers) => {
     state.developers = developers;
 }
+export const SET_PROJECTSBYDEV = (state, projectByDeveloper) => {
+    state.projectByDeveloper = projectByDeveloper;
+}
+export const SET_COMPLTASKS = (state, compltask) => {
+    state.compltask = compltask;
+}

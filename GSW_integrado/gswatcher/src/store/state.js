@@ -3,5 +3,7 @@ export default {
     project: null,
     devProjects: [],
     unfinishedDevProjects: [],
-    developers: []
+    developers: [],
+    projectByDeveloper: [],
+    compltask: []
 }

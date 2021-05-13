@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h1> DEV Robinho </h1>
+    <h1> {{ this.$route.params.name }} </h1>
     <v-divider></v-divider>
     <br />
     
      <h2 class="pa-2 font-weight-light text-uppercase grey--text">
-      [Batista, Moreira and Pereira LTDA] - Monitored multi-state installation
+      {{ this.$route.params.project_name }}
     </h2>
-
+    
     <!-- gráfico de linhas -->
     <v-container class="my-5">
       <lineTotalHours />
@@ -25,8 +25,6 @@
 import lineTotalHours from "@/components/base/lineTotalHours";
 import pieDevContribution from "@/components/base/pieDevContribution";
 
-import DataService from "../services/DataService";
-
 export default {
   name: "TotalHoursDev",
   components: {
@@ -43,30 +41,20 @@ export default {
       console.log("data");
       console.log(data.id);
     },
-    sortBy(prop) {
-      this.projs.sort((a, b) => (a[prop] < b[prop] ? -1 : 1));
-      console.log(this.projs);
-    },
-    retrieveProjs() {
-      DataService.getAllProjs()
-        .then((response) => {
-          this.projs = response.data.map(this.getDisplayProjs);
-          // console.log(response.data);
-        })
-        .catch((e) => {
-          console.log(e);
-        });
-    },
-    getDisplayProjs(proj) {
-      return {
-        id: proj.projeto_id,
-        nome: proj.projeto_nome,
-        total: proj.total_de_task,
-      };
-    },
+    
+  },
+  computed: {
+    projectByDeveloper() {
+      return this.$store.state.projectByDeveloper;
+    }
   },
   mounted() {
-    this.retrieveProjs();
+    // this.$store.dispatch('getProjectByDev', this.$route.params.dev_id, this.$route.params.id);
+    this.$store.dispatch({
+      type: 'getProjectByDev',
+      devId: this.$route.params.dev_id,
+      projId: this.$route.params.id
+    });
   },
 };
 </script>

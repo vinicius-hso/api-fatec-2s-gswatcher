@@ -1,6 +1,7 @@
 <template>
   <div class="mainBarChart">
     <div class="chart">
+      <!-- <v-btn @click="setData(compltask)"></v-btn> -->
       <div id="chart" class="chart-wrapper">
         <!-- original: width="1000"------------------------------------------------------------------>
         <!-- original: type="bar"------------------------------------------------------------------>
@@ -13,7 +14,7 @@
         ></apexchart>
       </div>
     </div>
-  </div>
+  </div>     
 </template>
 
 <script>
@@ -21,30 +22,17 @@ export default {
   name: "mainBarChart",
   data() {
     return {
+      tasksCompleted: [],
+      tasksIncompleted: [],
+      projectName: [],
       series: [
         {
-          data: [
-            5,
-            8,
-            9,
-            3,
-            9,
-            13,
-            8,
-            9,
-            9,
-            8,
-            7,
-            8,
-            9,
-            13,
-            10,
-            11,
-            4,
-            10,
-            8,
-            10,
-          ],
+          name: 'Complete',
+          data: [44, 55, 41, 67, 22, 43, 44, 55, 41, 67, 22, 43]
+        }, {
+          name: 'Incomplete',
+          data: [13, 23, 20, 8, 13, 27, 13, 23, 20, 8, 13, 27]
+        
         },
       ],
       // array 'series' trata dos valores de cada status dentro do projeto
@@ -54,6 +42,7 @@ export default {
           width: "100%",
           height: "auto",
           type: "bar",
+          stacked: true,
         },
         plotOptions: {
           bar: {
@@ -114,16 +103,6 @@ export default {
             "[Santos - Batista Comércio]",
             "[Souza Comércio e Associados]",
             "[Xavier EIRELI S.A.]",
-            "[Albuquerque Albuquerque and Carvalho Comércio]",
-            "[Batista Moreira and Pereira LTDA]",
-            "[Carvalho Costa and Costa e Associados]",
-            "[Costa Comércio Comércio]",
-            "[Costa LTDA S.A.]",
-            "[Melo Melo and Santos e Associados]",
-            "[Pereira - Barros Comércio]",
-            "[Santos - Batista Comércio]",
-            "[Souza Comércio e Associados]",
-            "[Xavier EIRELI S.A.]",
           ],
           position: "bottom",
           axisBorder: {
@@ -173,10 +152,82 @@ export default {
             fontSize: "15px",
           },
         },
-        colors: ["#304758"],
+        colors: ['#F44336', '#E91E63', '#9C27B0']
       },
     };
   },
+
+  computed: {
+      compltask() {
+        return this.$store.state.compltask;
+      }
+    },
+ 
+
+  
+
+  watch: {
+    compltask(){
+      this.setData(this.compltask)
+    }
+  },
+
+  mounted(){
+    this.$store.dispatch("getCompleteTask");
+  },
+    
+  methods: {
+    setData(compltask){
+        this.projectName =  []
+        this.tasksCompleted =  []
+        this.tasksIncompleted =  []
+      console.log(compltask)
+      
+      compltask.forEach((elem) => {
+        this.projectName.push(elem.projeto_nome)
+        this.tasksCompleted.push(elem.tasks_completas)
+        this.tasksIncompleted.push(elem.tasks_incompletas)
+      })
+
+      console.log(this.projectName)
+      console.log(this.tasksCompleted)
+      console.log(this.tasksIncompleted)
+
+
+       console.log(this.series.name)
+
+       this.series = [
+        {
+          name: 'Complete',
+          data: this.tasksCompleted,
+        }, {
+          name: 'Incomplete',
+          data: this.tasksIncompleted
+        
+        },
+      ],
+
+      //       this.series = [
+      //   {
+      //     data: this.tasksCompleted,
+      //     name: 'Complete'
+      //   },
+      // ];
+      //       this.series = [
+      //   {
+      //     data: this.tasksCompleted,
+      //   },
+      // ];
+      this.chartOptions = {
+        ...this.chartOptions,
+        ...{
+          xaxis: {
+            categories: this.projectName,
+          },
+        },
+      };
+    }
+  }
 };
 </script>
 

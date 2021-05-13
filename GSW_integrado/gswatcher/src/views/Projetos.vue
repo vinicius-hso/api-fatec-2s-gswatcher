@@ -15,7 +15,7 @@
 
     <v-container class="my-5">
       <v-divider></v-divider>
-      <barChart v-bind:project="project"> </barChart>
+      <barChart v-bind:projeto="projeto"> </barChart>
     </v-container>
 
     <v-container class="my-5">
@@ -65,6 +65,43 @@ export default {
     };
   },
 
+  methods: {
+     count(project) {
+      const counts = {};
+      let status = [];
+      let statusValue = [];
+
+      project.forEach((r) => {
+        counts[r["status_nome"]] = (counts[r["status_nome"]] || 0) + 1;
+      });
+
+      for (const key in counts) {
+        console.log(`${key} : ${counts[key]}`);
+        status.push(key);
+        statusValue.push(counts[key]);
+      }
+
+      console.log(status);
+      console.log(statusValue);
+
+      this.projeto = [status, statusValue];
+
+      this.series = [
+        {
+          data: statusValue,
+        },
+      ];
+      this.chartOptions = {
+        ...this.chartOptions,
+        ...{
+          xaxis: {
+            categories: status,
+          },
+        },
+      };
+    },
+  },
+
   computed: {
     project() {
       return this.$store.state.project;
@@ -73,6 +110,12 @@ export default {
 
   mounted() {
     this.$store.dispatch("getProject", this.$route.params.id);
+  },
+
+  watch: {
+    project(){
+      this.count(this.project)
+    }
   },
 
   // methods: {
