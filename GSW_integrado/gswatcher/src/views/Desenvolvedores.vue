@@ -3,55 +3,54 @@
     <h1>Developers</h1>
     <v-divider></v-divider>
 
+    <v-btn rounded color="blue" dark @click="setArray()"></v-btn>
+
     <v-container class="pa-5">
       <v-row align="align">
         <v-col>
+          <v-card>
+            <v-card-title>
+              <v-text-field
+                v-model="search"
+                append-icon="mdi-magnify"
+                label="Search"
+                single-line
+                hide-details
+              ></v-text-field>
+            </v-card-title>
+            <v-data-table
+              :headers="headers"
+              :items="arr"
+              :search="search"
+              :single-expand="singleExpand"
+              :expanded.sync="expanded"
+              item-key="nome"
+              show-expand
+              class="elevation-1"
+            >
+              <template v-slot:top>
+                <v-toolbar flat>
+                  <v-toolbar-title>Expandable Table</v-toolbar-title>
+                  <v-spacer></v-spacer>
+                  <v-switch
+                    v-model="singleExpand"
+                    label="Single expand"
+                    class="mt-2"
+                  ></v-switch>
+                </v-toolbar>
+              </template>
+              <template v-slot:expanded-item="{ headers, item }">
+                <td :colspan="headers.length">
+                  More info about {{ item.nome }}
+                  <a :href="'/devdetails/' + item.dev_id + '?nome=' + item.nome" class="text-decoration-none"
+                    >Non-underlined link</a
+                  >
+                </td>
 
-
-<template>
-  <v-card>
-    <v-card-title>
-      <v-text-field
-        v-model="search"
-        append-icon="mdi-magnify"
-        label="Search"
-        single-line
-        hide-details
-      ></v-text-field>
-    </v-card-title>
-    <v-data-table
-      :headers="headers"
-      :items="arr"
-      :search="search"
-    ></v-data-table>
-  </v-card>
-</template>
-          
-          <!-- <v-simple-table>
-            <template v-slot:default>
-              <thead>
-                <tr>
-                  <th class="text-left">Name</th>
-                  <th class="text-left">Tasks</th>
-                  <th class="text-left">Detalhes</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="item in developers" :key="item.nome">
-                  <td>{{ item.nome }} {{ item.sobrenome }}</td>
-                  <td>{{ item.dev_id }}</td>
-                  <td> 
-                    <v-btn :to="{ name: 'devdetails', params: { id: dev.id, name: dev.nome, sobrenome: dev.sobrenome }}" outlined text>
-                
-                    </v-btn>
-                  </td>
-                </tr>
-              </tbody>
-            </template>
-          </v-simple-table> -->
-
-
-
+                <!-- <v-btn :to="{ name: 'devdetails', params: { id: item.dev_id, name: item.nome, sobrenome: item.email }}" outlined text> aaa <v-btn> -->
+              </template>
+            </v-data-table>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
@@ -61,88 +60,39 @@
 <script>
 export default {
   name: "Desenvolvedores",
-  data () {
-      return {
-        search: '',
-        arr: [],
-        jso: {},
-        headers: [
-          {
-            text: 'Dessert (100g serving)',
-            align: 'start',
-            filterable: false,
-            value: 'name',
-          },
-          { text: 'Calories', value: 'calories' },
-          { text: 'Fat (g)', value: 'fat' },
-        ],
-        desserts: [
-          {
-            name: 'Frozen Yogurt',
-            calories: 159,
-            fat: 6.0,
-          },
-          {
-            name: 'Ice cream sandwich',
-            calories: 237,
-            fat: 9.0,
-          },
-          {
-            name: 'Eclair',
-            calories: 262,
-            fat: 16.0,
-          },
-          {
-            name: 'Cupcake',
-            calories: 305,
-            fat: 3.7,
-          },
-          {
-            name: 'Gingerbread',
-            calories: 356,
-            fat: 16.0,
-          },
-          {
-            name: 'Jelly bean',
-            calories: 375,
-            fat: 0.0,
-          },
-          {
-            name: 'Lollipop',
-            calories: 392,
-            fat: 0.2,
-          },
-          {
-            name: 'Honeycomb',
-            calories: 408,
-            fat: 3.2,
-          },
-          {
-            name: 'Donut',
-            calories: 452,
-            fat: 25.0,
-          },
-          {
-            name: 'KitKat',
-            calories: 518,
-            fat: 26.0,
-          },
-        ],
-      }
+  data() {
+    return {
+      search: "",
+      expanded: [],
+      singleExpand: false,
+      arr: [],
+      jso: {},
+      headers: [
+        {
+          text: "Name",
+          align: "start",
+          filterable: false,
+          value: "nome",
+        },
+        { text: "E-mail", value: "email" },
+        { text: "Dev ID", value: "dev_id" },
+        { text: "", value: "data-table-expand" },
+      ],
+    };
+  },
+  methods: {
+    setArray() {
+      this.developers.forEach((elem) => {
+        this.jso = {
+          nome: elem.nome + " " + elem.sobrenome,
+          dev_id: elem.dev_id,
+          email: elem.email,
+        };
+        this.arr.push(this.jso);
+      });
+      console.log(this.arr);
     },
-    methods: {
-      setArray(){
-        this.developers.forEach((elem) =>{
-          this.jso = {
-            nome: elem.nome + elem.sobrenome,
-            dev_id: elem.dev_id,
-            email: elem.email
-          }
-          this.arr.push(this.jso)
-        })
-      }
-
-    },
+  },
   computed: {
     developers() {
       return this.$store.state.developers;

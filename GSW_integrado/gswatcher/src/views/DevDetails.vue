@@ -3,8 +3,11 @@
     <br />
     <h1>Developer</h1>
     <v-divider></v-divider>
-    <h2 class="pa-2 font-weight-strong text-uppercase blue--text">
+    <!-- <h2 class="pa-2 font-weight-strong text-uppercase blue--text">
       {{ this.$route.params.name }} {{ this.$route.params.sobrenome }}
+    </h2> -->
+    <h2 class="pa-2 font-weight-strong text-uppercase blue--text">
+      {{ this.$route.query.nome }}
     </h2>
     <!-- Gráfico de barras -->
     <v-container>
