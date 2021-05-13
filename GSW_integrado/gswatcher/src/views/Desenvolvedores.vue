@@ -29,22 +29,22 @@
               class="elevation-1"
             >
               <template v-slot:top>
-                <v-toolbar flat>
-                  <v-toolbar-title>Expandable Table</v-toolbar-title>
+                <!-- <v-toolbar flat>
+                  <v-toolbar-title>Desenvolvedores</v-toolbar-title>
                   <v-spacer></v-spacer>
                   <v-switch
                     v-model="singleExpand"
                     label="Single expand"
                     class="mt-2"
                   ></v-switch>
-                </v-toolbar>
+                </v-toolbar> -->
               </template>
               <template v-slot:expanded-item="{ headers, item }">
                 <td :colspan="headers.length">
                   More info about 
                   <a :href="'/devdetails/' + item.dev_id + '?nome=' + item.nome" class="text-decoration-none"
                     > {{ item.nome }}</a
-                  >
+                  >  projects
                 </td>
 
                 <!-- <v-btn :to="{ name: 'devdetails', params: { id: item.dev_id, name: item.nome, sobrenome: item.email }}" outlined text> aaa <v-btn> -->
@@ -74,8 +74,8 @@ export default {
           filterable: false,
           value: "nome",
         },
-        { text: "E-mail", value: "email" },
-        { text: "Dev ID", value: "dev_id" },
+        // { text: "E-mail", value: "email" },
+        { text: "Total Tasks", value: "task" },
         { text: "", value: "data-table-expand" },
       ],
     };
@@ -87,6 +87,7 @@ export default {
           nome: elem.nome + " " + elem.sobrenome,
           dev_id: elem.dev_id,
           email: elem.email,
+          task: elem.total_de_task,
         };
         this.arr.push(this.jso);
       });
