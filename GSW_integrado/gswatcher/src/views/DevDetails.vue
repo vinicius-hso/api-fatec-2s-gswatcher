@@ -17,11 +17,11 @@
     <!-- VISUALIZAÇÃO DOS PROJETOS EM CARDS -->
     <v-container>
       <h2>Projects</h2>
-      <v-col cols="12" sm="3">
+      <!-- <v-col cols="12" sm="3">
         <v-btn rounded color="blue" dark @click="treatCycle(info, devProjects)">
           Show {{ this.$route.query.nome }}'s projects
         </v-btn>
-      </v-col>
+      </v-col> -->
       <!-- <v-btn @click="treatCycle(info, devProjects)"></v-btn> -->
       <v-divider></v-divider>
       <!-- BOTÕES DE ORDENAÇÃO  -->
@@ -202,6 +202,11 @@ export default {
     devProjects() {
       return this.$store.state.devProjects;
     },
+  },
+  watch: {
+    devProjects(){
+      this.treatCycle(this.info, this.devProjects)
+    }
   },
   mounted() {
     this.$store.dispatch("getDevProjects", this.$route.params.id);

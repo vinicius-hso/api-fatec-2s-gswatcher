@@ -3,7 +3,7 @@
     <h1>Developers</h1>
     <v-divider></v-divider>
 
-    <v-btn rounded color="blue" dark @click="setArray()"></v-btn>
+    <!-- <v-btn rounded color="blue" dark @click="setArray()"></v-btn> -->
 
     <v-container class="pa-5">
       <v-row align="align">
@@ -93,10 +93,18 @@ export default {
       console.log(this.arr);
     },
   },
+  //  updated(){
+  //   this.setArray()
+  //  },
   computed: {
     developers() {
       return this.$store.state.developers;
     },
+  },
+  watch: {
+    developers(){
+      this.setArray()
+    }
   },
   mounted() {
     this.$store.dispatch("getDevelopers");
