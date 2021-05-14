@@ -14,57 +14,17 @@
 
 <script>
 export default {
-  data: function () {
+  data () {
     return {
       // *** DADOS QUE SERÃO APRESENTADOS NOS GRÁFICOS ***
       series: [
         {
           name: "Completed Tasks",
-          data: [
-            44,
-            55,
-            41,
-            64,
-            22,
-            43,
-            21,
-            44,
-            55,
-            41,
-            64,
-            22,
-            43,
-            21,
-            44,
-            55,
-            41,
-            64,
-            22,
-          ],
+          data: [44, 55, 41, 64, 22, 43, 21, 44, 55, 41, 64, 22, 43, 21, 44, 55, 41, 64, 22]
         },
         {
           name: "Incompleted Tasks",
-          data: [
-            53,
-            32,
-            33,
-            52,
-            13,
-            44,
-            32,
-            12,
-            15,
-            43,
-            76,
-            11,
-            32,
-            14,
-            34,
-            32,
-            22,
-            21,
-            22,
-          ],
+          data: [53, 32, 33, 52, 13, 44, 32, 12, 15, 43, 76, 11, 32, 14, 34, 32, 22, 21, 22]
         },
       ],
       // *** FORMATAÇÃO DO GRÁFICO ***
@@ -257,6 +217,8 @@ export default {
       },
     };
   },
+
+  
 };
 </script>
 
