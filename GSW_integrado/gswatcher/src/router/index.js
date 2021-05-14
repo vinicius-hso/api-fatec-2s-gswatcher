@@ -11,6 +11,7 @@ import Projeto from '../views/Projeto.vue'
 import FirstAccess from '../views/FirstAccess.vue'
 import DevDetails from '../views/DevDetails.vue'
 import TotalHoursDev from '../views/TotalHoursDev.vue'
+import Login from '../views/Login.vue'
 
 
 
@@ -76,9 +77,14 @@ const routes = [
     component: DevDetails
   },
   {
-    path: '/totalhoursdev',
+    path: '/totalhoursdev/:id?',
     name: 'totalhoursdev',
     component: TotalHoursDev
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
   }
 ]
 

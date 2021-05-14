@@ -163,9 +163,6 @@ export default {
       }
     },
  
-
-  
-
   watch: {
     compltask(){
       this.setData(this.compltask)
@@ -207,17 +204,6 @@ export default {
         },
       ],
 
-      //       this.series = [
-      //   {
-      //     data: this.tasksCompleted,
-      //     name: 'Complete'
-      //   },
-      // ];
-      //       this.series = [
-      //   {
-      //     data: this.tasksCompleted,
-      //   },
-      // ];
       this.chartOptions = {
         ...this.chartOptions,
         ...{
