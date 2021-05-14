@@ -28,10 +28,10 @@ export default {
       series: [
         {
           name: 'Complete',
-          data: [44, 55, 41, 67, 22, 43, 44, 55, 41, 67, 22, 43]
+          data: []
         }, {
           name: 'Incomplete',
-          data: [13, 23, 20, 8, 13, 27, 13, 23, 20, 8, 13, 27]
+          data: []
         
         },
       ],
@@ -92,18 +92,7 @@ export default {
           style: {
             fontSize: "10px",
           },
-          categories: [
-            "[Albuquerque Albuquerque and Carvalho Comércio]",
-            "[Batista Moreira and Pereira LTDA]",
-            "[Carvalho Costa and Costa e Associados]",
-            "[Costa Comércio Comércio]",
-            "[Costa LTDA S.A.]",
-            "[Melo Melo and Santos e Associados]",
-            "[Pereira - Barros Comércio]",
-            "[Santos - Batista Comércio]",
-            "[Souza Comércio e Associados]",
-            "[Xavier EIRELI S.A.]",
-          ],
+          categories: [],
           position: "bottom",
           axisBorder: {
             show: false,
@@ -142,7 +131,7 @@ export default {
           },
         },
         title: {
-          text: "Completed Tasks",
+          text: "Project's Tasks Overview",
           floating: true,
           //   offsetY: 330,
           offsetY: -5,
@@ -152,7 +141,7 @@ export default {
             fontSize: "15px",
           },
         },
-        colors: ['#F44336', '#E91E63', '#9C27B0']
+        colors: ['#336087', '#d5e6f5']
       },
     };
   },
