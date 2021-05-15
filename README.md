@@ -57,3 +57,6 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 *Assista o vídeo demonstrativo: [link](https://youtu.be/YAZNf1QEOVQ)*
 
+### 3.2 - 🧩 Integração do Botão de Upload
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/upload-button.gif)
