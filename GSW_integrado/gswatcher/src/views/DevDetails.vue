@@ -98,8 +98,19 @@
                     </v-card-text>
                     <v-card-actions class="my-0">
                       <!-- <v-btn :to="`/totalhoursdev/`" outlined text> -->
-                      <v-btn :to="{ name: 'totalhoursdev', params: {id: devProject.data.id, project_name: devProject.name, name: dev_name, dev_id: dev_id}}" outlined text>
-
+                      <v-btn
+                        :to="{
+                          name: 'totalhoursdev',
+                          params: {
+                            id: devProject.data.id,
+                            project_name: devProject.name,
+                            name: dev_name,
+                            dev_id: dev_id,
+                          },
+                        }"
+                        outlined
+                        text
+                      >
                         Details
                         <v-icon>mdi-google-analytics</v-icon>
                       </v-btn>
@@ -177,7 +188,7 @@ export default {
       var t = 0;
       var c = 0;
       var ic = 0;
-      var id = '';
+      var id = "";
       projectObject.forEach((elem) => {
         if (elem.projeto_nome == projectName) {
           if (elem.horas != null) {
@@ -190,9 +201,16 @@ export default {
           if (elem.inicio < menor) {
             menor = elem.inicio;
             menor = new Date(menor);
+            const options = {
+              weekday: "long",
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            };
+            menor = menor.toLocaleDateString(undefined, options);
           }
         }
-        id = elem.projeto_id
+        id = elem.projeto_id;
       });
       return {
         id: id,
@@ -211,9 +229,9 @@ export default {
     },
   },
   watch: {
-    devProjects(){
-      this.treatCycle(this.info, this.devProjects)
-    }
+    devProjects() {
+      this.treatCycle(this.info, this.devProjects);
+    },
   },
   mounted() {
     this.$store.dispatch("getDevProjects", this.$route.params.id);
