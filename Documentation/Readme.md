@@ -2,10 +2,10 @@
 
 Acesse os documentos clicando nos links abaixo:
 
-* [__Gerenciamento do Escopo__]()
+* [__Gerenciamento do Escopo__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Documentation/Gerenciamento%20do%20Escopo_SPRINT_3.pdf)
 * [__Gerenciamento do Cronograma__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Documentation/Gerenciamento%20de%20Cronograma_SPRINT_3.pdf)
 * [__Gerenciamento de Qualidade__]()
-* [__Gerenciamento de Custo__]()
+* [__Gerenciamento de Custo__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Documentation/Gerenciamento%20de%20Custo__SPRINT_3.pdf)
 * [__Gerenciamento de Rh__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Documentation/Gerenciamento%20de%20RH_SPRINT_3.pdf)
 * [__Plano de Comunicação__]()
 * [__Plano e Gerenciamento de Risco__]()
