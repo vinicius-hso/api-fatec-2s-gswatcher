@@ -17,4 +17,4 @@ Sprint 2:
 *Clique [aqui](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-2/Documentation) para acessar os documentos produzidos anteriormente.*
 
 
-Observação: Os anexos dos arquivos PDF estão presented na pasta. 
+Observação: Os anexos dos arquivos PDF estão presentes na pasta. 
