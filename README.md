@@ -26,7 +26,7 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 3__ conforme es
 
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
 
-![]()
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/burndown-sprint3.png)
 
 ## 2 - 📂 Artefatos III: Documentação do Projeto
 
@@ -50,4 +50,10 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 Os gifs abaixo são referentes as implementações realizadas durante essa Sprint 3.
 
 *Clique [aqui para visualizar o código]( )*
+
+### 3.1 - ⚙️ API - Cadastro e Login
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/api-login-cadastro.gif)
+
+*Assista o vídeo demonstrativo: [link](https://youtu.be/YAZNf1QEOVQ)*
 
