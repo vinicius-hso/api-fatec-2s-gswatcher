@@ -20,7 +20,7 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 3__ conforme es
 
 *A imagem abaixo mostra os itens do [__Product Backlog__]() a serem desenvolvidos durante essa Sprint 3:*
 
-![]()
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/Sprint%203%20Backlog.png)
 
 ### 📉 Burndown Chart
 
@@ -42,8 +42,8 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 *Visualize os documentos produzidos anteriormente:*
 
-* *[Sprint 1]()*
-* *[Sprint 2](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-1#1----artefatos-documenta%C3%A7%C3%A3o-do-projeto)*
+* *[Sprint 1](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-1#2----artefatos-i-documenta%C3%A7%C3%A3o-do-projeto)*
+* *[Sprint 2](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/Sprint-2#2----artefatos-ii-documenta%C3%A7%C3%A3o-do-projeto)*
 
 ## 3 - 💫 Implementações
 
