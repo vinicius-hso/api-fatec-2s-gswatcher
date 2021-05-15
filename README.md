@@ -33,11 +33,11 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 3__ conforme es
 Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 * [__Gerenciamento de Escopo__]()
-* [__Gerenciamento de Cronograma__]()
-* [__Gerenciamento de RH__]()
+* [__Gerenciamento de Cronograma__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Documentation/Gerenciamento%20de%20Cronograma_SPRINT_3.pdf)
+* [__Gerenciamento de RH__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Documentation/Gerenciamento%20de%20RH_SPRINT_3.pdf)
 * [__Gerenciamento de Custo__]()
-* [__Gerenciamento de Comunicação__]()
-* [__Gerenciamento de Risco__]()
+* [__Plano de Comunicação__]()
+* [__Plano e Gerenciamento de Risco__]()
 * [__Gerenciamento de Qualidade__]()
 
 *Visualize os documentos produzidos anteriormente:*
