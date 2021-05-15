@@ -58,13 +58,13 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 *Assista o vídeo demonstrativo: [link](https://youtu.be/YAZNf1QEOVQ)*
 
-* *Gif demonstrando acesso negado e autorizado as rotas da API.
+* *Gif demonstrando acesso negado e autorizado as rotas da API.*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/acesso-negado.gif)
 
 *Assista o vídeo demonstravivo: [link](https://youtu.be/qC0gN-zDaVI)*
 
-* *Foto demonstrando como são gravadas os dados do usúario no database.
+* *Foto demonstrando como são gravadas os dados do usúario no database.*
 
 ![]()
 
