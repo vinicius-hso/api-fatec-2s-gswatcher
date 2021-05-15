@@ -52,13 +52,22 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 *Clique [aqui para visualizar o código]( )*
 
 ### 3.1 - ⚙️ API - Cadastro e Login
+* Gif demonstrando sistema de autenticação com cadastro e login já implementados no backend da aplicação, utilizado para proteger e evitar acesso não autorizado a dados sensíveis.
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/api-login-cadastro.gif)
+
+* Gif demonstrando acesso negado e autorizado as rotas da API.
+
+![]()
+
+* Foto demonstrando como são gravadas os dados do usúario no database.
+
+![]()
 
 *Assista o vídeo demonstrativo: [link](https://youtu.be/YAZNf1QEOVQ)*
 
 ### 3.2 - 🧩 Integração do Botão de Upload
 
-*Atrvés do botão de Upload o usuário pode carregar um arquivo .json com os dados a respeito dos projetos e gerar suas respectivas visualizações na aplicação*
+*Através do botão de Upload o usuário pode carregar um arquivo .json com os dados a respeito dos projetos e gerar suas respectivas visualizações na aplicação*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/upload-button.gif)
