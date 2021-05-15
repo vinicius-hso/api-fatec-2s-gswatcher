@@ -67,10 +67,10 @@
                     project.projeto_nome
                   }}</v-card-title>
                   <v-card-text>
-                    <div class="my-0 subtitle-1">
+                    <!-- <div class="my-0 subtitle-1">
                       <span><strong>Start Date: </strong></span>
                       <span>||</span>
-                    </div>
+                    </div> -->
                     <div class="my-0 subtitle-1">
                       <span><strong>Total Tasks: </strong></span>
                       <span>{{ project.total_de_task }}</span>

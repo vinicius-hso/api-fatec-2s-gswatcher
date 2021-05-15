@@ -110,7 +110,7 @@ export default {
         chart: {
           width: "100%",
           height: "100%",
-          type: "line",
+          type: "bar",
         },
         plotOptions: {
           bar: {
@@ -120,6 +120,7 @@ export default {
             },
           },
         },
+
         title: {
           text: "Worked Hours",
           align: "left",
@@ -266,7 +267,7 @@ export default {
       },
     };
   },
-  
+
   computed: {
     project() {
       return this.$store.state.project;
@@ -285,51 +286,51 @@ export default {
 
   methods: {
     setSides(project) {
-      console.log(project)
-      project.forEach((elem) =>{
-        if(elem.dev_id == this.$route.params.dev_id){
-          if(elem.horas != null) {
-            this.horas.push(elem.horas)
-            this.inicio.push(elem.inicio)
-            
+      console.log(project);
+      project.forEach((elem) => {
+        if (elem.dev_id == this.$route.params.dev_id) {
+          if (elem.horas != null) {
+            this.horas.push(elem.horas);
+            this.inicio.push(elem.inicio);
+
             // this.teste2 = [elem.inicio, elem.horas]
             // this.teste.push(this.teste2)
           }
           //  if(elem.inicio != null){
           //   this.inicio.push(elem.inicio)
           // }
-
         }
-         
-        
-      })
+      });
 
       // this.teste = {
       //         horas: this.horas,
       //         inicio: this.inicio
       //       }
 
-      console.log(this.horas)
-      console.log(this.inicio)
+      console.log(this.horas);
+      console.log(this.inicio);
       // console.log(this.teste)
 
       // this.teste.sort()
 
       // console.log(this.teste)
 
-      
       // this.series = [18.7, 81.3]
       // this.series = [this.horas.length, this.inicio.length]
-      this.series = [{
-        data: this.horas
-      }]
-      this.chartOptions = {...this.chartOptions, ...{
-        xaxis: {
-          categories: this.inicio
-        }
-      }}
-
-    },    
+      this.series = [
+        {
+          data: this.horas,
+        },
+      ];
+      this.chartOptions = {
+        ...this.chartOptions,
+        ...{
+          xaxis: {
+            categories: this.inicio,
+          },
+        },
+      };
+    },
   },
 };
 </script>

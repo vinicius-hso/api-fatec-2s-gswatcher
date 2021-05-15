@@ -14,27 +14,67 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
-      projectName:  [],
-      tasksCompleted:  [],
-      tasksIncompleted:  [],
+      projectName: [],
+      tasksCompleted: [],
+      tasksIncompleted: [],
       // *** DADOS QUE SERÃO APRESENTADOS NOS GRÁFICOS ***
       series: [
         {
           name: "Completed Tasks",
-          data: [44, 55, 41, 64, 22, 43, 21, 44, 55, 41, 64, 22, 43, 21, 44, 55, 41, 64, 22]
+          data: [
+            44,
+            55,
+            41,
+            64,
+            22,
+            43,
+            21,
+            44,
+            55,
+            41,
+            64,
+            22,
+            43,
+            21,
+            44,
+            55,
+            41,
+            64,
+            22,
+          ],
         },
         {
           name: "Incompleted Tasks",
-          data: [53, 32, 33, 52, 13, 44, 32, 12, 15, 43, 76, 11, 32, 14, 34, 32, 22, 21, 22]
+          data: [
+            53,
+            32,
+            33,
+            52,
+            13,
+            44,
+            32,
+            12,
+            15,
+            43,
+            76,
+            11,
+            32,
+            14,
+            34,
+            32,
+            22,
+            21,
+            22,
+          ],
         },
       ],
       // *** FORMATAÇÃO DO GRÁFICO ***
       chartOptions: {
         chart: {
           type: "bar",
-          height: "auto",
+          height: "500",
           width: "100%",
         },
 
@@ -224,61 +264,58 @@ export default {
   computed: {
     compltaskbydev() {
       return this.$store.state.compltaskbydev;
-    }
+    },
   },
- 
+
   watch: {
-    compltaskbydev(){
-      this.setData(this.compltaskbydev)
-    }
+    compltaskbydev() {
+      this.setData(this.compltaskbydev);
+    },
   },
 
-  mounted(){
-    this.$store.dispatch("getCompleteTaskByDev",  this.$route.params.id);
+  mounted() {
+    this.$store.dispatch("getCompleteTaskByDev", this.$route.params.id);
   },
-    
+
   methods: {
-    setData(compltaskbydev){
-        this.projectName =  []
-        this.tasksCompleted =  []
-        this.tasksIncompleted =  []
-      console.log(compltaskbydev)
-      
+    setData(compltaskbydev) {
+      this.projectName = [];
+      this.tasksCompleted = [];
+      this.tasksIncompleted = [];
+      console.log(compltaskbydev);
+
       compltaskbydev.forEach((elem) => {
-        this.projectName.push(elem.projeto_nome)
-        this.tasksCompleted.push(elem.tasks_completas)
-        this.tasksIncompleted.push(elem.tasks_incompletas)
-      })
+        this.projectName.push(elem.projeto_nome);
+        this.tasksCompleted.push(elem.tasks_completas);
+        this.tasksIncompleted.push(elem.tasks_incompletas);
+      });
 
-      console.log(this.projectName)
-      console.log(this.tasksCompleted)
-      console.log(this.tasksIncompleted)
+      console.log(this.projectName);
+      console.log(this.tasksCompleted);
+      console.log(this.tasksIncompleted);
 
+      console.log(this.series.name);
 
-       console.log(this.series.name)
-
-       this.series = [
+      (this.series = [
         {
-          name: 'Completed Tasks',
+          name: "Completed Tasks",
           data: this.tasksCompleted,
-        }, {
-          name: 'Incompleted Tasks',
-          data: this.tasksIncompleted
-        
         },
-      ],
-
-      this.chartOptions = {
-        ...this.chartOptions,
-        ...{
-          xaxis: {
-            categories: this.projectName,
+        {
+          name: "Incompleted Tasks",
+          data: this.tasksIncompleted,
+        },
+      ]),
+        (this.chartOptions = {
+          ...this.chartOptions,
+          ...{
+            xaxis: {
+              categories: this.projectName,
+            },
           },
-        },
-      };
-    }
-  }
-
+        });
+    },
+  },
 };
 </script>
 
