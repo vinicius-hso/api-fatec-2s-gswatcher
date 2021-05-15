@@ -20,7 +20,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer app v-model="drawer" color="grey darken-3">
+    <v-navigation-drawer app v-model="drawer" color="cyan accent-4">
       <v-list dense nav>
         <v-list-item
           v-for="link in links"

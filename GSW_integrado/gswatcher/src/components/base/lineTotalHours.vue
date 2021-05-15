@@ -19,6 +19,10 @@
 export default {
   data() {
     return {
+      teste: [],
+      teste2: [],
+      inicio: [],
+      horas: [],
       series: [
         {
           data: [
@@ -262,40 +266,71 @@ export default {
       },
     };
   },
-  mounted() {
-    console.log("BarChart mounted!");
-    this.count(this.project);
+  
+  computed: {
+    project() {
+      return this.$store.state.project;
+    },
   },
 
-  /*methods: {
-    count(project) {
-      const counts = {};
-      let status = [];
-      let statusValue = [];
+  mounted() {
+    this.$store.dispatch("getProject", this.$route.params.id);
+  },
 
-      project.forEach((r) => {
-        counts[r["status_nome"]] = (counts[r["status_nome"]] || 0) + 1;
-      });
+  watch: {
+    project() {
+      this.setSides(this.project);
+    },
+  },
 
-      for (const key in counts) {
-        console.log(`${key} : ${counts[key]}`);
-        status.push(key);
-        statusValue.push(counts[key]);
-      }
-
-      console.log(status);
-      console.log(statusValue);
-      
-        this.series = [{
-          data: statusValue
-        }]
-        this.chartOptions = {...this.chartOptions, ...{
-          xaxis: {
-            categories: status
+  methods: {
+    setSides(project) {
+      console.log(project)
+      project.forEach((elem) =>{
+        if(elem.dev_id == this.$route.params.dev_id){
+          if(elem.horas != null) {
+            this.horas.push(elem.horas)
+            this.inicio.push(elem.inicio)
+            
+            // this.teste2 = [elem.inicio, elem.horas]
+            // this.teste.push(this.teste2)
           }
-        }}
-      },    
-  },*/
+          //  if(elem.inicio != null){
+          //   this.inicio.push(elem.inicio)
+          // }
+
+        }
+         
+        
+      })
+
+      // this.teste = {
+      //         horas: this.horas,
+      //         inicio: this.inicio
+      //       }
+
+      console.log(this.horas)
+      console.log(this.inicio)
+      // console.log(this.teste)
+
+      // this.teste.sort()
+
+      // console.log(this.teste)
+
+      
+      // this.series = [18.7, 81.3]
+      // this.series = [this.horas.length, this.inicio.length]
+      this.series = [{
+        data: this.horas
+      }]
+      this.chartOptions = {...this.chartOptions, ...{
+        xaxis: {
+          categories: this.inicio
+        }
+      }}
+
+    },    
+  },
 };
 </script>
 
