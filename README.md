@@ -59,4 +59,6 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ### 3.2 - 🧩 Integração do Botão de Upload
 
+*Atrvés do botão de Upload o usuário pode carregar um arquivo .json com os dados a respeito dos projetos e gerar suas respectivas visualizações na aplicação*
+
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/upload-button.gif)
