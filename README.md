@@ -20,7 +20,7 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 3__ conforme es
 
 *A imagem abaixo mostra os itens do [__Product Backlog__]() a serem desenvolvidos durante essa Sprint 3:*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/Sprint%203%20Backlog.png)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/sprint3-backlog.png)
 
 ### 📉 Burndown Chart
 
