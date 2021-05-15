@@ -66,7 +66,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 * *Foto demonstrando como são gravadas os dados do usúario no database.*
 
-![]()
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/password-storage.jpeg)
 
 
 ### 3.2 - 🧩 Integração do Botão de Upload
