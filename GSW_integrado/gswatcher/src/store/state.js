@@ -5,5 +5,6 @@ export default {
     unfinishedDevProjects: [],
     developers: [],
     projectByDeveloper: [],
-    compltask: []
+    compltask: [],
+    compltaskbydev: []
 }

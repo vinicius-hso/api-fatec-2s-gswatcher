@@ -16,6 +16,9 @@
 export default {
   data () {
     return {
+      projectName:  [],
+      tasksCompleted:  [],
+      tasksIncompleted:  [],
       // *** DADOS QUE SERÃO APRESENTADOS NOS GRÁFICOS ***
       series: [
         {
@@ -218,7 +221,64 @@ export default {
     };
   },
 
-  
+  computed: {
+    compltaskbydev() {
+      return this.$store.state.compltaskbydev;
+    }
+  },
+ 
+  watch: {
+    compltaskbydev(){
+      this.setData(this.compltaskbydev)
+    }
+  },
+
+  mounted(){
+    this.$store.dispatch("getCompleteTaskByDev",  this.$route.params.id);
+  },
+    
+  methods: {
+    setData(compltaskbydev){
+        this.projectName =  []
+        this.tasksCompleted =  []
+        this.tasksIncompleted =  []
+      console.log(compltaskbydev)
+      
+      compltaskbydev.forEach((elem) => {
+        this.projectName.push(elem.projeto_nome)
+        this.tasksCompleted.push(elem.tasks_completas)
+        this.tasksIncompleted.push(elem.tasks_incompletas)
+      })
+
+      console.log(this.projectName)
+      console.log(this.tasksCompleted)
+      console.log(this.tasksIncompleted)
+
+
+       console.log(this.series.name)
+
+       this.series = [
+        {
+          name: 'Completed Tasks',
+          data: this.tasksCompleted,
+        }, {
+          name: 'Incompleted Tasks',
+          data: this.tasksIncompleted
+        
+        },
+      ],
+
+      this.chartOptions = {
+        ...this.chartOptions,
+        ...{
+          xaxis: {
+            categories: this.projectName,
+          },
+        },
+      };
+    }
+  }
+
 };
 </script>
 

@@ -12,7 +12,7 @@ export const getProject = ({ commit }, projectId) =>{
     .then(response => {
         commit('SET_PROJECT', response.data);
     })
-}
+};
 
 export const getDevProjects = ({ commit }, devId) =>{
     axios.get(`http://127.0.0.1:3000/api/teste2/${devId}`) //ip local para prevenir CORS
@@ -40,11 +40,18 @@ export const getProjectByDev = ({ commit }, devId, projId) =>{
     .then(response => {
         commit('SET_PROJECTSBYDEV', response.data);
     })
-}
+};
 
 export const getCompleteTask = ({ commit }) =>{
     axios.get('http://127.0.0.1:3000/api/main_chart') //ip local para prevenir CORS
     .then(response => {
         commit('SET_COMPLTASKS', response.data);
+    })
+};
+
+export const getCompleteTaskByDev = ({ commit }, devId ) =>{
+    axios.get(`http://127.0.0.1:3000/api/chart_dev/${devId}`) //ip local para prevenir CORS
+    .then(response => {
+        commit('SET_COMPLTASKSBYDEV', response.data);
     })
 };

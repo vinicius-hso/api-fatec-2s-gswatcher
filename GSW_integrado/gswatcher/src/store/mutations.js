@@ -19,3 +19,6 @@ export const SET_PROJECTSBYDEV = (state, projectByDeveloper) => {
 export const SET_COMPLTASKS = (state, compltask) => {
     state.compltask = compltask;
 }
+export const SET_COMPLTASKSBYDEV = (state, compltaskbydev) => {
+    state.compltaskbydev = compltaskbydev;
+}
