@@ -64,7 +64,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 *Assista o vídeo demonstravivo: [link](https://youtu.be/qC0gN-zDaVI)*
 
-* *Foto demonstrando como são gravadas os dados do usúario no database.*
+* *Imagem demonstrando como são gravadas os dados do usúario no database.*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/password-storage.jpeg)
 
