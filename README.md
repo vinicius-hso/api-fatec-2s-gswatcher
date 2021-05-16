@@ -93,7 +93,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ### 3.6 - ⏱️ Visualização do Total de Horas e Porcentagem de Contribuição de um Desenvolvedor por Projeto
 
-*A página Visualização do Total de Horas e Porcentagem de Contribuição de um Desenvolvedor por Projeto é possível visualizar o tempo em horas que o desenvolvedor trabalhou em determinado projeto e também a porcentagem que aquele desenvolvedor contribuiu no projeto*
+*Na página Visualização do Total de Horas e Porcentagem de Contribuição de um Desenvolvedor por Projeto é possível visualizar o tempo em horas que o desenvolvedor trabalhou em determinado projeto e também a porcentagem que aquele desenvolvedor contribuiu no projeto*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/total-hours-developer.gif)
 
