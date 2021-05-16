@@ -97,6 +97,8 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ### 3.6 - ✨ Finalização da Identidade visual 
 
+*A identidade visual será aplicada inteiramente na __Sprint 4__*
+
 * __Logotipo__
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/gswatcher-logo.gif)
