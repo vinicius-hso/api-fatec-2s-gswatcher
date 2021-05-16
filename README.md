@@ -77,7 +77,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ### 3.3 - 🧩 Integração da página Home
 
-![]()
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/integracao-home.gif)
 
 ### 3.4 - 🧩 Integração da página Developers
 
