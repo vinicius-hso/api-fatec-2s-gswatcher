@@ -110,4 +110,4 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 * __Paleta de Cores__
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/identidade-visual.png)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/identidade_visual.png)
