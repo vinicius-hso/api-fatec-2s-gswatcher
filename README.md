@@ -20,7 +20,7 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 3__ conforme es
 
 *A imagem abaixo mostra os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_backlog_v4.pdf) a serem desenvolvidos durante essa Sprint 3:*
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/sprint3-backlog.png)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/sprint-3-backlog.png)
 
 ### 📉 Burndown Chart
 
@@ -49,7 +49,7 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 Os gifs abaixo são referentes as implementações realizadas durante essa Sprint 3.
 
-*Clique [aqui para visualizar o código]( )*
+*Clique [aqui para visualizar o código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/development/GSW_integrado)*
 
 ### 3.1 - ⚙️ API - Cadastro e Login
 * *Gif demonstrando sistema de autenticação com cadastro e login já implementados no backend da aplicação, utilizado para proteger e evitar acesso não autorizado a dados sensíveis.*
