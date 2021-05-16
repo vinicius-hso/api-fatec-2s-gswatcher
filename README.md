@@ -86,3 +86,15 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 *A página Developers exibe todos os desenvolvedores presentes na base de dados, podendo-se organizar a exibição de acordo com o nome (em ordem alfabética) ou com o total de tasks*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/integracao-developers.gif)
+
+### 3.5 - 📊 Visualização das Tasks de um Desenvolvedor
+
+![]()
+
+### 3.6 - ⏱️ Visualização do Total de Horas e Porcentagem de Contribuição de um Desenvolvedor por projeto
+
+![]()
+
+### 3.6 - ✨ Finalização da Identidade visual 
+
+![]()
