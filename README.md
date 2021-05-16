@@ -89,6 +89,9 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ### 3.5 - 📊 Visualização das Tasks de um Desenvolvedor
 
+*A página Visualização das Tasks de um Desenvolvedor exibe um gráfico de barras onde é possível visualizar as tasks completas e incompletas de acordo com cada proejto que o desenvolvedor participou, também exibe os cards resferentes a cada projeto podendo-se obter mais informações a respeito do desempenho de um desenvolvedor em um determinado projeto através do botão "Details" no card, direcionando o usuário á página "Visualização do Total de Horas e Porcentagem de Contribuição de um Desenvolvedor por Projeto
+" *
+
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/tasks-developer.gif)
 
 ### 3.6 - ⏱️ Visualização do Total de Horas e Porcentagem de Contribuição de um Desenvolvedor por Projeto
