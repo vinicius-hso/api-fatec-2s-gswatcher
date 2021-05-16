@@ -77,8 +77,12 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ### 3.3 - 🧩 Integração da página Home
 
+*A página Home exibe um gráfico com o total de tasks completas e incompletas de cada projeto e os cards referentes a cada um dos projetos, qual direciona através do botão "Details" para a página de detalhes do projeto*
+
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/integracao-home.gif)
 
 ### 3.4 - 🧩 Integração da página Developers
+
+*A página Developers exibe todos os desenvolvedores presentes na base de dados, podendo-se organizar a exibição de acordo com o nome (em ordem alfabética) ou com o total de tasks*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/integracao-developers.gif)
