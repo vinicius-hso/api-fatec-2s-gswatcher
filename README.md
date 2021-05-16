@@ -81,4 +81,4 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ### 3.4 - 🧩 Integração da página Developers
 
-![]()
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/integracao-developers.gif)
