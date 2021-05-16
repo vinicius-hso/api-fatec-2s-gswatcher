@@ -93,7 +93,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ### 3.6 - ⏱️ Visualização do Total de Horas e Porcentagem de Contribuição de um Desenvolvedor por projeto
 
-![]()
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/total-hours-developer.gif)
 
 ### 3.6 - ✨ Finalização da Identidade visual 
 
