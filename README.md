@@ -100,7 +100,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Images/total-hours-developer.gif)
 
-### 3.6 - ✨ Finalização da Identidade visual 
+### 3.6 - 🎨 Finalização da Identidade visual 
 
 *A identidade visual será aplicada inteiramente na __Sprint 4__*
 
