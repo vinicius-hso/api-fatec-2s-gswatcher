@@ -8,12 +8,10 @@ class User extends Model {
             name: DataTypes.STRING,
             email: DataTypes.STRING,
             password: DataTypes.STRING,
-
+            passwordResetToken: DataTypes.STRING,
+            passwordResetExpires: DataTypes.DATE,
         },{
             sequelize: connection
-        }) // criptografando password no pré save...
-        User.addHook('beforeSave', async client => {
-                client.password = await bcrypt.hash(client.password, 10)
         })
     }
 }
