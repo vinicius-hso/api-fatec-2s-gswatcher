@@ -10,8 +10,8 @@
               <v-card-text>
                 <v-form>
                   <v-text-field
-                    name="login"
-                    label="Login"
+                    name="email"
+                    label="Email"
                     type="text"
                   ></v-text-field>
                   <v-text-field
