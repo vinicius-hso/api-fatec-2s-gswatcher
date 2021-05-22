@@ -79,10 +79,10 @@ exports.forgot_password = async (req, res) => {
 
         mailer.sendMail({
             to: email,
-            from: 'teste@contato.com',
+            from: '"ContatoGSWatcher" <teste@contato.com>',
+            subject: "GSWatcher: Reset password",
             template: '/forgot_password',
-            html: `<p>Você esqueceu sua senha? Não tem problema, utilize esse token para recuperar sua senha: ${token} </p>`,
-            content: { token } ,
+            context: { token } ,
         }, (err) => {
                 if (err)
                     return res.status(400).send({ error: 'Cannot send forgot password email' })
