@@ -12,6 +12,12 @@
               <v-card-text>
                 <v-form>
                   <v-text-field
+                    prepend-icon="persons"
+                    name="name"
+                    label="Name"
+                    type="text"
+                  ></v-text-field>
+                  <v-text-field
                     prepend-icon="email"
                     name="email"
                     label="Email"
@@ -30,16 +36,17 @@
               <v-row align="center" justify="space-around">
                 <v-card-actions>
                   <v-spacer></v-spacer>
-                  <v-btn dark color="cyan darken-4" to="#">Login</v-btn>
-                  <v-btn dark color="cyan darken-4" to="/register"
-                    >Register</v-btn
+                  <v-btn dark color="cyan darken-4" to="#"
+                    >Create Account</v-btn
                   >
                 </v-card-actions>
               </v-row>
 
               <v-row align="center" justify="space-around">
-                <v-text
-                  ><br /><a href="#"><p>Forgot your password?</p></a></v-text
+                <v-text>
+                  <br /><a href="/login"
+                    ><p>Already have an account?</p></a
+                  ></v-text
                 >
               </v-row>
             </v-card>
@@ -52,14 +59,13 @@
 
 <script>
 export default {
-  name: "Login",
+  name: "Register",
   props: {
     source: String,
   },
 };
 </script>
 
-<style scoped>
-</style>
-
+<style>
+</style>>
 

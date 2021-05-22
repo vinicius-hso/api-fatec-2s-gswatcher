@@ -12,7 +12,7 @@ import FirstAccess from '../views/FirstAccess.vue'
 import DevDetails from '../views/DevDetails.vue'
 import TotalHoursDev from '../views/TotalHoursDev.vue'
 import Login from '../views/Login.vue'
-
+import Register from '../views/Register.vue'
 
 
 Vue.use(VueRouter)
@@ -85,6 +85,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: Login
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: Register
   }
 ]
 
