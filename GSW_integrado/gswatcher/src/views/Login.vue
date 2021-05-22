@@ -12,12 +12,15 @@
               <v-card-text>
                 <v-form>
                   <v-text-field
+                    v-model="email"
                     prepend-icon="email"
                     name="email"
                     label="Email"
                     type="text"
                   ></v-text-field>
+                  {
                   <v-text-field
+                    v-model="password"
                     prepend-icon="lock"
                     id="password"
                     name="password"
@@ -55,6 +58,12 @@ export default {
   name: "Login",
   props: {
     source: String,
+  },
+  data: function () {
+    return {
+      email: "",
+      password: "",
+    };
   },
 };
 </script>
