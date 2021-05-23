@@ -4,7 +4,7 @@
       <v-container fluid fill-height>
         <v-layout align-center justify-center>
           <v-flex xs12 sm8 md4>
-            <v-card class="elevation-12\" flat="true" height="100">
+            <v-card class="elevation-12\" flat="true" height="120">
               <div><v-img src="../assets/gswatcher-logo.png"></v-img></div>
             </v-card>
 
@@ -18,7 +18,7 @@
                     label="Email"
                     type="text"
                   ></v-text-field>
-                  {
+
                   <v-text-field
                     v-model="password"
                     prepend-icon="lock"
@@ -33,7 +33,13 @@
               <v-row align="center" justify="space-around">
                 <v-card-actions>
                   <v-spacer></v-spacer>
-                  <v-btn dark color="cyan darken-4" to="#">Login</v-btn>
+                  <v-btn
+                    dark
+                    color="cyan darken-4"
+                    to="#"
+                    v-on:click="getEmail(), getPassword()"
+                    >Login</v-btn
+                  >
                   <v-btn dark color="cyan darken-4" to="/register"
                     >Register</v-btn
                   >
@@ -64,6 +70,16 @@ export default {
       email: "",
       password: "",
     };
+  },
+  methods: {
+    getEmail() {
+      var e = this.email;
+      console.log(e);
+    },
+    getPassword() {
+      var p = this.password;
+      console.log(p);
+    },
   },
 };
 </script>
