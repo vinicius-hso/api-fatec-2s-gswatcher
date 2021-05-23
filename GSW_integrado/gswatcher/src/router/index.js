@@ -13,6 +13,7 @@ import DevDetails from '../views/DevDetails.vue'
 import TotalHoursDev from '../views/TotalHoursDev.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
+import ForgotPass from '../views/ForgotPass.vue'
 
 
 Vue.use(VueRouter)
@@ -90,6 +91,11 @@ const routes = [
     path: '/register',
     name: 'register',
     component: Register
+  },
+  {
+    path: '/forgotpass',
+    name: 'forgotpass',
+    component: ForgotPass
   }
 ]
 

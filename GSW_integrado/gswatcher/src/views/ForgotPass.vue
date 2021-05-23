@@ -18,15 +18,6 @@
                     label="Email"
                     type="text"
                   ></v-text-field>
-
-                  <v-text-field
-                    v-model="password"
-                    prepend-icon="lock"
-                    id="password"
-                    name="password"
-                    label="Password"
-                    type="password"
-                  ></v-text-field>
                 </v-form>
               </v-card-text>
 
@@ -36,21 +27,14 @@
                   <v-btn
                     dark
                     color="cyan darken-4"
-                    to="#"
-                    v-on:click="getEmail(), getPassword()"
-                    >Login</v-btn
-                  >
-                  <v-btn dark color="cyan darken-4" to="/register"
-                    >Register</v-btn
+                    to="/login"
+                    v-on:click="getEmail()"
+                    >Continue</v-btn
+                   
                   >
                 </v-card-actions>
               </v-row>
-
-              <v-row align="center" justify="space-around">
-                <v-text
-                  ><br /><a href="forgotpass"><p>Forgot your password?</p></a></v-text
-                >
-              </v-row>
+        
             </v-card>
           </v-flex>
         </v-layout>
@@ -61,30 +45,24 @@
 
 <script>
 export default {
-  name: "Login",
+  name: "ForgotPass",
   props: {
     source: String,
   },
   data: function () {
     return {
       email: "",
-      password: "",
     };
   },
   methods: {
     getEmail() {
       var e = this.email;
       console.log(e);
-    },
-    getPassword() {
-      var p = this.password;
-      console.log(p);
-    },
+    }
   },
 };
 </script>
 
-<style scoped>
-</style>
-
+<style>
+</style>>
 
