@@ -12,7 +12,7 @@
               <v-card-text>
                 <v-form>
                   <v-text-field
-                    v-model="email"
+                    v-model="form.email"
                     prepend-icon="email"
                     name="email"
                     label="Email"
@@ -20,7 +20,7 @@
                   ></v-text-field>
 
                   <v-text-field
-                    v-model="password"
+                    v-model="form.password"
                     prepend-icon="lock"
                     id="password"
                     name="password"
@@ -33,11 +33,7 @@
               <v-row align="center" justify="space-around">
                 <v-card-actions>
                   <v-spacer></v-spacer>
-                  <v-btn
-                    dark
-                    color="cyan darken-4"
-                    to="#"
-                    v-on:click="getEmail(), getPassword()"
+                  <v-btn dark color="cyan darken-4" to="#" v-on:click="submit()"
                     >Login</v-btn
                   >
                   <v-btn dark color="cyan darken-4" to="/register"
@@ -48,7 +44,9 @@
 
               <v-row align="center" justify="space-around">
                 <v-text
-                  ><br /><a href="forgotpass"><p>Forgot your password?</p></a></v-text
+                  ><br /><a href="forgotpass"
+                    ><p>Forgot your password?</p></a
+                  ></v-text
                 >
               </v-row>
             </v-card>
@@ -67,18 +65,15 @@ export default {
   },
   data: function () {
     return {
-      email: "",
-      password: "",
+      form: {
+        email: "",
+        password: "",
+      },
     };
   },
   methods: {
-    getEmail() {
-      var e = this.email;
-      console.log(e);
-    },
-    getPassword() {
-      var p = this.password;
-      console.log(p);
+    submit() {
+      console.log(this.form);
     },
   },
 };
