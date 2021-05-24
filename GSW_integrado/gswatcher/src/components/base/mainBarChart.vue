@@ -7,14 +7,14 @@
         <!-- original: type="bar"------------------------------------------------------------------>
         <apexchart
           min-width="350"
-          height="400"
+          height="500"
           type="bar"
           :options="chartOptions"
           :series="series"
         ></apexchart>
       </div>
     </div>
-  </div>     
+  </div>
 </template>
 
 <script>
@@ -27,12 +27,12 @@ export default {
       projectName: [],
       series: [
         {
-          name: 'Complete',
-          data: []
-        }, {
-          name: 'Incomplete',
-          data: []
-        
+          name: "Complete",
+          data: [],
+        },
+        {
+          name: "Incomplete",
+          data: [],
         },
       ],
       // array 'series' trata dos valores de cada status dentro do projeto
@@ -40,7 +40,7 @@ export default {
       chartOptions: {
         chart: {
           width: "100%",
-          height: "auto",
+          height: "500",
           type: "bar",
           stacked: true,
         },
@@ -141,68 +141,66 @@ export default {
             fontSize: "15px",
           },
         },
-        colors: ['#336087', '#d5e6f5']
+        colors: ["#336087", "#d5e6f5"],
       },
     };
   },
 
   computed: {
-      compltask() {
-        return this.$store.state.compltask;
-      }
+    compltask() {
+      return this.$store.state.compltask;
     },
- 
-  watch: {
-    compltask(){
-      this.setData(this.compltask)
-    }
   },
 
-  mounted(){
+  watch: {
+    compltask() {
+      this.setData(this.compltask);
+    },
+  },
+
+  mounted() {
     this.$store.dispatch("getCompleteTask");
   },
-    
+
   methods: {
-    setData(compltask){
-        this.projectName =  []
-        this.tasksCompleted =  []
-        this.tasksIncompleted =  []
-      console.log(compltask)
-      
+    setData(compltask) {
+      this.projectName = [];
+      this.tasksCompleted = [];
+      this.tasksIncompleted = [];
+      console.log(compltask);
+
       compltask.forEach((elem) => {
-        this.projectName.push(elem.projeto_nome)
-        this.tasksCompleted.push(elem.tasks_completas)
-        this.tasksIncompleted.push(elem.tasks_incompletas)
-      })
+        this.projectName.push(elem.projeto_nome);
+        this.tasksCompleted.push(elem.tasks_completas);
+        this.tasksIncompleted.push(elem.tasks_incompletas);
+      });
 
-      console.log(this.projectName)
-      console.log(this.tasksCompleted)
-      console.log(this.tasksIncompleted)
+      console.log(this.projectName);
+      console.log(this.tasksCompleted);
+      console.log(this.tasksIncompleted);
 
+      console.log(this.series.name);
 
-       console.log(this.series.name)
-
-       this.series = [
+      (this.series = [
         {
-          name: 'Complete',
+          name: "Complete",
           data: this.tasksCompleted,
-        }, {
-          name: 'Incomplete',
-          data: this.tasksIncompleted
-        
         },
-      ],
-
-      this.chartOptions = {
-        ...this.chartOptions,
-        ...{
-          xaxis: {
-            categories: this.projectName,
+        {
+          name: "Incomplete",
+          data: this.tasksIncompleted,
+        },
+      ]),
+        (this.chartOptions = {
+          ...this.chartOptions,
+          ...{
+            xaxis: {
+              categories: this.projectName,
+            },
           },
-        },
-      };
-    }
-  }
+        });
+    },
+  },
 };
 </script>
 
