@@ -6,5 +6,9 @@ export default {
     developers: [],
     projectByDeveloper: [],
     compltask: [],
-    compltaskbydev: []
+    compltaskbydev: [],
+    // /* Alteração */
+    user: {},
+    token: ''
+
 }

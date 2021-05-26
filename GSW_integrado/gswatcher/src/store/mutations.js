@@ -22,3 +22,10 @@ export const SET_COMPLTASKS = (state, compltask) => {
 export const SET_COMPLTASKSBYDEV = (state, compltaskbydev) => {
     state.compltaskbydev = compltaskbydev;
 }
+// /* Alteração */
+export const SET_USER = (state, user) => {
+    state.user = user;
+}
+export const SET_TOKEN = (state, token) => {
+    state.user = token;
+}

@@ -12,7 +12,7 @@
               <v-card-text>
                 <v-form>
                   <v-text-field
-                    v-model="form.email"
+                    v-model="login.email"
                     prepend-icon="email"
                     name="email"
                     label="Email"
@@ -20,7 +20,7 @@
                   ></v-text-field>
 
                   <v-text-field
-                    v-model="form.password"
+                    v-model="login.password"
                     prepend-icon="lock"
                     id="password"
                     name="password"
@@ -33,7 +33,7 @@
               <v-row align="center" justify="space-around">
                 <v-card-actions>
                   <v-spacer></v-spacer>
-                  <v-btn dark color="cyan darken-4" to="#" v-on:click="submit()"
+                  <v-btn dark color="cyan darken-4" to="#" v-on:click="log()"
                     >Login</v-btn
                   >
                   <v-btn dark color="cyan darken-4" to="/register"
@@ -58,6 +58,9 @@
 </template>
 
 <script>
+import { http } from "../services/api";
+// import axios from "axios";
+
 export default {
   name: "Login",
   props: {
@@ -65,15 +68,22 @@ export default {
   },
   data: function () {
     return {
-      form: {
+      login: {
         email: "",
         password: "",
       },
     };
   },
+
   methods: {
-    submit() {
-      console.log(this.form);
+    async log() {
+      try {
+        const response = await http.post("/authenticate", this.login);
+        localStorage.setItem("@gswatcher:token", response.data.token);
+        this.$router.push("/");
+      } catch (error) {
+        console.error(error);
+      }
     },
   },
 };
