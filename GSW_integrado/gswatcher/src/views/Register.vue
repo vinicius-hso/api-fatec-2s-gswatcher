@@ -12,21 +12,21 @@
               <v-card-text>
                 <v-form>
                   <v-text-field
-                    v-model="name"
+                    v-model="form.name"
                     prepend-icon="person"
                     name="name"
                     label="Name"
                     type="text"
                   ></v-text-field>
                   <v-text-field
-                    v-model="email"
+                    v-model="form.email"
                     prepend-icon="email"
                     name="email"
                     label="Email"
                     type="text"
                   ></v-text-field>
                   <v-text-field
-                    v-model="password"
+                    v-model="form.password"
                     prepend-icon="lock"
                     id="password"
                     name="password"
@@ -43,7 +43,7 @@
                     dark
                     color="cyan darken-4"
                     to="#"
-                    v-on:click="getName(), getEmail(), getPassword()"
+                    v-on:click="register()"
                     >Create Account</v-btn
                   >
                 </v-card-actions>
@@ -51,10 +51,11 @@
 
               <v-row align="center" justify="space-around">
                 <v-text>
-                  <br /><a href="/login"
-                    ><p>Already have an account?</p></a
-                  ></v-text
-                >
+                  <br />
+                  <router-link to="/login">
+                    <p>Already have an account?</p></router-link
+                  >
+                </v-text>
               </v-row>
             </v-card>
           </v-flex>
@@ -65,6 +66,8 @@
 </template>
 
 <script>
+import { http } from "../services/api";
+
 export default {
   name: "Register",
   props: {
@@ -72,23 +75,24 @@ export default {
   },
   data: function () {
     return {
-      name: "",
-      email: "",
-      password: "",
+      form: {
+        name: "",
+        email: "",
+        password: "",
+      },
     };
   },
   methods: {
-    getName() {
-      var n = this.name;
-      console.log(n);
-    },
-    getEmail() {
-      var e = this.email;
-      console.log(e);
-    },
-    getPassword() {
-      var p = this.password;
-      console.log(p);
+    async register() {
+      try {
+        const response = await http.post("/register", this.form);
+        localStorage.setItem("@gswatcher:token", response.data.token);
+        this.$router.push("/");
+      } catch (error) {
+        console.error(error);
+        if (error == "Error: Request failed with status code 403")
+          alert("Sorry! The email is already been used.");
+      }
     },
   },
 };

@@ -44,10 +44,11 @@
 
               <v-row align="center" justify="space-around">
                 <v-text
-                  ><br /><a href="forgotpass"
-                    ><p>Forgot your password?</p></a
-                  ></v-text
-                >
+                  ><br />
+                  <router-link to="/forgotpass"
+                    ><p>Forgot your password?</p></router-link
+                  >
+                </v-text>
               </v-row>
             </v-card>
           </v-flex>
@@ -83,6 +84,13 @@ export default {
         this.$router.push("/");
       } catch (error) {
         console.error(error);
+        if (error == "Error: Request failed with status code 401") {
+          alert("Invalid password");
+        } else if (error == "Error: Request failed with status code 404") {
+          alert("User not found");
+        } else {
+          alert(error);
+        }
       }
     },
   },

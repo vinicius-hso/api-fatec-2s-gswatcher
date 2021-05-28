@@ -9,6 +9,16 @@
             </v-card>
 
             <v-card class="elevation-12\" flat="true">
+              <div v-if="message">
+                <v-alert dense text type="success">
+                  {{ message }}
+                </v-alert>
+              </div>
+              <div v-else-if="error">
+                <v-alert dense outlined type="error">
+                  {{ error }}
+                </v-alert>
+              </div>
               <v-card-text>
                 <v-form>
                   <v-text-field
@@ -27,14 +37,12 @@
                   <v-btn
                     dark
                     color="cyan darken-4"
-                    to="/login"
-                    v-on:click="getEmail()"
+                    to=""
+                    v-on:click="sendEmail()"
                     >Continue</v-btn
-                   
                   >
                 </v-card-actions>
               </v-row>
-        
             </v-card>
           </v-flex>
         </v-layout>
@@ -44,6 +52,8 @@
 </template>
 
 <script>
+import { http } from "../services/api";
+
 export default {
   name: "ForgotPass",
   props: {
@@ -52,13 +62,24 @@ export default {
   data: function () {
     return {
       email: "",
+      message: "",
+      error: "",
     };
   },
   methods: {
-    getEmail() {
-      var e = this.email;
-      console.log(e);
-    }
+    async sendEmail() {
+      try {
+        const response = await http.put("/forgot_password", {
+          email: this.email,
+        });
+        this.message = "The email was sent!";
+        this.error = "";
+        console.log(response);
+      } catch (error) {
+        this.error = "Error occurred! Invalid email!";
+        this.message = "";
+      }
+    },
   },
 };
 </script>
