@@ -14,6 +14,7 @@ import TotalHoursDev from '../views/TotalHoursDev.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import ForgotPass from '../views/ForgotPass.vue'
+import Reset from '../views/Reset.vue'
 
 
 Vue.use(VueRouter)
@@ -96,6 +97,11 @@ const routes = [
     path: '/forgotpass',
     name: 'forgotpass',
     component: ForgotPass
+  },
+  {
+    path: '/reset/:token',
+    name: 'reset',
+    component: Reset
   }
 ]
 
