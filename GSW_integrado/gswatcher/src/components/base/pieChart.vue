@@ -14,12 +14,13 @@
 </template>
 
 <script>
-// category
-// datetime
-// numeric
 export default {
-  name: "lineChart",
-  data: () => ({
+  name: "pieChart",
+
+  data() {
+    return {
+      complData: [],
+      incomplData: [],
     series: [87.5, 12.5],
     chartOptions: {
       chart: {
@@ -69,9 +70,53 @@ export default {
       },
       legend: {
         show: false,
+        },
+      colors: ["#03a9f4", "#ffa726"],
       },
+    };
+  },
+
+   computed: {
+    project() {
+      return this.$store.state.project;
     },
-  }),
+  },
+
+  mounted() {
+    this.$store.dispatch("getProject", this.$route.params.id);
+  },
+
+  watch: {
+    project() {
+      this.setSides(this.project);
+    },
+  },
+
+  methods: {
+    setSides(project){
+      //console.log(project)
+      project.forEach((elem) =>{
+        if(elem.horas != null) {
+          this.complData.push(elem.horas)
+        }else {
+            this.incomplData.push(elem.horas)
+        }
+        
+      })
+      //console.log(this.incomplData)
+
+      let completed  = (this.complData.length/2)
+      let incompleted  = (this.incomplData.length/2)
+
+      
+      // this.series = [18.7, 81.3]
+      this.series = [completed, incompleted]
+
+    }
+  }
+
+
+
 };
 </script>
 
