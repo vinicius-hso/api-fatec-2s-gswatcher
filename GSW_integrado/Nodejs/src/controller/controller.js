@@ -142,7 +142,7 @@ exports.listAll_Status = async (req, res) => {
     if (!req.files) {
         return res.status(500).send({ msg: "file is not found" })
     }
-        // accessing the file
+    // accessing the file
     global.myFile = req.files.file;
 
     //  mv() method places the file inside public directory
@@ -207,31 +207,34 @@ exports.main_chart = async (req, res) => {
 
 
   exports.uploadButton = async (req, res) => {
-  res.header("Access-Control-Allow-Origin", "*");
+    try{
+      const funcDados = require('../models/treating_data')    
+      dados = await funcDados(myFile.name);
 
-  const funcDados = require('../models/treating_data')    
-  dados = await funcDados(myFile.name);
+      const CreateTables = require('../models/create_tables')
+      await CreateTables();
 
-  const CreateTables = require('../models/create_tables')
-  await CreateTables();
+      const CheckTablesNull = require('../models/check_tables_null')
+      const insertUSER = require('../models/insert_user1')
+      let check = await CheckTablesNull('tbl_usuario');
+      if (check)
+        await insertUSER();
 
-  const CheckTablesNull = require('../models/check_tables_null')
-  const insertUSER = require('../models/insert_user1')
-  let check = await CheckTablesNull('tbl_usuario');
-  if (check)
-    await insertUSER();
+      const Insert_data = require('../models/insert_data')
+      await Insert_data(dados);
 
-  const Insert_data = require('../models/insert_data')
-  await Insert_data(dados);
+      const Save_data = require('../models/save_data')
+      let values = await Save_data();
 
-  const Save_data = require('../models/save_data')
-  let values = await Save_data();
+      const insertRECARGA = require('../models/insert_RECARGA')
+      await insertRECARGA(values.tbl_projeto,values.tbl_status,values.tbl_sistema, dados.dados_tratados);
 
-  const insertRECARGA = require('../models/insert_RECARGA')
-  await insertRECARGA(values.tbl_projeto,values.tbl_status,values.tbl_sistema, dados.dados_tratados);
+      res.status(200).send({message:"The data was saved sucessfully!"});
 
-
-  res.status(200).send({message:"data-saved"});
+    } catch (error) {
+        return res.status(400).send({ error: 'Cannot save data, try again' })
+    }
+  
   };
 
 
