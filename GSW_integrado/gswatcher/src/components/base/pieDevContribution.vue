@@ -99,7 +99,7 @@ export default {
 
   methods: {
     setSides(project){
-      console.log(project)
+      //console.log(project)
       // project.forEach((elem) =>{
       //   if(elem.dev_id == "29af5134-9b8d-489a-8303-a83f89cb07ff"){ arr.push(elem)}else{this.projectData.push(elem)}
       // })
@@ -114,13 +114,16 @@ export default {
           }
         }
       })
-      console.log(this.devData)
-      console.log(this.projectData)
+      console.log(this.devData.length)
+      //console.log(this.projectData)
 
+
+      let other_devs = this.projectData.length/2;
+      let this_dev = this.devData.length/2;
 
       
       // this.series = [18.7, 81.3]
-      this.series = [this.devData.length, this.projectData.length]
+      this.series = [this_dev, other_devs]
 
     }
   }
