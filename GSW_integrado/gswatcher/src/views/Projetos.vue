@@ -2,7 +2,7 @@
   <div class="projetos">
     <h1>Project Details</h1>
     <v-divider></v-divider>
-    <h2 class="pa-2 font-weight-strong text-uppercase blue--text">
+    <h2 class="pa-2 font-weight-strong text-uppercase primary--text">
       {{ this.$route.params.name }}
     </h2>
 
@@ -66,7 +66,7 @@ export default {
   },
 
   methods: {
-     count(project) {
+    count(project) {
       const counts = {};
       let status = [];
       let statusValue = [];
@@ -113,9 +113,9 @@ export default {
   },
 
   watch: {
-    project(){
-      this.count(this.project)
-    }
+    project() {
+      this.count(this.project);
+    },
   },
 
   // methods: {

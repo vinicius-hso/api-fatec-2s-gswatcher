@@ -6,7 +6,7 @@
     <!-- <h2 class="pa-2 font-weight-strong text-uppercase blue--text">
       {{ this.$route.params.name }} {{ this.$route.params.sobrenome }}
     </h2> -->
-    <h2 class="pa-2 font-weight-strong text-uppercase blue--text">
+    <h2 class="pa-2 font-weight-strong text-uppercase primary--text">
       {{ this.$route.query.nome }}
     </h2>
     <!-- Gráfico de barras -->
@@ -99,6 +99,7 @@
                     <v-card-actions class="my-0">
                       <!-- <v-btn :to="`/totalhoursdev/`" outlined text> -->
                       <v-btn
+                        class="primary white--text"
                         :to="{
                           name: 'totalhoursdev',
                           params: {

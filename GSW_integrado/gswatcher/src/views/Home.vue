@@ -20,7 +20,7 @@
     <v-divider></v-divider>
     <v-container class="my-5">
       <v-layout row class="mb-3">
-        <v-btn small flat color="grey" @click="sortBy('name')">
+        <v-btn small flat color="primary" @click="sortBy('name')">
           <v-icon left small>mdi-folder</v-icon>
           <span class="caption text-lowercase">Project</span>
         </v-btn>
@@ -28,7 +28,7 @@
           <v-icon left small>mdi-calendar</v-icon>
           <span class="caption text-lowercase">Started At</span>
         </v-btn> -->
-        <v-btn small flat color="grey" @click="sortBy('tasks')">
+        <v-btn small flat color="primary" @click="sortBy('tasks')">
           <v-icon left small>mdi-list-status</v-icon>
           <span class="caption text-lowercase">Total Tasks</span>
         </v-btn>
@@ -78,6 +78,7 @@
                   </v-card-text>
                   <v-card-actions class="my-0">
                     <v-btn
+                      class="primary white--text"
                       :to="{
                         name: 'projetos',
                         params: {
@@ -115,19 +116,34 @@
 
 <script>
 import mainBarChart from "@/components/base/mainBarChart";
+// import { http } from "../services/api";
 // import DataService from "../services/DataService";
 
 export default {
   name: "Projects",
-  components: {
-    mainBarChart,
-  },
 
   data: function () {
     return {
       projs: [],
+      token: "",
     };
   },
+
+  components: {
+    mainBarChart,
+  },
+
+  async created() {
+    // var a = localStorage.getItem("@gswatcher:token");
+    // console.log(a);
+    // if (a == null) {
+    //   this.$router.push("/login");
+    // }
+    // if (!localStorage.getItem("@gswatcher:token")) {
+    //   this.$router.push("/login");
+    // }
+  },
+
   methods: {
     sortBy(prop) {
       this.projects.sort((a, b) => (a[prop] < b[prop] ? -1 : 1));
@@ -139,8 +155,13 @@ export default {
       return this.$store.state.projects;
     },
   },
+
   mounted() {
     this.$store.dispatch("getProjects");
+    //*** TENTATIVA DE LIMITAR O ACESSO BASEADO NA TOKEN ***
+    // if (localStorage.getItem("@gswatcher:token") == null) {
+    //   this.$router.push("/login");
+    // }
   },
 };
 </script>

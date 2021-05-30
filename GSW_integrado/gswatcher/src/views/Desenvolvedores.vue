@@ -41,10 +41,14 @@
               </template>
               <template v-slot:expanded-item="{ headers, item }">
                 <td :colspan="headers.length">
-                  More info about 
-                  <a :href="'/devdetails/' + item.dev_id + '?nome=' + item.nome" class="text-decoration-none"
-                    > {{ item.nome }}</a
-                  >  projects
+                  More info about
+                  <a
+                    :href="'/devdetails/' + item.dev_id + '?nome=' + item.nome"
+                    class="text-decoration-none"
+                  >
+                    {{ item.nome }}</a
+                  >
+                  projects
                 </td>
 
                 <!-- <v-btn :to="{ name: 'devdetails', params: { id: item.dev_id, name: item.nome, sobrenome: item.email }}" outlined text> aaa <v-btn> -->
@@ -103,9 +107,9 @@ export default {
     },
   },
   watch: {
-    developers(){
-      this.setArray()
-    }
+    developers() {
+      this.setArray();
+    },
   },
   mounted() {
     this.$store.dispatch("getDevelopers");

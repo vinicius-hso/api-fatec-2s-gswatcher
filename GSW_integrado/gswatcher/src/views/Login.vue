@@ -82,6 +82,7 @@ export default {
         const response = await http.post("/authenticate", this.login);
         localStorage.setItem("@gswatcher:token", response.data.token);
         this.$router.push("/");
+        console.log(response);
       } catch (error) {
         console.error(error);
         if (error == "Error: Request failed with status code 401") {
