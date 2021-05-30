@@ -263,7 +263,7 @@ export default {
             },
           },
         },
-        colors: ["#2A1979"],
+        colors: ["#FFA726"],
       },
     };
   },

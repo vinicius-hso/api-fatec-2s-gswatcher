@@ -225,14 +225,13 @@ export default {
           shared: true,
           intersect: false,
         },
-        fill: {
-          opacity: 1,
-        },
+
         legend: {
           position: "top",
           horizontalAlign: "left",
           offsetX: 40,
         },
+        colors: ["#01579B", "#E53935"],
         // *** CONFIGURAÇÕES PARA TELAS MENORES DE 500px ***
         responsive: [
           {

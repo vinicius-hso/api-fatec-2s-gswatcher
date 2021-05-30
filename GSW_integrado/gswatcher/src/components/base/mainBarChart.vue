@@ -141,7 +141,7 @@ export default {
             fontSize: "15px",
           },
         },
-        colors: ["#336087", "#d5e6f5"],
+        colors: ["#01579B", "#E53935"],
       },
     };
   },

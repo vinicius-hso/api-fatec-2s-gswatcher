@@ -50,6 +50,7 @@ export default {
           colors: ["#333333"],
         },
       },
+      colors: ["#006064"],
 
       stroke: {
         curve: "smooth",

@@ -28,14 +28,16 @@ export default {
           type: "pie",
         },
         labels: [this.$route.params.name, "Other developers"],
-        theme: {
-          monochrome: {
-            enabled: true,
-            color: "#5F27CD",
-            shadeTo: "light",
-            shadeIntensity: 0.7,
-          },
-        },
+
+        colors: ["#01579B", "#03A9F4"],
+        // theme: {
+        //   monochrome: {
+        //     enabled: true,
+        //     color: "#5F27CD",
+        //     shadeTo: "light",
+        //     shadeIntensity: 0.7,
+        //   },
+        // },
         plotOptions: {
           pie: {
             //size: 500,
@@ -98,36 +100,32 @@ export default {
   },
 
   methods: {
-    setSides(project){
+    setSides(project) {
       //console.log(project)
       // project.forEach((elem) =>{
       //   if(elem.dev_id == "29af5134-9b8d-489a-8303-a83f89cb07ff"){ arr.push(elem)}else{this.projectData.push(elem)}
       // })
-      project.forEach((elem) =>{
-        if(elem.dev_id == this.$route.params.dev_id){
-          if(elem.horas != null) {
-            this.devData.push(elem.horas)
+      project.forEach((elem) => {
+        if (elem.dev_id == this.$route.params.dev_id) {
+          if (elem.horas != null) {
+            this.devData.push(elem.horas);
           }
-        }else if(elem.dev_id != this.$route.params.dev_id){
-          if(elem.horas != null){
-            this.projectData.push(elem.horas)
+        } else if (elem.dev_id != this.$route.params.dev_id) {
+          if (elem.horas != null) {
+            this.projectData.push(elem.horas);
           }
         }
-      })
-      console.log(this.devData.length)
+      });
+      console.log(this.devData.length);
       //console.log(this.projectData)
 
+      let other_devs = this.projectData.length / 2;
+      let this_dev = this.devData.length / 2;
 
-      let other_devs = this.projectData.length/2;
-      let this_dev = this.devData.length/2;
-
-      
       // this.series = [18.7, 81.3]
-      this.series = [this_dev, other_devs]
-
-    }
-  }
-
+      this.series = [this_dev, other_devs];
+    },
+  },
 };
 </script>
 

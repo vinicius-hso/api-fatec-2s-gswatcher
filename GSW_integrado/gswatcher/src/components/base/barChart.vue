@@ -86,9 +86,10 @@ export default {
           crosshairs: {
             fill: {
               type: "gradient",
+
               gradient: {
-                colorFrom: "#D8E3F0",
-                colorTo: "#BED1E6",
+                colorFrom: "#01579B",
+                colorTo: "#E53935",
                 stops: [0, 100],
                 opacityFrom: 0.4,
                 opacityTo: 0.5,
