@@ -81,7 +81,7 @@ export default {
           offsetX: 0,
           style: {
             fontSize: "12px",
-            colors: ["#1976d2"],
+            colors: ["#000000"],
           },
         },
 
