@@ -1,10 +1,10 @@
 <template>
   <nav>
-    <v-app-bar dense app>
+    <v-app-bar dense app v-show="token">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>
         <router-link class="font-weight-dark text-decoration-none" to="/"
-          >GSWatcher
+          ><div id="logo-name">GSWATCHER</div>
         </router-link>
 
         <!--<span class="font-weight-light text-uppercase grey--text"> - Gerenciador de Projetos</span>-->
@@ -124,6 +124,7 @@ export default {
         { icon: "mdi-file-upload", text: "Upload", route: "/upload" },
         // { icon: 'mdi-face', text: 'Time', route: '/time' },
       ],
+      token: localStorage.getItem("@gswatcher:token"),
     };
   },
   methods: {
@@ -134,4 +135,13 @@ export default {
   },
 };
 </script>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+
+#logo-name {
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: larger;
+}
+</style>
 

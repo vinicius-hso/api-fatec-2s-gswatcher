@@ -43,6 +43,7 @@ export default {
             },
           },
         },
+        colors: ["#01579b"],
         title: {
           text: "Tasks per Status",
           floating: true,
@@ -62,7 +63,7 @@ export default {
           offsetY: -20,
           style: {
             fontSize: "12px",
-            colors: ["#1976d2"],
+            colors: ["#000"],
           },
         },
 
@@ -114,7 +115,6 @@ export default {
             },
           },
         },
-        colors: ["#304758"],
       },
     };
   },
