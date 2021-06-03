@@ -5,9 +5,14 @@
         <v-layout align-center justify-center>
           <v-flex xs12 sm8 md4>
             <v-card class="elevation-12\" flat="true" height="120">
-              <div><v-img src="../assets/gswatcher-logo.png"></v-img></div>
+              <div id="img">
+                <v-img src="../assets/gswatcher-logo.png"></v-img>
+              </div>
             </v-card>
-
+            <br />
+            <br />
+            <br />
+            <br />
             <v-card class="elevation-12\" flat="true">
               <v-card-text>
                 <v-form>
@@ -98,7 +103,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+#img {
+  padding-bottom: 100px;
+}
 </style>
 
 

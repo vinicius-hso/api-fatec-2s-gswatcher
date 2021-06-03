@@ -1,6 +1,6 @@
 <template>
-  <nav>
-    <v-app-bar dense app v-show="token">
+  <nav v-if="!['login', 'register', 'forgotpass'].includes($route.name)">
+    <v-app-bar dense app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>
         <router-link class="font-weight-dark text-decoration-none" to="/"
