@@ -19,7 +19,7 @@ A tabela abaixo mostra as __Histórias de Usuário__ selecionadas para serem des
 
 ### 📋 Sprint Backlog
 
-*A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_backlog_v4.pdf) a serem desenvolvidos durante essa Sprint 1:*
+*A imagem abaixo mostra como os itens do [__Product Backlog__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/documentation/%2303_product_backlog.pdf) a serem desenvolvidos durante essa Sprint 1:*
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-1/Images/sprint1_backlog.png)
 
