@@ -48,3 +48,11 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 Os gifs abaixo são referentes as implementações realizadas durante essa Sprint 4.
 
 *Clique [aqui para visualizar o código]()*
+
+### 3.1 - 🔑 Login e Register
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-4/Images/register_login.gif)
+
+### 3.2 - 🔐 Forgot e Reset Password
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-4/Images/forgot_reset.gif)
