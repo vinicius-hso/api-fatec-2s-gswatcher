@@ -1,7 +1,6 @@
 <template>
   <div class="barChart">
     <div class="chart">
-      <div id="chart" class="chart-wrapper">
         <apexchart
           class="my-8"
           type="bar"
@@ -10,7 +9,6 @@
           :options="chartOptions"
           :series="series"
         ></apexchart>
-      </div>
     </div>
   </div>
 </template>
