@@ -7,10 +7,7 @@
             <v-card class="elevation-12\" flat="true" height="120">
               <div><v-img src="../assets/gswatcher-logo.png"></v-img></div>
             </v-card>
-            <br />
-            <br />
-            <br />
-            <br />
+
             <v-card class="elevation-12\" flat="true">
               <v-card-text>
                 <v-form>
