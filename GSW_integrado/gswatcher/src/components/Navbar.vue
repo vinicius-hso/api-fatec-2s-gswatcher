@@ -13,11 +13,11 @@
       <!-- <v-btn icon>
                 <v-icon>mdi-magnify</v-icon>
             </v-btn> -->
-      <v-btn to="/perfil" flat>
-        <!-- <router-link to="/perfil"></router-link> -->
-        <v-icon>mdi-account-circle</v-icon>
-        <!-- Por enquanto está com o ícone errado, buscar validação de usuário para alterar dinâmicamente ícone -->
-      </v-btn>
+      <!-- <v-btn to="/perfil" flat> ******* TEMPORARIAMENTE ******* -->
+      <!-- <router-link to="/perfil"></router-link> -->
+      <!-- <v-icon>mdi-account-circle</v-icon> ******* TEMPORARIAMENTE ******* -->
+      <!-- Por enquanto está com o ícone errado, buscar validação de usuário para alterar dinâmicamente ícone -->
+      <!-- </v-btn> ******* TEMPORARIAMENTE ******* -->
     </v-app-bar>
 
     <v-navigation-drawer app v-model="drawer" color="grey darken-3">
