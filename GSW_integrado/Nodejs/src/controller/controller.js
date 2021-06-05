@@ -57,12 +57,13 @@ exports.TESTE2 = async (req, res) => {
 exports.TESTE3 = async (req, res) => {
   const id = req.params.id
   const response = await db.query(
-    `select tbl_projeto.projeto_id, tbl_projeto.projeto_nome, tbl_task.task_id,tbl_task.dev_id,
+    `select tbl_projeto.projeto_id, tbl_projeto.projeto_nome, tbl_task.task_id,tbl_task.dev_id, tbl_dev.nome, tbl_dev.sobrenome,
      tbl_task.nome, tbl_task_detalhes.inicio, tbl_task_detalhes.termino, tbl_task_Detalhes.horas,
       tbl_status.status_id, tbl_status.status_nome from tbl_projeto 
     inner join tbl_task on tbl_task.projeto_id = tbl_projeto.projeto_id
     inner join tbl_task_detalhes on tbl_task.task_detalhes = tbl_task_detalhes.task_detalhes_id
     inner join tbl_status on tbl_task_detalhes.task_status_id = tbl_status.status_id
+    inner join tbl_dev on tbl_task.dev_id = tbl_dev.dev_id
     where tbl_projeto.projeto_id = '${id}'`,
     );
     res.status(200).send(response.rows);
