@@ -137,27 +137,7 @@ exports.listAll_Status = async (req, res) => {
   };    
 
 
-  //POST route
-  exports.singlefile = async (req, res) => {
-
-    if (!req.files) {
-        return res.status(500).send({ msg: "file is not found" })
-    }
-    // accessing the file
-    global.myFile = req.files.file;
-
-    //  mv() method places the file inside public directory
-    myFile.mv(`${__dirname}/public/${myFile.name}`, function (err) {
-        if (err) {
-            console.log(err)
-            return res.status(500).send({ msg: "Error occured" });
-        }
-        // returing the response with file path and name
-        return res.send({name: myFile.name, path: `/${myFile.name}`});
-    });
-
-}
-
+ 
 
 exports.main_chart = async (req, res) => {
   const saveTableContent = require('../models/saveTableContent')
@@ -205,6 +185,46 @@ exports.main_chart = async (req, res) => {
 
     res.status(200).send(output);
   }; 
+
+
+
+   //POST route
+  exports.singlefile = async (req, res) => {
+
+    if (!req.files) {
+        return res.status(500).send({ msg: "file is not found" })
+    }
+    // accessing the file
+    global.myFile = req.files.file;
+        try{
+	      const funcDados = require('../models/treating_data')    
+	      let dados = await funcDados(JSON.parse(myFile.data));
+
+	      const CreateTables = require('../models/create_tables')
+	      await CreateTables();
+
+	      const CheckTablesNull = require('../models/check_tables_null')
+	      const insertUSER = require('../models/insert_user1')
+	      let check = await CheckTablesNull('tbl_usuario');
+	      if (check)
+	        await insertUSER();
+
+	      const Insert_data = require('../models/insert_data')
+	      await Insert_data(dados);
+
+	      const Save_data = require('../models/save_data')
+	      let values = await Save_data();
+
+	      const insertRECARGA = require('../models/insert_RECARGA')
+	      await insertRECARGA(values.tbl_projeto,values.tbl_status,values.tbl_sistema, dados.dados_tratados);
+
+	      res.status(200).send({message:"The data was saved sucessfully!"});
+
+	    } catch (error) {
+	        return res.status(400).send({ error: 'Cannot save data, try again' })
+	    }
+
+	}
 
 
   exports.uploadButton = async (req, res) => {
