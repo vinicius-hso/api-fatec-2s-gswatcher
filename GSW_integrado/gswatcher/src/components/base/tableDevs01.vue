@@ -14,7 +14,7 @@
       <v-data-table
         height="250"
         :headers="headers"
-        :items="desserts"
+        :items="formatedarray"
         :search="search"
       ></v-data-table>
     </v-card>
@@ -24,9 +24,10 @@
 <script>
 export default {
   name: "table01",
-  // props: ["project"],
   data() {
     return {
+      formatedarray: [],
+      singleJson: {},
       search: "",
       headers: [
         {
@@ -52,28 +53,7 @@ export default {
 
     methods: {
     treatCycle(projs) {
-
-      // let counts = {}
-      // let devIds = []
-      // let statusValue = []
-      // projs.forEach((r) => {
-      //     counts[r["dev_id"]] = (counts[r["dev_id"]] || 0) + 1
-      // })
-
-      // for (const key in counts) {
-      //   // console.log(`${key} : ${counts[key]}`);
-      //   devIds.push(key);
-      //   statusValue.push(counts[key]);
-      // }
-
-
-
-      // projs.forEach((e1) => devIds.forEach((e2) => {
-      //   if(e1 === e2){}
-      // }))
-
-
-console.log(projs)
+      console.log(projs)
       var devs = {};
       projs.forEach(function(e) {
         if (!devs[e.dev_id]) 
@@ -81,129 +61,48 @@ console.log(projs)
         else
           devs[e.dev_id].push(e);
       });
-      // console.log(devs)
-
 
       for (const element in devs) {
-        // if (!devs.hasOwnProperty(element)) continue;
         let horas = []
+        let inicio = []
         let obj = devs[element]
         // console.log(obj)
         obj.forEach((e) =>{
           if(e.horas) {
             horas.push(e.horas)
           }
+          if(e.inicio) {
+            inicio.push(new Date(e.inicio))
+            
+          }
 
         })
-        
+        let minDate = new Date(Math.min.apply(null,inicio));
         let total = horas.reduce((total, currentElement) => total + currentElement)
         let totalCompletas = horas.length
 
         devs[element].horasGerais = [horas];
+        devs[element].inicioGeral = [inicio];
+        devs[element].dataInicio = minDate;
         devs[element].tasksCompletas = totalCompletas;
         devs[element].totalHoras = total;
         
-        
       }
-
-      // devs.forEach(element => {
-      //   let horas = []
-      //   element.forEach((e) =>{
-      //     if(e.horas) {
-      //       horas.push(e.horas)
-      //     }
-
-      //   })
-      //   devs[element.totalHoras] = [horas];
-      // });
       console.log(devs)
-      // let totalHorasDev = []
-      // devs.forEach(element => {
-      //   let total = devs.reduce((total, currentElement) => total + currentElement)
-      //   let totalCompletas = devs.length
-      // });
-
-
-
-
-
-      let devProjTasks = [];
-      let devProjs = this.devProjectsSet(projs);
-
-      // console.log(devProjs);
-
-      devProjs.forEach((elem) => {
-        let data = this.dataStats(elem, projs);
-        devProjTasks.push({
-          name: elem,
-          data: data,
-        });
-      });
-      console.log(devProjTasks);
-      this.info = devProjTasks;
+      this.setArray(devs)
     },
 
-    // *** DEV PROJECTS ***
-    // Retorna um array com os projetos de um dev
-
-    devProjectsSet(projectObject) {
-      // console.log(projectObject) //entrada
-      var p = [];
-      var projetos = [];
-
-      projectObject.forEach((elem, index) => {
-        p[index] = projectObject[index].projeto_nome;
-        if (projetos.includes(p[index]) == false) {
-          projetos.push(p[index]);
+    setArray(devs){
+      for(let k in devs){	
+        this.singleJson = {
+          name: k,
+          completedTasks: devs[k]["tasksCompletas"],
+          startDate: devs[k]["dataInicio"],
+          totalHours: devs[k]["totalHoras"],
         }
-      });
-      return projetos;
-    },
-
-    // *** DATA STATS***
-    // Retorna o total de tasks (completas) de um projeto
-    // Retorna o total de horas de um dev em um projeto
-    // Retorna a data da task mais antiga de um projeto
-
-    // dataStats(projectName, projectObject) {
-    //   var menor = projectObject[0].inicio;
-    //   var horas = 0;
-    //   var t = 0;
-    //   var c = 0;
-    //   var ic = 0;
-    //   var id = "";
-    //   projectObject.forEach((elem) => {
-    //     if (elem.projeto_nome == projectName) {
-    //       if (elem.horas != null) {
-    //         c++;
-    //         horas += elem.horas;
-    //       } else if (elem.horas == null) {
-    //         ic++;
-    //       }
-    //       t++;
-    //       if (elem.inicio < menor) {
-    //         menor = elem.inicio;
-    //         menor = new Date(menor);
-    //         const options = {
-    //           weekday: "long",
-    //           year: "numeric",
-    //           month: "long",
-    //           day: "numeric",
-    //         };
-    //         menor = menor.toLocaleDateString(undefined, options);
-    //       }
-    //     }
-    //     id = elem.projeto_id;
-    //   });
-    //   return {
-    //     id: id,
-    //     totalTasks: t,
-    //     tasksCompletas: c,
-    //     tasksIncompletas: ic,
-    //     horas: horas.toFixed(2),
-    //     dataInicio: menor,
-    //   };
-    // },
+        this.formatedarray.push(this.singleJson);
+      }
+    }
   },
 
   computed: {
