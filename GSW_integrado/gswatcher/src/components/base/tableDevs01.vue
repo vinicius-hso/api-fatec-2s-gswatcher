@@ -103,6 +103,7 @@ export default {
           totalHours: devs[k]["totalHoras"],
         };
         this.formatedarray.push(this.singleJson);
+        this.formatedarray = [...new Set(this.formatedarray)]
       }
     },
   },

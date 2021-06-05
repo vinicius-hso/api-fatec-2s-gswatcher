@@ -72,7 +72,13 @@ export default {
           }
         });
         let minDate = new Date(Math.min.apply(null, inicio));
-        let totalCompletas = inicio.length;
+        let totalCompletas = '';
+        if (inicio.length) {
+          totalCompletas = inicio.length;
+        }else{
+          totalCompletas = '-'
+          minDate = '--'
+          }
         devs[element].inicioGeral = [inicio];
         devs[element].dataInicio = minDate;
         devs[element].tasksIncompletas = totalCompletas;
@@ -90,6 +96,7 @@ export default {
           startDate: devs[k]["dataInicio"],
         };
         this.formatedarray.push(this.singleJson);
+        this.formatedarray = [...new Set(this.formatedarray)]
       }
     },
   },
