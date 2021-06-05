@@ -9,7 +9,9 @@
                 <v-img src="../assets/gswatcher-logo.png"></v-img>
               </div>
             </v-card>
-
+            <v-alert dense outlined type="error" v-show="this.message">
+              {{ this.message }}
+            </v-alert>
             <v-card class="elevation-12\" flat="true">
               <v-card-text>
                 <v-form>
@@ -75,6 +77,7 @@ export default {
         email: "",
         password: "",
       },
+      message: "",
     };
   },
 
@@ -88,9 +91,11 @@ export default {
       } catch (error) {
         console.error(error);
         if (error == "Error: Request failed with status code 401") {
-          alert("Invalid password");
+          this.message = "Invalid password!";
+          // alert("Invalid password");
         } else if (error == "Error: Request failed with status code 404") {
-          alert("User not found");
+          this.message = "User not found!";
+          // alert("User not found");
         } else {
           alert(error);
         }
