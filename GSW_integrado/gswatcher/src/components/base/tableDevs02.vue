@@ -90,6 +90,7 @@ export default {
 
     setArray(devs) {
       for (let k in devs) {
+        this.singleJson = {}
         this.singleJson = {
           name: devs[k]["nome"],
           openTasks: devs[k]["tasksIncompletas"],
