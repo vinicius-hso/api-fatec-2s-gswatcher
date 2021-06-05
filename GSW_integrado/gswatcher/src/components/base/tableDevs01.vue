@@ -95,6 +95,7 @@ export default {
     },
 
     setArray(devs) {
+      this.formatedarray = []
       for (let k in devs) {
         this.singleJson = {}
         this.singleJson = {

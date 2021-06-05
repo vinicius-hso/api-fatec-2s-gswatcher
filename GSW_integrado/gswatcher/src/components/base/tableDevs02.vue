@@ -89,17 +89,36 @@ export default {
     },
 
     setArray(devs) {
+      this.formatedarray = []
+      // let multipleJsons = []
+      // let comp = []
       for (let k in devs) {
+        // this.formatedarray = []
         this.singleJson = {}
         this.singleJson = {
           name: devs[k]["nome"],
           openTasks: devs[k]["tasksIncompletas"],
           startDate: devs[k]["dataInicio"],
         };
+        console.log(this.singleJson);
         this.formatedarray.push(this.singleJson);
         this.formatedarray = [...new Set(this.formatedarray)]
       }
+      // comp = multipleJsons
+      // let aaa = this.getUnique(multipleJsons, comp)
+      // console.log(aaa)
     },
+
+    // getUnique(arr, comp) {
+    //   // store the comparison  values in array
+    //   let unique =  arr.map(e => e[comp])
+    //   // store the indexes of the unique objects
+    //   .map((e, i, final) => final.indexOf(e) === i && i)
+    //   // eliminate the false indexes & return unique objects
+    //   .filter((e) => arr[e]).map(e => arr[e]);
+    //   console.log(unique)
+    //   return unique;
+    // }
   },
 
   computed: {
