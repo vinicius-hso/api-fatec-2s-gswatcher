@@ -42,67 +42,69 @@ export default {
       ],
       desserts: [
         {
-          name: "Ana Júlia",
-          completedTasks: 159,
-          startDate: 159,
-          totalHours: 6.0,
+          name: "Nome",
+          completedTasks: 0,
+          startDate: 0,
+          totalHours: 0,
         },
       ],
     };
   },
 
-    methods: {
+  methods: {
     treatCycle(projs) {
-      console.log(projs)
+      // console.log(projs);
       var devs = {};
-      projs.forEach(function(e) {
-        if (!devs[e.dev_id]) 
-          devs[e.dev_id] = [e];
-        else
-          devs[e.dev_id].push(e);
+      projs.forEach(function (e) {
+        if (!devs[e.dev_id]) devs[e.dev_id] = [e];
+        else devs[e.dev_id].push(e);
       });
 
       for (const element in devs) {
-        let horas = []
-        let inicio = []
-        let obj = devs[element]
+        let horas = [];
+        let inicio = [];
+        let nome = '';
+        let obj = devs[element];
         // console.log(obj)
-        obj.forEach((e) =>{
-          if(e.horas) {
-            horas.push(e.horas)
+        obj.forEach((e) => {
+          if(e.nome){
+            nome = e.nome + " " + e.sobrenome
           }
-          if(e.inicio) {
-            inicio.push(new Date(e.inicio))
-            
+          if (e.horas) {
+            horas.push(e.horas);
           }
-
-        })
-        let minDate = new Date(Math.min.apply(null,inicio));
-        let total = horas.reduce((total, currentElement) => total + currentElement)
-        let totalCompletas = horas.length
+          if (e.inicio) {
+            inicio.push(new Date(e.inicio));
+          }
+        });
+        let minDate = new Date(Math.min.apply(null, inicio));
+        let total = horas.reduce(
+          (total, currentElement) => total + currentElement
+        );
+        let totalCompletas = horas.length;
 
         devs[element].horasGerais = [horas];
         devs[element].inicioGeral = [inicio];
         devs[element].dataInicio = minDate;
         devs[element].tasksCompletas = totalCompletas;
         devs[element].totalHoras = total;
-        
+        devs[element].nome = nome;
       }
-      console.log(devs)
-      this.setArray(devs)
+      // console.log(devs);
+      this.setArray(devs);
     },
 
-    setArray(devs){
-      for(let k in devs){	
+    setArray(devs) {
+      for (let k in devs) {
         this.singleJson = {
-          name: k,
+          name: devs[k]["nome"],
           completedTasks: devs[k]["tasksCompletas"],
           startDate: devs[k]["dataInicio"],
           totalHours: devs[k]["totalHoras"],
-        }
+        };
         this.formatedarray.push(this.singleJson);
       }
-    }
+    },
   },
 
   computed: {
@@ -120,6 +122,5 @@ export default {
       this.treatCycle(this.project);
     },
   },
-  
 };
 </script>
