@@ -18,7 +18,7 @@
 <script>
 export default {
   name: "barChart",
-  props: ["project"],
+  // props: ["project"],
 
   data() {
     return {
@@ -118,10 +118,27 @@ export default {
       },
     };
   },
-  mounted() {
-    console.log("BarChart mounted!");
-    this.count(this.project);
+
+  computed: {
+    project() {
+      return this.$store.state.project;
+    },
   },
+
+  mounted() {
+    this.$store.dispatch("getProject", this.$route.params.id);
+  },
+
+  watch: {
+    project() {
+      this.count(this.project);
+    },
+  },
+
+  // mounted() {
+  //   console.log("BarChart mounted!");
+  //   this.count(this.project);
+  // },
 
   methods: {
     count(project) {

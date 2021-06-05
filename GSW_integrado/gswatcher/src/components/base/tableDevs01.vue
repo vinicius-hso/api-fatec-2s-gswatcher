@@ -24,7 +24,7 @@
 <script>
 export default {
   name: "table01",
-  props: ["project"],
+  // props: ["project"],
   data() {
     return {
       search: "",
@@ -46,62 +46,181 @@ export default {
           startDate: 159,
           totalHours: 6.0,
         },
-        {
-          name: "Antônio",
-          completedTasks: 237,
-          startDate: 237,
-          totalHours: 9.0,
-        },
-        {
-          name: "Bernardo",
-          completedTasks: 262,
-          startDate: 262,
-          totalHours: 16.0,
-        },
-        {
-          name: "Carlos",
-          completedTasks: 305,
-          startDate: 305,
-          totalHours: 3.7,
-        },
-        {
-          name: "Cecília",
-          completedTasks: 356,
-          startDate: 356,
-          totalHours: 16.0,
-        },
-        {
-          name: "Célia",
-          completedTasks: 375,
-          startDate: 375,
-          totalHours: 0.0,
-        },
-        {
-          name: "Davi",
-          completedTasks: 392,
-          startDate: 392,
-          totalHours: 0.2,
-        },
-        {
-          name: "Elísio",
-          completedTasks: 408,
-          startDate: 408,
-          totalHours: 3.2,
-        },
-        {
-          name: "Enzo Gabriel",
-          completedTasks: 452,
-          startDate: 452,
-          totalHours: 25.0,
-        },
-        {
-          name: "Fábio",
-          completedTasks: 518,
-          startDate: 518,
-          totalHours: 26.0,
-        },
       ],
     };
   },
+
+    methods: {
+    treatCycle(projs) {
+
+      // let counts = {}
+      // let devIds = []
+      // let statusValue = []
+      // projs.forEach((r) => {
+      //     counts[r["dev_id"]] = (counts[r["dev_id"]] || 0) + 1
+      // })
+
+      // for (const key in counts) {
+      //   // console.log(`${key} : ${counts[key]}`);
+      //   devIds.push(key);
+      //   statusValue.push(counts[key]);
+      // }
+
+
+
+      // projs.forEach((e1) => devIds.forEach((e2) => {
+      //   if(e1 === e2){}
+      // }))
+
+
+console.log(projs)
+      var devs = {};
+      projs.forEach(function(e) {
+        if (!devs[e.dev_id]) 
+          devs[e.dev_id] = [e];
+        else
+          devs[e.dev_id].push(e);
+      });
+      // console.log(devs)
+
+
+      for (const element in devs) {
+        // if (!devs.hasOwnProperty(element)) continue;
+        let horas = []
+        let obj = devs[element]
+        // console.log(obj)
+        obj.forEach((e) =>{
+          if(e.horas) {
+            horas.push(e.horas)
+          }
+
+        })
+        
+        let total = horas.reduce((total, currentElement) => total + currentElement)
+        let totalCompletas = horas.length
+
+        devs[element].horasGerais = [horas];
+        devs[element].tasksCompletas = totalCompletas;
+        devs[element].totalHoras = total;
+        
+        
+      }
+
+      // devs.forEach(element => {
+      //   let horas = []
+      //   element.forEach((e) =>{
+      //     if(e.horas) {
+      //       horas.push(e.horas)
+      //     }
+
+      //   })
+      //   devs[element.totalHoras] = [horas];
+      // });
+      console.log(devs)
+      // let totalHorasDev = []
+      // devs.forEach(element => {
+      //   let total = devs.reduce((total, currentElement) => total + currentElement)
+      //   let totalCompletas = devs.length
+      // });
+
+
+
+
+
+      let devProjTasks = [];
+      let devProjs = this.devProjectsSet(projs);
+
+      // console.log(devProjs);
+
+      devProjs.forEach((elem) => {
+        let data = this.dataStats(elem, projs);
+        devProjTasks.push({
+          name: elem,
+          data: data,
+        });
+      });
+      console.log(devProjTasks);
+      this.info = devProjTasks;
+    },
+
+    // *** DEV PROJECTS ***
+    // Retorna um array com os projetos de um dev
+
+    devProjectsSet(projectObject) {
+      // console.log(projectObject) //entrada
+      var p = [];
+      var projetos = [];
+
+      projectObject.forEach((elem, index) => {
+        p[index] = projectObject[index].projeto_nome;
+        if (projetos.includes(p[index]) == false) {
+          projetos.push(p[index]);
+        }
+      });
+      return projetos;
+    },
+
+    // *** DATA STATS***
+    // Retorna o total de tasks (completas) de um projeto
+    // Retorna o total de horas de um dev em um projeto
+    // Retorna a data da task mais antiga de um projeto
+
+    // dataStats(projectName, projectObject) {
+    //   var menor = projectObject[0].inicio;
+    //   var horas = 0;
+    //   var t = 0;
+    //   var c = 0;
+    //   var ic = 0;
+    //   var id = "";
+    //   projectObject.forEach((elem) => {
+    //     if (elem.projeto_nome == projectName) {
+    //       if (elem.horas != null) {
+    //         c++;
+    //         horas += elem.horas;
+    //       } else if (elem.horas == null) {
+    //         ic++;
+    //       }
+    //       t++;
+    //       if (elem.inicio < menor) {
+    //         menor = elem.inicio;
+    //         menor = new Date(menor);
+    //         const options = {
+    //           weekday: "long",
+    //           year: "numeric",
+    //           month: "long",
+    //           day: "numeric",
+    //         };
+    //         menor = menor.toLocaleDateString(undefined, options);
+    //       }
+    //     }
+    //     id = elem.projeto_id;
+    //   });
+    //   return {
+    //     id: id,
+    //     totalTasks: t,
+    //     tasksCompletas: c,
+    //     tasksIncompletas: ic,
+    //     horas: horas.toFixed(2),
+    //     dataInicio: menor,
+    //   };
+    // },
+  },
+
+  computed: {
+    project() {
+      return this.$store.state.project;
+    },
+  },
+
+  mounted() {
+    this.$store.dispatch("getProject", this.$route.params.id);
+  },
+
+  watch: {
+    project() {
+      this.treatCycle(this.project);
+    },
+  },
+  
 };
 </script>
