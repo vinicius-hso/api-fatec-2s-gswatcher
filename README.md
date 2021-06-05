@@ -56,3 +56,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 ### 3.2 - 🔐 Forgot e Reset Password
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-4/Images/forgot_reset.gif)
+
+### 3.3 - 🎨 Implementação da Identidade Visual
+
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-4/Images/identidade_visual.gif)
