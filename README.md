@@ -71,7 +71,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-4/Images/desktop.gif)
 
-### 3.5 - First Accesss Tutorial Video
+### 3.5 - 🧑‍🏫 First Accesss Tutorial Video
 
 [Vídeo no Youtube](https://www.youtube.com/watch?v=8j8ktkdrvd4)
 
