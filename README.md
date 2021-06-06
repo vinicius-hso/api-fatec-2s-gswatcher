@@ -75,3 +75,11 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 [Vídeo no Youtube](https://www.youtube.com/watch?v=8j8ktkdrvd4)
 
 ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-4/Images/first-access.gif)
+
+### 3.6 - Integração da página de Detalhes de um Projeto
+
+![]()
+
+### 3.7 - Hospedagem/Deploy no Heroku
+
+* 🔗 [https://gswatcher.herokuapp.com/](https://gswatcher.herokuapp.com/)
