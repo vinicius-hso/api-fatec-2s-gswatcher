@@ -78,7 +78,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ### 3.6 - 📊 Integração da página de Detalhes de um Projeto
 
-![]()
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-4/Images/project-details.gif)
 
 ### 3.7 - 🏢 Hospedagem/Deploy no Heroku
 
