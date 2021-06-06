@@ -82,4 +82,6 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ### 3.7 - 🏢 Hospedagem/Deploy no Heroku
 
+Acesse a aplicação em produção através do link abaixo:
+
 * 🔗 [https://gswatcher.herokuapp.com/](https://gswatcher.herokuapp.com/)
