@@ -26,7 +26,7 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 4__ conforme es
 
 *O gráfico abaixo mostra o desempenho da equipe na realização das tarefas referentes a Sprint:*
 
-![]()
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-4/Images/burndown-chart.png)
 
 ## 2 - 📂 Artefatos III: Documentação do Projeto
 
