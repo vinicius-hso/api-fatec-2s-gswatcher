@@ -59,7 +59,7 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 
 ### 3.3 - 🎨 Implementação da Identidade Visual
 
-![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-4/Images/identidade_visual.gif)
+![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-4/Images/identidade-visual.gif)
 
 ### 3.4 - 📱 ➕ 🖥️ Implementação final da Responsividade da aplicação
 
