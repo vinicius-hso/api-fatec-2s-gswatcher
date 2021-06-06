@@ -14,7 +14,6 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 4__ conforme es
 | US_11 | Essencial  | * Eu, como usuário, gostaria de visualizar as informacões reais sobre os projetos, com dados provenientes do banco de dados. | 13             |
 | US_17 | Essencial  | Eu, como usuário, gostaria de realizar meu cadastro na aplicação utilizando nome, email e senha para ter meus dados armazenados. | 13             |
 | US_22 | Importante | Eu, como usuário, gostaria de ter a aplicação hospedada em um servidor para que seu acesso seja possível em qualquer situação. | 13             |
-| US_23 | Desejável  | Eu, como usuário, gostaria de imprimir as visualizações geradas pela aplicação para poder ter as informações em formato físico também. | 5              |
 | US_18 | Desejável  | Eu, como usuário, gostaria de que a aplicação tivesse uma identidade visual para uma melhor experiência na aplicação. | 8              |
 
 ### 📋 Sprint Backlog
