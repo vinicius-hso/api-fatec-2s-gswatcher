@@ -85,3 +85,5 @@ Os gifs abaixo são referentes as implementações realizadas durante essa Sprin
 Acesse a aplicação em produção através do link abaixo:
 
 * 🔗 [https://gswatcher.herokuapp.com/](https://gswatcher.herokuapp.com/)
+
+* ⚙️ API - [https://api-gswatcher.herokuapp.com/](https://api-gswatcher.herokuapp.com/)
