@@ -21,7 +21,7 @@
               <iframe
                 width="280px"
                 height="200px"
-                src="https://www.youtube.com/embed/KOmHkYIDPMU"
+                src="https://www.youtube.com/embed/8j8ktkdrvd4"
                 title="YouTube video player"
                 frameborder="1"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -40,7 +40,15 @@
 
 export default {
   name: "FirstAccess",
+
+  mounted() {
+    //*** TENTATIVA DE LIMITAR O ACESSO BASEADO NA TOKEN ***
+    if (localStorage.getItem("@gswatcher:token") == null) {
+      this.$router.push("/login");
+    }
+  }
 };
+
 </script>
 
 <style>

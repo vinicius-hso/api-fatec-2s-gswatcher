@@ -7,7 +7,7 @@ const cors = require("cors");
 require('../database')
 
 var corsOptions = {
-  origin: "http://localhost:8080"
+  origin: "https://gswatcher.herokuapp.com" || "http://localhost:8080"
 };
 
 app.use(express.static('public'))
@@ -26,7 +26,9 @@ main(dados)
 // Rotas da API;
 const AuthRoute = require('../routes/auth_routes')
 const productRoute = require('../routes/product_routes')
+const route = require('../routes/index')
 
+app.use(route)
 app.use('/auth', AuthRoute)
 app.use('/api/', productRoute)
 
