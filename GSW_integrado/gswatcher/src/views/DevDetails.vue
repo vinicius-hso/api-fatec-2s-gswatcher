@@ -145,6 +145,7 @@ export default {
   },
   methods: {
     treatCycle(info, projs) {
+      this.info = {}
       let devProjTasks = [];
       let devProjs = this.devProjectsSet(projs);
 
@@ -210,8 +211,10 @@ export default {
             };
             menor = menor.toLocaleDateString(undefined, options);
           }
+          console.log(elem)
+          id = elem.projeto_id;
         }
-        id = elem.projeto_id;
+        
       });
       return {
         id: id,
