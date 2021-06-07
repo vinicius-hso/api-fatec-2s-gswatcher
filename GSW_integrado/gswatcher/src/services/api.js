@@ -2,7 +2,8 @@ import axios from 'axios'
 
 export const http = axios.create({
     baseURL: "http://localhost:3000/auth",
-    headers: {
+    headers: { 
+        'Authorization': 'Bearer ' + localStorage.getItem('@gswatcher:token'),
         "Content-type": "application/json"
     }
 });
