@@ -227,9 +227,16 @@ export default {
         },
 
         legend: {
+          show: false,
           position: "top",
           horizontalAlign: "left",
           offsetX: 40,
+          onItemClick: {
+            toggleDataSeries: true
+          },
+          onItemHover: {
+            highlightDataSeries: true
+          },
         },
         colors: ["#01579B", "#E53935"],
         // *** CONFIGURAÇÕES PARA TELAS MENORES DE 500px ***

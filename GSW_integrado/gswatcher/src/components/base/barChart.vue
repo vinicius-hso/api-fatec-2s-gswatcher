@@ -135,7 +135,7 @@ export default {
 
   // mounted() {
   //   console.log("BarChart mounted!");
-  //   this.count(this.project);
+    // this.count(this.project);
   // },
 
   methods: {
