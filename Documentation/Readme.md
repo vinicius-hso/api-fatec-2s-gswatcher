@@ -2,7 +2,8 @@
 
 Para a última entrega foi realizado o Project Model Canvas do projeto, que engloba todas as áreas de gerencimento do projeto, proporcionando uma visão macro acerca do projeto desenvolvido.
 
-* [__Canvas__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-3/Documentation/Gerenciamento%20do%20Escopo_SPRINT_3.pdf)
+* [__Canvas__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-4/Documentation/Canvas.png)
+* ![](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-4/Documentation/Canvas.png)
 
 Para verificar as documentações entregues nas Sprints anteriores clique nos links abaixo.
 
