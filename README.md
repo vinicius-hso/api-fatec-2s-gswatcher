@@ -32,9 +32,7 @@ Abaixo encontram-se todos os itens produzidos durante a __SPRINT 4__ conforme es
 
 Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
-* [__Doc1__]()
-* [__Doc2__]()
-* [__Doc3__]()
+* [__Canvas__](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/blob/Sprint-4/Documentation/GSWatcher_Canvas.bmp)
 
 *Visualize os documentos produzidos anteriormente:*
 
