@@ -44,7 +44,7 @@ Acesse os documentos produzidos durante a Sprint 2 clicando nos links abaixo:
 
 Os gifs abaixo são referentes as implementações realizadas durante essa Sprint 4.
 
-*Clique [aqui para visualizar o código]()*
+*Clique [aqui para visualizar o código](https://github.com/vinicius-hso/api-fatec-2s-gswatcher/tree/development)*
 
 ### 3.1 - 🔑 Login e Register
 
